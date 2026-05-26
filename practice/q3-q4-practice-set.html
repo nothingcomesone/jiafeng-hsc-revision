@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>《夹缝中的光芒》Q3 + Q4 练习集 — HSC C&amp;L Hub</title>
+  <meta name="description" content="HSC Chinese & Literature《夹缝中的光芒》Q3 + Q4 练习集：8 道 Q3 阅读题 + 2 道 Q4 跨文本议论文 + Band 6 范文 / 示范答案。中英双语题干。">
+  <style>
+:root {
+  --ink: #1f2933; --muted: #5d6875; --line: #d7dee8;
+  --paper: #ffffff; --wash: #f6f8fb;
+  --teal: #0f766e; --teal-soft: #e7f4f2;
+  --red: #a43b3b; --red-soft: #faeeee;
+  --gold: #87620e; --gold-soft: #fff6dc;
+  --blue: #2b5d8a; --blue-soft: #edf5fb;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--wash); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; line-height: 1.65; }
+main { width: min(1100px, calc(100% - 32px)); margin: 28px auto 64px; background: var(--paper); border: 1px solid var(--line); box-shadow: 0 18px 48px rgba(31, 41, 51, 0.08); }
+header.doc-head { padding: 42px 46px 30px; border-bottom: 1px solid var(--line); background: linear-gradient(135deg, rgba(15, 118, 110, 0.13), rgba(135, 98, 14, 0.10) 60%, rgba(43, 93, 138, 0.10)), #fff; }
+section.question { padding: 36px 46px; border-bottom: 4px solid var(--line); scroll-margin-top: 20px; }
+section.question:last-child { border-bottom: 0; }
+section.toc-section, section.divider-section { padding: 28px 46px; border-bottom: 1px solid var(--line); }
+section.divider-section { background: var(--wash); }
+h1, h2, h3, h4 { margin: 0; line-height: 1.25; }
+h1 { font-size: 30px; margin-bottom: 8px; }
+h2 { font-size: 24px; margin-bottom: 4px; }
+h2 .num { display: inline-flex; align-items: center; justify-content: center; min-width: 34px; height: 34px; border-radius: 8px; background: var(--teal); color: #fff; font-weight: 800; font-size: 16px; padding: 0 10px; margin-right: 10px; }
+h3 { font-size: 16px; margin: 20px 0 8px; color: var(--ink); display: flex; align-items: center; gap: 10px; }
+h3 .num { display: inline-block; min-width: 26px; height: 26px; line-height: 26px; border-radius: 6px; background: var(--teal-soft); color: var(--teal); font-weight: 800; font-size: 13px; text-align: center; padding: 0 6px; }
+h4 { font-size: 14px; margin: 0 0 5px; }
+p { margin: 0 0 10px; }
+.doc-subtitle { color: var(--muted); font-size: 16px; margin-bottom: 18px; }
+.meta-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 18px; }
+.meta-card { padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: #fff; min-height: 70px; }
+.meta-label { display: block; color: var(--muted); font-size: 11px; letter-spacing: 0.05em; margin-bottom: 4px; }
+.meta-value { font-size: 15px; font-weight: 800; }
+.tag { display: inline-block; border-radius: 999px; padding: 2px 8px; margin: 2px 3px 2px 0; font-size: 11px; font-weight: 800; white-space: nowrap; }
+.tag.teal { background: var(--teal-soft); color: var(--teal); }
+.tag.red { background: var(--red-soft); color: var(--red); }
+.tag.gold { background: var(--gold-soft); color: var(--gold); }
+.tag.blue { background: var(--blue-soft); color: var(--blue); }
+.callout { padding: 14px 16px; background: var(--gold-soft); border: 1px solid #ead394; border-radius: 8px; margin-top: 12px; font-size: 13px; }
+.callout strong { color: var(--gold); }
+.q-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 14px; flex-wrap: wrap; }
+.q-num { font-size: 36px; font-weight: 800; letter-spacing: -0.03em; color: var(--teal); min-width: 60px; }
+.q-title { font-size: 22px; font-weight: 800; }
+.q-meta { color: var(--muted); font-size: 12px; }
+.section-labels { color: var(--muted); font-size: 12px; font-style: italic; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px dashed var(--line); }
+.extract-card { padding: 18px 22px; background: #f7f9fc; border: 1px solid #dae0ea; border-left: 4px solid var(--blue); border-radius: 8px; margin: 12px 0; }
+.extract-card .extract-label { display: inline-block; padding: 2px 8px; background: var(--blue); color: #fff; font-size: 11px; font-weight: 800; border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.05em; }
+.extract-card p { font-size: 14px; line-height: 1.85; text-indent: 2em; margin-bottom: 8px; }
+.extract-card p:last-child { margin-bottom: 0; }
+.questions-block { padding: 14px 18px; border: 1px solid var(--line); border-radius: 8px; background: #fff; margin: 16px 0; }
+.questions-label { display: inline-block; padding: 3px 10px; background: var(--ink); color: #fff; font-size: 12px; font-weight: 800; border-radius: 4px; margin-bottom: 12px; }
+.questions-block .instruction { font-size: 13px; color: var(--muted); font-style: italic; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px dashed var(--line); }
+.questions-block .q-zh { font-size: 14px; margin: 8px 0 2px; font-weight: 600; }
+.questions-block .q-en { font-size: 12.5px; color: var(--muted); margin: 0 0 12px; padding-left: 14px; font-style: italic; }
+.answer-divider { text-align: center; margin: 24px 0 16px; color: var(--muted); font-size: 12px; letter-spacing: 0.1em; font-weight: 700; }
+.answer-divider:before, .answer-divider:after { content: "—————"; margin: 0 8px; color: var(--line); }
+.sample-answer { padding: 16px 20px; border: 1px solid var(--line); border-left: 4px solid var(--red); border-radius: 8px; background: #fffafa; margin: 12px 0; }
+.sample-answer .sub-heading { display: flex; align-items: baseline; gap: 8px; margin-bottom: 10px; }
+.sample-answer .sub-label { display: inline-block; padding: 3px 9px; border-radius: 4px; font-size: 11px; font-weight: 800; color: #fff; }
+.sample-answer .sub-label.a { background: var(--gold); }
+.sample-answer .sub-label.b { background: var(--teal); }
+.sample-answer .sub-label.c { background: var(--red); }
+.sample-answer .sub-title { font-size: 14px; font-weight: 700; color: var(--ink); }
+.sample-answer .mark-badge { color: var(--muted); font-size: 11px; font-weight: 600; }
+.sample-answer .body { font-size: 13.5px; line-height: 1.85; color: var(--ink); margin: 0; text-indent: 2em; }
+.sample-answer .body + .body { margin-top: 10px; }
+.sample-answer .body strong { color: var(--red); }
+.q4-meta { padding: 14px 16px; background: var(--blue-soft); border: 1px solid #c9ddec; border-radius: 8px; margin: 12px 0; font-size: 13px; }
+.q4-meta strong { color: var(--blue); margin-right: 6px; }
+.q4-meta .line { padding: 3px 0; }
+.statement-block { padding: 16px 20px; background: #fffefa; border: 1px solid #ead394; border-left: 4px solid var(--gold); border-radius: 8px; margin: 12px 0; }
+.statement-block .stmt-label { display: inline-block; padding: 3px 9px; background: var(--gold); color: #fff; font-size: 11px; font-weight: 800; border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.05em; }
+.statement-block .stmt-zh { font-size: 14.5px; line-height: 1.85; margin: 0 0 10px; font-weight: 600; color: var(--ink); }
+.statement-block .stmt-en { font-size: 12.5px; line-height: 1.75; color: var(--muted); font-style: italic; margin: 0 0 10px; }
+.statement-block .instructions { font-size: 12.5px; color: var(--gold); font-weight: 700; margin: 8px 0 0; padding-top: 8px; border-top: 1px dashed #e0c97a; }
+.essay-para { padding: 14px 18px; border: 1px solid var(--line); border-radius: 8px; background: #fff; margin: 10px 0; }
+.essay-para.intro { border-left: 4px solid var(--teal); background: var(--teal-soft); }
+.essay-para.body1 { border-left: 4px solid var(--gold); }
+.essay-para.body2 { border-left: 4px solid var(--blue); }
+.essay-para.conclusion { border-left: 4px solid var(--red); background: var(--red-soft); }
+.essay-para .para-label { display: inline-block; padding: 3px 9px; color: #fff; font-size: 11px; font-weight: 800; border-radius: 4px; margin-bottom: 8px; }
+.essay-para.intro .para-label { background: var(--teal); }
+.essay-para.body1 .para-label { background: var(--gold); }
+.essay-para.body2 .para-label { background: var(--blue); }
+.essay-para.conclusion .para-label { background: var(--red); }
+.essay-para .body { font-size: 13.5px; line-height: 1.85; margin: 0; text-indent: 2em; }
+.toc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin-top: 10px; }
+.toc-grid a { display: flex; gap: 10px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 6px; text-decoration: none; color: var(--ink); background: #fff; font-size: 13px; align-items: center; transition: all 0.15s; }
+.toc-grid a:hover { background: var(--wash); border-color: var(--teal); }
+.toc-num { display: inline-block; min-width: 32px; padding: 2px 6px; border-radius: 4px; background: var(--teal); color: #fff; font-weight: 800; font-size: 11px; text-align: center; }
+.toc-num.q4 { background: var(--red); }
+.section-divider-title { font-size: 20px; font-weight: 800; color: var(--ink); margin-bottom: 6px; display: flex; align-items: center; gap: 12px; }
+.section-divider-meta { color: var(--muted); font-size: 13px; }
+.back-to-top { display: block; text-align: center; padding: 12px; color: var(--muted); font-size: 12px; text-decoration: none; border-top: 1px solid var(--line); background: var(--wash); }
+.back-to-top:hover { color: var(--teal); background: #fff; }
+@media (max-width: 860px) {
+  main { width: 100%; margin: 0; border-left: 0; border-right: 0; }
+  header.doc-head, section.question, section.toc-section, section.divider-section { padding: 22px 18px; }
+  .meta-row, .toc-grid { grid-template-columns: 1fr; }
+  .q-num { font-size: 28px; }
+  .extract-card p { font-size: 13px; text-indent: 1.5em; }
+}
+</style>
+</head>
+<body>
+<main>
+
+<header class="doc-head" id="top">
+  <h1>《夹缝中的光芒》Q3 + Q4 练习集</h1>
+  <p class="doc-subtitle">HSC Chinese &amp; Literature · 8 道 Q3 (Section II Part A, 15 marks each) + 2 道 Q4 (Section II Part B, 25 marks each)</p>
+  <div>
+    <span class="tag teal">Theme 1 (1.1 / 1.2 / 1.3)</span>
+    <span class="tag gold">Theme 2 (2.1 / 2.2 / 2.3)</span>
+    <span class="tag blue">中英双语题干</span>
+    <span class="tag red">Band 6 范文 / 示范答案</span>
+  </div>
+  <div class="meta-row">
+    <div class="meta-card"><span class="meta-label">Q3 题数</span><span class="meta-value">8 道 · 每题 15 分</span></div>
+    <div class="meta-card"><span class="meta-label">Q4 题数</span><span class="meta-value">2 道 · 每题 25 分</span></div>
+    <div class="meta-card"><span class="meta-label">Q3 结构</span><span class="meta-value">(a) 3 + (b) 5 + (c) 7</span></div>
+    <div class="meta-card"><span class="meta-label">Q4 结构</span><span class="meta-value">4-段 cross-text</span></div>
+  </div>
+  <div class="callout">
+    <strong>使用提示：</strong>每题包含 <em>原文节选</em> + <em>中英双语题干</em> + <em>示范答案 / Band 6 范文</em>。Q3 (c) 7分答案严格按「3 mini-论点段 + 首先/其次/最后 + extract 引文 + wider-text 引文 + 收束句」结构组织；Q4 范文严格按「Intro / Body 1 (Text 1) / Body 2 (Text 2) / Conclusion (综上所述)」4-段结构。
+    需要打印或下载，请用 <a href="q3-q4-practice-set.pdf">PDF 版本</a> 或 <a href="q3-q4-practice-set.docx">DOCX 版本</a>。
+  </div>
+</header>
+
+
+<section class="toc-section">
+  <h2>题号速览 / Table of Contents</h2>
+  <div class="toc-grid">
+    <a href="#q3-1"><span class="toc-num">Q3-1</span>第 1 题 · 15 分</a><a href="#q3-2"><span class="toc-num">Q3-2</span>第 2 题 · 15 分</a><a href="#q3-3"><span class="toc-num">Q3-3</span>第 3 题 · 15 分</a><a href="#q3-4"><span class="toc-num">Q3-4</span>第 4 题 · 15 分</a><a href="#q3-5"><span class="toc-num">Q3-5</span>第 5 题 · 15 分</a><a href="#q3-6"><span class="toc-num">Q3-6</span>第 6 题 · 15 分</a><a href="#q3-7"><span class="toc-num">Q3-7</span>第 7 题 · 15 分</a><a href="#q3-8"><span class="toc-num">Q3-8</span>第 8 题 · 15 分</a><a href="#q4-41"><span class="toc-num q4">Q4-1</span>《夹缝中的光芒》＋《漂向北方》 · 25 分</a><a href="#q4-42"><span class="toc-num q4">Q4-2</span>《夹缝中的光芒》＋《大江大河》 · 25 分</a>
+  </div>
+</section>
+
+
+<section class="divider-section">
+  <div class="section-divider-title"><span class="tag teal">Part A</span>Section II – Part A · Reading and Responding · 8 道 Q3 题（每题 15 分）</div>
+  <div class="section-divider-meta">每题独立结构：原文节选 + 6 行中英双语题目 (3 sub-questions × 2 语言) + 示范答案分 (a)(b)(c) 三档</div>
+</section>
+
+
+<section class="question" id="q3-1">
+  <div class="q-head">
+    <span class="q-num">1</span>
+    <div>
+      <div class="q-title">第 1 题 · Q3 Reading &amp; Responding · 15 marks</div>
+      <div class="q-meta">Section II · Part A · (a) 3分 + (b) 5分 + (c) 7分</div>
+    </div>
+  </div>
+  <div class="section-labels">HSC Chinese and Literature · Section II – Reading and Responding · Part A</div>
+
+  
+    <div class="extract-card">
+      <span class="extract-label">Text 1 · 选文</span>
+      <p>在大众化教育时代，尽管文凭贬值的呼声几乎成为共识，读书改变命运也日渐被人怀疑，但我的直觉是，尽管跨越了二十三年的光景，062111班学生的命运，和我1995年大学毕业的班级——岳阳大学9202班同学的整体命运，并没有太大的差距。我以前总认为，随着二十世纪九十年代后期大学的扩招，年轻人的机会越来越少，但进入具体的分析和审视，可以发现，至少在我当班主任的062111班，这一结论并不成立。</p>
+<p>我之所以拿我大学毕业的班级，和062111班相比，是基于以下几点：从大学层次看，两所大学在中国当下高校的分类中，都属于二本高校（两所学校都经历了校名更替的过程，岳阳大学现改名为湖南理工学院；广东F学院的前身是中国人民银行所属的地方院校）；从专业看，都是最为常见的汉语言文学专业；从招生特点看，两所大学都隶属当地教育主管部门，所招学生几乎都来自当地；从招生难度看，1992年，全国共有303万人参加高考，录取75万人，录取率25%，加上当年还有大量的中专院校，由此可以推断，能够考上岳阳大学的学生，至少排在当年高考人数的前20%。2006年，全国高考报名人数950万人，录取540万人，录取率56.8%，但因为全国还有大量的三本、独立院校和职业技术学院，加上广东F学院地处沿海发达省份，而且专业偏重热门的财经大类，整体录取的分数在全国同等院校中偏高，可以大致推断，能够考入广东F学院的生源，至少也排在当年高考生源的前20%。换言之，我的学生2006年考入广东F学院的难度系数，和我1992年考入岳阳大学的难度系数大致相当，两所普普通通的学校，接纳的都是当地一些普普通通的孩子。</p>
+<p>但两者也有不同之处，从地域分布而言，我所毕业的学校地处湖南岳阳，是一个中等发展省份的内陆城市，班上的同学全部来自岳阳地区，而我任教的学校地处广州，占有沿海发达地区一线城市的区位优势，班上的学生，全部来自经济较为发达的广东省；从学历层次而言，我所念的岳阳大学，当时还是专科层次，直到1998年左右，才和别的学校合并，升为本科院校；而我的学生进入广东F学院后，学校在2005年就已升为本科层次，他们的学制是大学四年完整的本科。剔除生源的相似状况，由此恰好可以窥视学历的含金量如何发生变化。</p>
+    </div>
+    
+
+  
+    <div class="questions-block">
+      <span class="questions-label">Question 3 (15 marks)</span>
+      <p class="instruction">Answer the questions in EITHER Chinese OR English. You should write your answers in complete sentences.</p>
+      <p class="q-zh">(a) 根据选文，作者提出了哪些具体的数据来支持他的比较分析？ （3分）</p>
+<p class="q-en">According to the extract, what specific data does the author provide to support his comparative analysis? (3 marks)</p>
+<p class="q-zh">(b) 作者如何通过语言表达来体现他对这一教育现象的理性分析态度？ （5分）</p>
+<p class="q-en">How does the author use language to demonstrate his rational analytical approach to this educational phenomenon? (5 marks)</p>
+<p class="q-zh">(c) 结合选文以及《夹缝中的光芒》的其他相关内容，分析作者如何通过对比研究方法来探讨当代教育价值的变化。 （7分）</p>
+<p class="q-en">With reference to the extract and other relevant content from Light in the Crevice, analyse how the author uses comparative research methods to explore changes in contemporary educational value. (7 marks)</p>
+
+    </div>
+    
+
+  <div class="answer-divider">示范答案 · Sample Answer</div>
+
+  
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label a">(a) 识别</span>
+            <span class="sub-title">作者引用的具体数据</span>
+            <span class="mark-badge">3 分</span>
+          </div>
+          <p class="body">作者援引「1992年三百零三万人参加、录取率25%」与「2006年九百五十万人报名、录取率56.8%」两组高考数据，并以「跨越了二十三年的光景」框定研究跨度，加之「两所学校都属于二本高校」「都排在前20%」的可比性陈述，奠定了对比研究的统计基石。</p>
+        </div>
+        
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label b">(b) 分析</span>
+            <span class="sub-title">理性分析态度的语言体现</span>
+            <span class="mark-badge">5 分</span>
+          </div>
+          <p class="body">首先，作者运用数据论证法，「1992年三百零三万、录取率25%」与「2006年九百五十万、录取率56.8%」的精确数字并置，将主观经验置于可验证的统计框架，体现了作者理性的研究底色。其次，作者贯穿使用反思性语言，「我的直觉是」与「我以前总认为......但进入具体的分析和审视，可以发现」的自陈结构使分析在自我检视中推进，呈现边思考边求证的理性姿态。最后，作者采取限定性表述，强调「两所大学都属于二本高校」「都属汉语言文学专业」，以同质化前提剔除生源差异，使比较得以聚焦于「学历含金量如何发生变化」这一理性命题。</p>
+        </div>
+        
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label c">(c) 综合</span>
+            <span class="sub-title">对比研究方法与教育价值变化</span>
+            <span class="mark-badge">7 分 ⚠ 满分门</span>
+          </div>
+          <p class="body">首先，作者通过控制变量法奠定研究合法性。选文中「两所大学都属于二本高校」「都属汉语言文学专业」「都排在前20%」三项同质化条件，剔除了生源差异这一干扰变量，使「学历含金量如何发生变化」成为唯一聚焦的考察对象。结合海燕「从一名劳务派遣的漂泊女孩，变成了一名金融系统的正式员工」的身份转换可见，作者的研究方法揭示了教育价值并未消失而是「变形」——它不再保证起点，但仍能撬动转折。</p>
+<p class="body">其次，作者通过纵向时空跨度呈现教育价值的演变路径。选文以「跨越了二十三年的光景」标识对比尺度，将1995年「精英教育」与2010年「大众化教育」纳入同一研究坐标。结合钟梦兰「以全校第一的成绩」考入镇上中学、父亲「梦兰高二那年」购地建房的轨迹可见，二十三年间教育对家庭的撬动力依然存在，但已从「直接转化为干部身份」滑向「为代际跃升提供阶梯」，呈现出保底而非保证的转型。</p>
+<p class="body">最后，作者通过反思性立场揭示价值演变的多维度。选文中「我以前总认为......但进入具体的分析和审视，可以发现」的自我修正结构，承认了「文凭贬值的呼声几乎成为共识」却不被其裹挟。结合吴志勇「在他所从事的职业门类中，压根就没有稳定一说」的辗转与王国伟父亲「在四会买房」获得的家庭支撑两种轨迹可见，「时代夹缝中的光芒」揭示的不是教育的失效，而是其价值已从制度性兑现转向个体性激活的根本差异。</p>
+        </div>
+        
+</section>
+
+<section class="question" id="q3-2">
+  <div class="q-head">
+    <span class="q-num">2</span>
+    <div>
+      <div class="q-title">第 2 题 · Q3 Reading &amp; Responding · 15 marks</div>
+      <div class="q-meta">Section II · Part A · (a) 3分 + (b) 5分 + (c) 7分</div>
+    </div>
+  </div>
+  <div class="section-labels">HSC Chinese and Literature · Section II – Reading and Responding · Part A</div>
+
+  
+    <div class="extract-card">
+      <span class="extract-label">Text 1 · 选文</span>
+      <p>毕业二十三年后，我的大学同学都在干什么呢？以2005年参加毕业十周年聚会的三十六人为例，其中党政机关、事业单位就职的有二十九人，占到八成，在国营企业的有六人，在外资企业的有一人。有意思的是，除了四位同学在工作中发生变故，存在二次就业，80%的同学一直在同一单位或同一系统工作。这种状况，充分显示了高校在没有市场化以前的就业特点：在国家包分配的前提下，个人和国家及单位的粘连非常紧密，尽管人才流动性相对较差，但人才的稳定性极强，个体对单位的情感认同深厚，对单位的忠诚度非常高。从同学的生存状态看，他们通过高等教育获得干部身份后，在单位早已成为骨干，有不少同学甚至已是单位的主要领导，个人的经济状况、社会地位，在当地都属于上等水平，生活稳定、安逸。从就业地点看，班上的同学除了一名在北京定居，两名在广东定居外，其他同学都在湖南落户，在当地就业的比例超过九成，充分显示了地方院校的就业分布特点。整体而言，对班上70%来自农村的大学同学而言，通过高考，确实改变了一个群体的生存、命运，他们大多不仅获得了稳定的职业，享受了计划经济时代单位分配的住房（或者购买了房价低廉时候的住房），得以在城市轻松扎根，更成为各自家庭的支柱，充分享受了大学文凭带来的极高性价比。</p>
+<p>1995年到2010年，中间横亘了十五年时空，我第一次当班主任的062111班面临毕业。2018年7月，在学生毕业八年后，我统计了一下，班上五十二名同学，全部在广东就业，其中定居广州的有十七名，定居深圳的有四名，分布在珠三角一带有八名，其余的则大多回了生源地，遍布广东各个地区，其中潮汕地区有四名，湛江三名，肇庆两名。有意思的是，毕业时，班上没有一人选择考研，八年过去，除了石磊选择了读在职研究生，依然没有一人全脱产考研深造。由此可以推断，整体而言，他们对自己的就业状况较为满意，并不需要通过文凭的提升去改变生存状况。</p>
+<p>如果说，岳阳大学9202班的同学，得益于时代所提供的机遇，在文凭并未贬值、高校依然坚守精英教育的时代，哪怕出生在乡村，也能通过高考得以改变命运，过上了衣食无忧的生活。以此为对照，我发现062111班的学生，尽管面临大众化教育的整体背景，但因为地处广东，整体上，通过高考，他们依然能获得在社会立足的根基。如果将我的七零后同学，叙述为幸运的一代，那么，我的八零后的学生，同样享受到了时代夹缝中的光芒。</p>
+    </div>
+    
+
+  
+    <div class="questions-block">
+      <span class="questions-label">Question 3 (15 marks)</span>
+      <p class="instruction">Answer the questions in EITHER Chinese OR English. You should write your answers in complete sentences.</p>
+      <p class="q-zh">(a) 根据选文，两个不同时代的大学班级在就业模式上有哪些主要差异？ （3分）</p>
+<p class="q-en">According to the extract, what are the main differences in employment patterns between the two university classes from different eras? (3 marks)</p>
+<p class="q-zh">(b) 作者如何运用数据统计和对比分析来支撑他的论点？ （5分）</p>
+<p class="q-en">How does the author use statistical data and comparative analysis to support his argument? (5 marks)</p>
+<p class="q-zh">(c) 结合选文以及《夹缝中的光芒》的其他相关内容，分析作者如何通过两代大学生的命运对比来体现"变化的社会对个人产生的冲击"这一主题。 （7分）</p>
+<p class="q-en">With reference to the extract and other relevant content from Light in the Crevice, analyse how the author uses the comparison of two generations of university students' destinies to reflect the theme of "the impact of a changing society on the individual". (7 marks)</p>
+
+    </div>
+    
+
+  <div class="answer-divider">示范答案 · Sample Answer</div>
+
+  
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label a">(a) 识别</span>
+            <span class="sub-title">两代班级就业模式的主要差异</span>
+            <span class="mark-badge">3 分</span>
+          </div>
+          <p class="body">9202班「80%的同学一直在同一单位或同一系统工作」，九成留在湖南本地，呈现「国家包分配」时代下就业的稳定与单一；062111班五十二人「全部在广东就业」，从广州、深圳到潮汕、湛江多地分布，呈现市场化时代就业的流动与多元。</p>
+        </div>
+        
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label b">(b) 分析</span>
+            <span class="sub-title">数据统计与对比分析的运用</span>
+            <span class="mark-badge">5 分</span>
+          </div>
+          <p class="body">首先，作者运用精确数据论证支撑论点，「以2005年参加毕业十周年聚会的三十六人为例」「党政机关、事业单位就职的二十九人，占到八成」等具体计数将整体趋势锚定到可核查的样本，使「80%同学一直在同一单位」这一判断具备统计底座。其次，作者运用空间分布对比呈现差异——前者「九成同学在湖南本地就业」，后者「定居广州的十七名，定居深圳的四名，分布在珠三角一带有八名」——通过地理细分使代际「冲击」从抽象转为可见的迁徙图谱，强化了对比分析的颗粒度。最后，作者运用条件假设式结构，以「如果说，岳阳大学9202班的同学......以此为对照，我发现062111班......」的逻辑钩子将两组数据纳入同一框架，使「市场化就业」与「国家包分配」不再是平行陈述，而是显出两代命运的对比张力。</p>
+        </div>
+        
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label c">(c) 综合</span>
+            <span class="sub-title">两代命运对比与社会冲击主题</span>
+            <span class="mark-badge">7 分 ⚠ 满分门</span>
+          </div>
+          <p class="body">首先，社会从计划经济到市场经济的制度性更迭直接重塑了两代人的命运基底。选文中9202班「80%一直在同一单位或同一系统工作」对照062111班彻底缺位的「包分配」机制，已呈现就业逻辑的代际断裂。结合海燕「从一名劳务派遣的漂泊女孩，变成了一名金融系统的正式员工」的身份转换可见，新一代必须穿越「劳务派遣」这一「高等教育市场化在就业层面的直接体现」才能站稳脚跟——制度的退出不是空缺，而是把保障的成本压回了个体身上。</p>
+<p class="body">其次，区域经济结构的差异化产生了地理空间上的冲击。选文中9202班「90%以上在湖南本地就业」与062111班「定居广州十七、深圳四、珠三角八」的空间分布对比，表明市场经济使个人选择被区位资源高度引导。结合陈倩在佛山「找不到归宿感」后回潮州依靠家族陶瓷厂，以及梅怡选择广州互联网创业、「在城中村租了一个三十多平米的办公室」的两种轨迹可见，地理不再是个人偶然落点，而是资源密度与机会成本共同塑造的结构性影响。</p>
+<p class="body">最后，价值观念上的代际错位形成了心理与认同层面的冲击。选文中9202班「人才的稳定性极强」对照062111班职业「极为频繁」的流动，已暗示两代人对「稳定」的判断截然不同。结合丽颖「作为专门被坑的八零后，如何混战在这个复杂的社会」的自我定位，以及素婷「不想过早步入婚姻生活」「精神上的追求比拥有一套房子更重要」的价值宣言可见，新一代既不被旧体制收纳，又不愿被婚房物质重塑，被迫在机遇与孤独并存的夹缝中重新定义安身立命的标准。</p>
+        </div>
+        
+</section>
+
+<section class="question" id="q3-3">
+  <div class="q-head">
+    <span class="q-num">3</span>
+    <div>
+      <div class="q-title">第 3 题 · Q3 Reading &amp; Responding · 15 marks</div>
+      <div class="q-meta">Section II · Part A · (a) 3分 + (b) 5分 + (c) 7分</div>
+    </div>
+  </div>
+  <div class="section-labels">HSC Chinese and Literature · Section II – Reading and Responding · Part A</div>
+
+  
+    <div class="extract-card">
+      <span class="extract-label">Text 1 · 选文</span>
+      <p>钟梦兰出生于广东省吴川市一个普通的农民家庭，兄弟姐妹五人，这种多子女的状况，在广东的乡村极为常见。父亲高中文化程度，从事建筑行业，母亲是全职家庭主妇，负责照看一家老小的日常起居，家里的主要经济来源依靠父亲。尽管家庭开支极大，养育五个孩子的成本不低，但得益于中国高速的城市化进程，父亲所在的建筑行业，获得了最为充分的发展，他一人的收入，足够维持一个大家庭的开支。梦兰回忆，尽管出生在农村，但父母并没有让孩子们在贫穷中长大，家里的经济条件，在当地属于中等偏上水平。</p>
+<p>梦兰的小学时光，在村里度过，小学毕业后，她以全校第一的成绩，考到了镇上的中学。母亲为了照顾孩子们的学业，租房住在镇上，陪伴梦兰度过了中学六年的时光。在母亲陪读的过程中，父亲决定拿出多年的积蓄，在市里购地建房，并在梦兰高二那年，将此变为现实。一年后，梦兰考上大学，他们全家也彻底告别乡村，开始了在小城市的生活。</p>
+<p>梦兰一家的经历，对观照纯粹的农村家庭如何迈进城市化门槛，具有极为典型的样板意义。十几年前，对家庭条件尚可的农村家庭而言，坚定地走向城市，是他们常见的共同选择。中国乡村城镇化的进程，更多时候，不是在刻意为之的行政意志下生硬地完成，而是渗透进千家万户的细部，伴随家庭的需求和孩子们成长的路径，在不知不觉中自动完成。</p>
+<p>潘海燕的情况与王国伟、钟梦兰不同，代表了农村家庭在城镇化转型期的另一种遭遇。海燕刚进初中时，父母为了增加收入，决定远走他乡，外出打工。母亲去了佛山，在一家茶餐厅当服务员，父亲则去广州开车。他们一家，代表了普通农民家庭一种更为普遍的抉择：为改善经济状况，进城打工。这种选择的结果，虽增加家庭收入，伴随而来的常见后果，要么是夫妻分居，要么是孩子成为留守儿童。海燕记得上初一时，不论接到妈妈的第一封信，还是接到妈妈的第一个电话，都因为思念而泣不成声。尽管留守经历极为难熬，但她对此没有任何抱怨，依旧理解父母的选择，"对于妈妈外出打工，我当时也没太多想法，因为很多家庭都是这样的，妈妈要外出挣钱交学费"。</p>
+    </div>
+    
+
+  
+    <div class="questions-block">
+      <span class="questions-label">Question 3 (15 marks)</span>
+      <p class="instruction">Answer the questions in EITHER Chinese OR English. You should write your answers in complete sentences.</p>
+      <p class="q-zh">(a) 根据选文，钟梦兰和潘海燕两个家庭在应对城镇化进程时采取了哪些不同的策略？ （3分）</p>
+<p class="q-en">According to the extract, what different strategies did the families of Zhong Menglan and Pan Haiyan adopt in responding to the urbanisation process? (3 marks)</p>
+<p class="q-zh">(b) 作者如何通过具体的家庭案例来体现城镇化进程的复杂性和多样性？ （5分）</p>
+<p class="q-en">How does the author use specific family case studies to demonstrate the complexity and diversity of the urbanisation process? (5 marks)</p>
+<p class="q-zh">(c) 结合选文以及《夹缝中的光芒》的其他相关内容，分析作者如何通过这些家庭的经历来探讨"当代社会中的家庭"结构和分工的变化。 （7分）</p>
+<p class="q-en">With reference to the extract and other relevant content from Light in the Crevice, analyse how the author uses these family experiences to explore changes in "the family in contemporary society" structure and division of labour. (7 marks)</p>
+
+    </div>
+    
+
+  <div class="answer-divider">示范答案 · Sample Answer</div>
+
+  
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label a">(a) 识别</span>
+            <span class="sub-title">两个家庭应对城镇化的不同策略</span>
+            <span class="mark-badge">3 分</span>
+          </div>
+          <p class="body">梦兰一家采取渐进式同步迁移策略：母亲「租房住在镇上」陪读、父亲在「梦兰高二那年」「拿出多年的积蓄，在市里购地建房」，全家伴随教育阶梯整体上行。海燕一家则采取分离式打工策略：父母分赴佛山、广州务工，弟妹「直接沦为不折不扣的留守儿童」，以家庭离散换取教育经费。</p>
+        </div>
+        
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label b">(b) 分析</span>
+            <span class="sub-title">家庭案例呈现城镇化的复杂性和多样性</span>
+            <span class="mark-badge">5 分</span>
+          </div>
+          <p class="body">首先，作者运用典型案例选择呈现复杂性，明确指出梦兰一家「对观照纯粹的农村家庭如何迈进城市化门槛，具有极为典型的样板意义」，将单个家庭升格为可观察的社会样本，使「复杂性」具体可触。其次，作者通过案例并置体现多样性，将梦兰家「坚定地走向城市」与海燕家「外出打工」并置——同样源于乡村，路径却分叉为「主动融入」与「被动应对」两种逻辑——使「多样性」显得既真实又结构化。最后，作者运用层次递进式归纳，从家庭个案上升到「中国乡村城镇化的进程......渗透进千家万户的细部，伴随家庭的需求和孩子们成长的路径，在不知不觉中自动完成」的理论概括，使个案与时代趋势之间形成由微而宏的论证链条，凸显城镇化进程的多样与复杂。</p>
+        </div>
+        
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label c">(c) 综合</span>
+            <span class="sub-title">当代社会中家庭结构和分工的变化</span>
+            <span class="mark-badge">7 分 ⚠ 满分门</span>
+          </div>
+          <p class="body">首先，城镇化重塑了家庭的空间结构。选文中梦兰家从村到镇到市的同步迁移、海燕家「父母外出-子女留守」的分散安置，已颠覆了传统三代同堂的物理同框。结合海燕大学后周末「从龙洞跨城到荔湾父母租处煮饭洗衣」的细节可见，新型家庭以可流动的「补偿性同框」替代固定的「日常同框」——空间分散反而成为家庭成员重新维系联结的设计前提。</p>
+<p class="body">其次，城镇化改写了家庭的分工模式。选文中梦兰母亲从「全职家庭主妇」转为「陪读母亲」、父亲在建筑业累积「多年的积蓄」反哺购房，已显示传统男主外女主内分工被「教育-资本」二轨结构吸纳。结合陈倩婚后「全面参与家族陶瓷厂从设计、跟单、货款跟踪、产品维护到与客户的频繁联系」的劳动嵌入可见，当代家庭分工不再以性别为基础，而是以家庭整体的资源调度需求为基础，重新分配成员角色。</p>
+<p class="body">最后，城镇化使家庭的功能从生产单位转向教育投资单位。选文中海燕一家「三个孩子读书的学费、伙食费」成为父母外出的核心驱动，与梦兰母亲六年陪读的时间投入，已表明家庭资源高度向教育倾斜。结合丽颖母亲「不工作就没有发言权，不工作就无法独立」的就业转身可见，家庭功能的现代转型不止于经济投入，更包含母亲自身从依附角色向独立角色的重塑——家庭从「养育下一代」单功能体演化为「同步推动多个成员社会身份升级」的协同体。</p>
+        </div>
+        
+</section>
+
+<section class="question" id="q3-4">
+  <div class="q-head">
+    <span class="q-num">4</span>
+    <div>
+      <div class="q-title">第 4 题 · Q3 Reading &amp; Responding · 15 marks</div>
+      <div class="q-meta">Section II · Part A · (a) 3分 + (b) 5分 + (c) 7分</div>
+    </div>
+  </div>
+  <div class="section-labels">HSC Chinese and Literature · Section II – Reading and Responding · Part A</div>
+
+  
+    <div class="extract-card">
+      <span class="extract-label">Text 1 · 选文</span>
+      <p>陈倩是一个样貌秀气的女孩，说话快言快语。她出生于潮州古巷镇，两个姐姐，一个弟弟。爸爸一直在枫溪做工艺瓷，家里也开了一家陶瓷厂。她大学毕业那年，爸爸因为年事已高，将家里的工厂出租给了别人，自己则待在家里画画，同时指导弟弟作画。陈倩毕业后，和班上很多同学一样，最开始在珠三角一带活动。她曾在佛山工作过一年，因为找不到归宿感，2011年回了潮州。陈倩曾经尝试在潮州找一份工作，摆在她面前的现实是，尽管潮州工厂遍地，但大的公司极少，稍微好一点的公司，诸如创佳电视，如果要进去，必须通过关系才能达成。她的人脉，没有办法帮她进入大的公司，若依靠中文的专业背景，找一份普通的文员工作并不难，但文员的工资极其低廉，月薪只有两千元左右，她最终放弃并决定寻找别的出路。</p>
+<p>和同样出生古巷镇的丈夫结识后，她决定此后不再外出，安心在潮州定居。丈夫没有念大学，但勤奋好学，极为聪敏，丈夫家和自己家一样，也经营了一家陶瓷厂。1997年，公公婆婆看准了即将到来的市场，辞掉了国营企业的稳定工作，开办了这家厂子，订单根本接不过来的火爆的行情，一直延续到2008年之前。陈倩结婚后，彻底放弃了去外面谋生的念头，她利用自己的专业知识和工作经验，很快成为丈夫家族企业的一员，并全面参与和管理工厂的整体事务。从设计、跟单、货款跟踪、产品维护、一直到与客户的频繁联系，每一个环节，她都了然于胸。和十几年前的市场比较起来，陈倩明显感到，近几年，工厂受汇率、环保、人工成本等外部影响非常明显。除了外部因素，面对变化的形势，这家经营了二十多年的家族企业的现实难题在于：对于产品，消费者个性化要求越来越高，工厂不能延续以前的批量生产模式。这些新的挑战，他们还没有找到化解的有效办法。</p>
+<p>陈倩大学毕业后的选择，对潮汕甚至广东的学生而言，极为常见。家里有厂子的，父辈经营得好，子女完成学业后，会接过来成为继任者；家里没有工厂的，相比进一家固定单位，他们更倾向从事商业活动。出生在汕头的大顺，就曾经和我谈起他爸爸的态度，"宁愿开厂，也不愿给别人打工"。国伟也曾和我聊过，父亲在四会买房以后，母亲曾劝他放弃纸厂的生意，到市区谋一份工作，但父亲的看法是，"打工没有自由，还不如自己做个小老板"。对于内地出生的我而言，这种职业观念的差异，让我颇为惊讶。</p>
+    </div>
+    
+
+  
+    <div class="questions-block">
+      <span class="questions-label">Question 3 (15 marks)</span>
+      <p class="instruction">Answer the questions in EITHER Chinese OR English. You should write your answers in complete sentences.</p>
+      <p class="q-zh">(a) 根据选文，陈倩在潮州求职时面临了哪些具体困难？ （3分）</p>
+<p class="q-en">According to the extract, what specific difficulties did Chen Qian face when seeking employment in Chaozhou? (3 marks)</p>
+<p class="q-zh">(b) 作者如何通过对话引用和对比手法来体现不同地区年轻人职业观念的差异？ （5分）</p>
+<p class="q-en">How does the author use dialogue quotations and contrasting techniques to demonstrate the differences in career attitudes among young people from different regions? (5 marks)</p>
+<p class="q-zh">(c) 结合选文以及《夹缝中的光芒》的其他相关内容，分析作者如何通过陈倩的经历来探讨"现代社会中的性别角色"和"当代社会中的家庭"的变化。 （7分）</p>
+<p class="q-en">With reference to the extract and other relevant content from Light in the Crevice, analyse how the author uses Chen Qian's experience to explore changes in "gender roles in today's society" and "the family in contemporary society". (7 marks)</p>
+
+    </div>
+    
+
+  <div class="answer-divider">示范答案 · Sample Answer</div>
+
+  
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label a">(a) 识别</span>
+            <span class="sub-title">陈倩在潮州求职面临的具体困难</span>
+            <span class="mark-badge">3 分</span>
+          </div>
+          <p class="body">陈倩面临三重困难：潮州「工厂遍地，但大的公司极少」，优质岗位稀缺；进「创佳电视」一类大公司需「通过关系才能达成」，她没有人脉支撑；依靠中文专业「找一份普通的文员工作并不难」，但「月薪只有两千元左右」，与个人期望落差显著。</p>
+        </div>
+        
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label b">(b) 分析</span>
+            <span class="sub-title">对话引用与对比手法呈现地区职业观念差异</span>
+            <span class="mark-badge">5 分</span>
+          </div>
+          <p class="body">首先，作者运用直接引语呈现潮汕父辈的价值立场，「宁愿开厂，也不愿给别人打工」「打工没有自由，还不如自己做个小老板」两句话原汁原味地保留了说话人语气与判断，使「不同地区年轻人职业观念的差异」获得最贴近现场的证词。其次，作者运用并置案例对比强化群体特征，将大顺、国伟、陈倩三位潮汕同学的家庭背景并列叙述，使「家里有厂子的接厂、没厂子的从商」从个案抽升为可识别的区域模式，凸显「差异」并非偶然偏好而是结构性现象。最后，作者运用自我介入式立场对比，以「对于内地出生的我而言，这种职业观念的差异，让我颇为惊讶」的第一人称表述，将「内地稳定取向」与「沿海经商取向」两套价值并置，使读者得以从作者的「惊讶」中触摸到地域差异的真实落差。</p>
+        </div>
+        
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label c">(c) 综合</span>
+            <span class="sub-title">性别角色与当代家庭结构的变化</span>
+            <span class="mark-badge">7 分 ⚠ 满分门</span>
+          </div>
+          <p class="body">首先，陈倩的经历呈现了女性角色从依附性向核心管理者的根本转变。选文中她婚后未沦为家族企业的附属，而是「全面参与和管理工厂的整体事务」，从「设计、跟单、货款跟踪、产品维护、一直到与客户的频繁联系，每一个环节，她都了然于胸」。结合素婷「年龄困不住一个女人......就不会惧怕衰老」的独立宣言可见，现代女性的角色重塑不限于走出家门进入职场，更体现为在传统场域内部以专业能力夺回话语权——身份的更新从「岗位获得」推进到「能力定义岗位」。</p>
+<p class="body">其次，陈倩的婚姻揭示了家庭从情感共同体到经济共同体的现代转型。选文中她「和同样出生古巷镇的丈夫」的结合，事实上促成了两家族陶瓷厂的资源整合——丈夫「没有念大学，但勤奋好学」、公公婆婆1997年「辞掉了国营企业的稳定工作」创业的家族储备，与陈倩的大学教育形成专业互补。结合钟梦兰一家「父亲建筑积蓄+母亲陪读」的协同模式可见，当代家庭分工已从角色规约转向能力分工，配偶组合本质上是两套资本与技能的并表。</p>
+<p class="body">最后，陈倩案例呈现了家庭对外部市场的深度嵌入。选文中她需应对「订单根本接不过来」的鼎盛与2008年后衰退两阶段，并坦言企业受到「汇率、环保、人工成本」与「客户对个性化的需求」等外部影响。结合王国伟父亲「打工没有自由，还不如自己做个小老板」的家族哲学可见，潮汕家庭已不再是封闭的生活单元，而是与全球化生产链直接对接的微型企业——家庭结构的「现代化」本质上是其与市场系统的高度耦合。</p>
+        </div>
+        
+</section>
+
+<section class="question" id="q3-5">
+  <div class="q-head">
+    <span class="q-num">5</span>
+    <div>
+      <div class="q-title">第 5 题 · Q3 Reading &amp; Responding · 15 marks</div>
+      <div class="q-meta">Section II · Part A · (a) 3分 + (b) 5分 + (c) 7分</div>
+    </div>
+  </div>
+  <div class="section-labels">HSC Chinese and Literature · Section II – Reading and Responding · Part A</div>
+
+  
+    <div class="extract-card">
+      <span class="extract-label">Text 1 · 选文</span>
+      <p>丽颖出生于广州市从化区，来自一个普通的警察家庭，有一个弟弟。父亲1966年出生，大专学历，在公安系统工作了将近三十年，干过交警、刑警、治安警察，是一个性格沉默，喜怒不形于色的男人。母亲比父亲大一岁，在很长一段时间之内，为了照顾孩子，她当起了家庭主妇，"每天除了买菜，几乎不出门，对着四堵墙，犹如井底之蛙"。直到2003年丽颖初中毕业，母亲突然意识到，"不工作就没有发言权，不工作就无法独立"，于是拜托熟人，在公安局找了一份后勤服务的工作。</p>
+<p>因为家庭环境的影响，丽颖性格极为独立，所有的事情，从高考的志愿、专业、人生规划，都自己做主，独立带来的副产品，是孤独感的滋生。有一段时间，她几乎掉进了抑郁的阴霾，直到遇见现在当医生的丈夫，才结束了整个青春期游离困惑的情感状态。她毕业后的第一份工作，是经过层层选拔后，进入某地方电视台当一名播音主持，主持的方向包括新闻时政、热点问题、家庭教育、儿童节目等。这一份工作貌似光鲜，但在市场化运营过程中，对刚毕业的年轻人，为了减少成本，单位不承诺给予编制，只是劳务派遣形式。尽管干的活并不比正式编制的职工少半点，但丽颖明显感到，领导并不尊重他们，加上地方小媒体行政化管理手段与市场实际需求之间的矛盾愈演愈烈，在一次忍无可忍的冲突后，她毅然辞去了电台的工作，参加了广州某区规划局的招聘，并顺利通过考试，来到了新单位。</p>
+<p>来到新单位后，她最大的困扰是工作中的喝酒应酬，而最大的改变，则是从纯粹的行政人员，变成了半个懂规划的技术人员。回首自己历经媒体到机关的职业生涯，在见识了媒体的混乱和行政部门的官僚作风后，她感叹，"作为专门被坑的八零后，如何混战在这个复杂的社会，如何通过我们这一代人去改变大环境，我觉得还没能给出一个答案，我希望能在彷徨与摸爬滚打中找到答案"。</p>
+    </div>
+    
+
+  
+    <div class="questions-block">
+      <span class="questions-label">Question 3 (15 marks)</span>
+      <p class="instruction">Answer the questions in EITHER Chinese OR English. You should write your answers in complete sentences.</p>
+      <p class="q-zh">(a) 根据选文，丽颖母亲的角色转变体现了什么样的觉醒过程？ （3分）</p>
+<p class="q-en">According to the extract, what kind of awakening process does the role transformation of Li Ying's mother demonstrate? (3 marks)</p>
+<p class="q-zh">(b) 作者如何运用对比和心理描写等技巧来展现丽颖职业发展中的困境与挑战？ （5分）</p>
+<p class="q-en">How does the author use techniques such as contrast and psychological description to demonstrate the difficulties and challenges in Li Ying's career development? (5 marks)</p>
+<p class="q-zh">(c) 结合选文以及《夹缝中的光芒》的其他相关内容，分析作者如何通过丽颖母女两代人的经历来探讨"现代社会中的性别角色"变化和"现代年轻人的压力"问题。 （7分）</p>
+<p class="q-en">With reference to the extract and other relevant content from Light in the Crevice, analyse how the author uses the experiences of Li Ying and her mother across two generations to explore changes in "gender roles in today's society" and issues of "pressures on young people today". (7 marks)</p>
+
+    </div>
+    
+
+  <div class="answer-divider">示范答案 · Sample Answer</div>
+
+  
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label a">(a) 识别</span>
+            <span class="sub-title">丽颖母亲角色转变的觉醒过程</span>
+            <span class="mark-badge">3 分</span>
+          </div>
+          <p class="body">丽颖母亲的觉醒呈两步走：起点是「每天除了买菜，几乎不出门，对着四堵墙，犹如井底之蛙」的封闭家庭主妇状态；转折是「不工作就没有发言权，不工作就无法独立」的自我宣告，并在丽颖初三那年到公安局后勤就业，完成从依附角色向独立角色的实质转变。</p>
+        </div>
+        
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label b">(b) 分析</span>
+            <span class="sub-title">对比与心理描写呈现职业发展的困境与挑战</span>
+            <span class="mark-badge">5 分</span>
+          </div>
+          <p class="body">首先，作者运用理想与现实对比展现职业困境的反差，「这一份工作貌似光鲜」的播音主持表面与「劳务派遣形式」「单位不承诺给予编制」的体制内在并置，使「困境」从制度层面被锐化，揭示了八零后年轻人在职业表象与实质之间的落差。其次，作者运用职场环境对比呈现挑战的延续，从电视台的「媒体的混乱」过渡到规划局的「行政部门的官僚作风」，两段相隔的职业体验在写法上互为映照，表明丽颖面对的并非某一单位的特例，而是不同制度生态下的共同结构性问题。最后，作者运用心理描写深化挑战的内在重量，「独立带来的副产品，是孤独感的滋生」「几乎掉进了抑郁的阴霾」与丽颖自我定位「作为专门被坑的八零后，如何混战在这个复杂的社会」并行铺陈，将外部挑战与内心承重打通，使「困境」呈现外内合击的立体面貌。</p>
+        </div>
+        
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label c">(c) 综合</span>
+            <span class="sub-title">性别角色变化与现代年轻人压力</span>
+            <span class="mark-badge">7 分 ⚠ 满分门</span>
+          </div>
+          <p class="body">首先，两代女性的经历呈现了性别角色从「家庭主妇」到「自主主体」的根本演进。选文中丽颖母亲「井底之蛙」的封闭状态与「不工作就没有发言权」的觉醒构成代际断点，而丽颖「所有的事情，从高考的志愿、专业、人生规划，都自己做主」已成为新一代女性的起点。结合素婷「将自己的梦想构建在男人身上」是「最大的敌人」的反思可见，现代女性的角色重塑已从「争取就业权」深化为「重新定义自我的尺度」——价值的来源从外部确认转向内部自决。</p>
+<p class="body">其次，丽颖的体制内挣扎呈现了现代年轻人「身份不稳」的结构性压力。选文中她「以劳务派遣形式」进入电视台、又「干的活并不比正式编制的职工少半点，但丽颖明显感到，领导并不尊重他们」，已将「劳务派遣」这一新型用工模式的内在不平等具象化。结合海燕在广州移动萝岗分公司「也是劳务派遣」、四十五天后才意外接到清远农信社的录用电话可见，「编制」的有无成为决定八零后职业尊严的隐性门槛——压力不只是工作量，更是身份分类带来的归属感断裂。</p>
+<p class="body">最后，丽颖的母女关系揭示了女性在「代际责任」与「个体追求」之间的双重负载。选文中丽颖高中作文写下「30岁的我，微胖，育有自己的乖女儿，同时继续在职场打滚」的双轨愿景，与素婷「努力赚钱，趁父母健康，带他们出去见识一下」的孝心驱动构成两种典型样本。结合海燕「他们这种希望教育能改变生活、命运的想法，给我们打开了前进的道路」的反哺意识可见，新一代女性的压力来源已不限于职场，更包含承接父母期待与回馈父母付出的双向情感账户——独立的代价是更密集的关系责任。</p>
+        </div>
+        
+</section>
+
+<section class="question" id="q3-6">
+  <div class="q-head">
+    <span class="q-num">6</span>
+    <div>
+      <div class="q-title">第 6 题 · Q3 Reading &amp; Responding · 15 marks</div>
+      <div class="q-meta">Section II · Part A · (a) 3分 + (b) 5分 + (c) 7分</div>
+    </div>
+  </div>
+  <div class="section-labels">HSC Chinese and Literature · Section II – Reading and Responding · Part A</div>
+
+  
+    <div class="extract-card">
+      <span class="extract-label">Text 1 · 选文</span>
+      <p>前面提到的潘海燕，显然也受益于学校这一大的就业环境。海燕1986年出生于广东省连州市大路边镇一个村庄，有一个弟弟、一个妹妹，祖祖辈辈都是农民。爸爸仅仅念到了初一，初中没有毕业；妈妈因为外婆去世早，虽考上了高中，但不得不辍学回家，帮外公一起养家糊口。父母结婚后，爸爸买了一辆拖拉机，外出连州市区运输建筑材料挣钱养家；妈妈留在家，和爷爷一起下地务农，主要种植水果、庄稼；奶奶则待在家里做饭，负责照看孙子。在海燕看来，他们家的生活，依循的路径，正是村里绝大部分家庭的生活模式。</p>
+<p>随着孩子们的长大，家里负担陡然增重，"三个孩子读书的学费、伙食费，爷爷奶奶的生活费、医药费，大大小小，都落在了父母身上"。光靠待在家里刨生活，已无法满足基本开支，父母经过慎重思考，决定外出谋生。海燕上初中时，妈妈跟随一个远房亲戚到佛山打工，在周记茶餐厅当服务员；爸爸随后也转移了阵地，来到广州开车；弟弟妹妹留在爷爷奶奶身边；海燕则被寄养在姑姑家，没有念寄宿。姑姑待她极好，海燕始终认为自己不算留守儿童，毕竟父母外出时她已上初中。但弟弟、妹妹年龄尚小，父母离开，就直接沦为不折不扣的留守儿童，并对此后的性格养成，有直接的影响。</p>
+<p>海燕的工作充满了戏剧性。毕业时，她参加了清远农信社的公开应聘，但第一轮落选。她随后通过了广州移动萝岗分公司的招聘笔试、面试，成为营业厅营销代表实习生，并以劳务派遣的形式，成为公司的一员。"劳务派遣"是当下大学就业的主要形式，也算得上高等教育市场化在就业层面的直接体现。虽然这种形式弹性大，有时有较高的业绩，但晋升的平台并不明朗。更重要的是，海燕发现，在移动公司，除了完成工作任务，"学会应酬、说漂亮话，学会左右逢源、处事圆滑"的潜规则，对职场生存同样重要，这对拙朴的乡村孩子而言，是一个很大的挑战。</p>
+<p>在萝岗移动公司实习四十五天后，她接到了失而复得的清远农信社录用电话，心情激动而复杂，曾经缥缈的期待，竟然不可思议地真实降临，她的身份由此获得了根本改变，从一名劳务派遣的漂泊女孩，变成了一名金融系统的正式员工。</p>
+    </div>
+    
+
+  
+    <div class="questions-block">
+      <span class="questions-label">Question 3 (15 marks)</span>
+      <p class="instruction">Answer the questions in EITHER Chinese OR English. You should write your answers in complete sentences.</p>
+      <p class="q-zh">(a) 根据选文，海燕家庭在面对经济压力时采取了哪些具体的应对措施？ （3分）</p>
+<p class="q-en">According to the extract, what specific measures did Haiyan's family take when facing economic pressure? (3 marks)</p>
+<p class="q-zh">(b) 作者如何运用对比和细节描写等手法来展现海燕求职过程中的挫折与转机？ （5分）</p>
+<p class="q-en">How does the author use techniques such as contrast and detailed description to demonstrate the setbacks and turning points in Haiyan's job-seeking process? (5 marks)</p>
+<p class="q-zh">(c) 结合选文以及《夹缝中的光芒》的其他相关内容，分析作者如何通过海燕的成长经历来探讨"教育在年轻人生活中的位置"和"变化的社会对个人产生的冲击"这两个主题。 （7分）</p>
+<p class="q-en">With reference to the extract and other relevant content from Light in the Crevice, analyse how the author uses Haiyan's growth experience to explore the themes of "the place of education in young people's lives" and "the impact of a changing society on the individual". (7 marks)</p>
+
+    </div>
+    
+
+  <div class="answer-divider">示范答案 · Sample Answer</div>
+
+  
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label a">(a) 识别</span>
+            <span class="sub-title">海燕家庭应对经济压力的具体措施</span>
+            <span class="mark-badge">3 分</span>
+          </div>
+          <p class="body">海燕一家采取三项措施：父母分别外出，母亲到佛山「周记茶餐厅当服务员」、父亲到广州开车，扩大收入来源；弟妹由「爷爷奶奶带」、海燕「寄养在姑姑家」，以亲属网络分担养育成本；母亲极度节俭，「她和弟弟、弟媳合租了一间老旧的大房子」，将打工收入悉数送回家中供三姊妹读书。</p>
+        </div>
+        
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label b">(b) 分析</span>
+            <span class="sub-title">对比与细节描写呈现求职挫折与转机</span>
+            <span class="mark-badge">5 分</span>
+          </div>
+          <p class="body">首先，作者运用期望与现实的对比突显挫折与转机的戏剧性，「第一轮落选」清远农信社与「失而复得的清远农信社录用电话」两节文本呼应使用，将命运反转的张力凝聚在同一机构上，使「挫折」与「转机」不仅在情节上承接，更在情感上互为放大。其次，作者运用工作性质对比深化挫折与转机的本质落差，从广州移动萝岗分公司「劳务派遣形式」到清远农信社「金融系统的正式员工」的身份切换，将求职的胜负锚定在编制制度这一关键变量上，使「转机」具备制度层面的解释力。最后，作者运用细节描写为求职过程注入真实感，「实习四十五天后」的具体时长、「心情激动而复杂，曾经缥缈的期待，竟然不可思议地真实降临」的内心刻画，使「挫折与转机」之间的等待与逆转都有了可感的时间与心理重量。</p>
+        </div>
+        
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label c">(c) 综合</span>
+            <span class="sub-title">教育在年轻人生活中的位置与社会冲击</span>
+            <span class="mark-badge">7 分 ⚠ 满分门</span>
+          </div>
+          <p class="body">首先，海燕的轨迹证明教育在新时代仍是阶层跃迁的核心杠杆。选文中她「从一名劳务派遣的漂泊女孩，变成了一名金融系统的正式员工」的身份转换，直接得益于大学教育所提供的考试与录用资格。结合作者断言海燕若无教育将面临「照顾弟弟妹妹、早早辍学、嫁人生子」的另一种命运可见，教育并非保证就业的牌照，而是开启选择空间的钥匙——它把命运从「单线轨道」改写为「可分叉路径」。</p>
+<p class="body">其次，海燕的家庭策略呈现了教育投资如何重塑家庭结构。选文中父母为了供「三个孩子读书的学费、伙食费」分赴佛山与广州，导致海燕在初中阶段被姑姑寄养、弟妹成为「不折不扣的留守儿童」。结合梦兰母亲「六年陪读」的另一种家庭重组路径可见，教育投资已超越个体行为，成为重新分配家庭成员物理位置、情感连结与代际责任的总枢纽——家庭围绕「下一代」重新组装。</p>
+<p class="body">最后，海燕的职场经历折射了市场化对个体的结构性冲击。选文中她需先承受「学会应酬、说漂亮话，学会左右逢源、处事圆滑」的潜规则——这「对拙朴的乡村孩子而言，是一个很大的挑战」——才能进入劳务派遣岗位。结合丽颖「领导并不尊重他们」与梅怡「每天叫醒我的只有坚强」的两种应对可见，新一代不仅承受教育投资期的延迟收益，更承受市场化逻辑施加的「人格商品化」要求——社会冲击体现为价值观与生存技能的整体重置。</p>
+        </div>
+        
+</section>
+
+<section class="question" id="q3-7">
+  <div class="q-head">
+    <span class="q-num">7</span>
+    <div>
+      <div class="q-title">第 7 题 · Q3 Reading &amp; Responding · 15 marks</div>
+      <div class="q-meta">Section II · Part A · (a) 3分 + (b) 5分 + (c) 7分</div>
+    </div>
+  </div>
+  <div class="section-labels">HSC Chinese and Literature · Section II – Reading and Responding · Part A</div>
+
+  
+    <div class="extract-card">
+      <span class="extract-label">Text 1 · 选文</span>
+      <p>素婷出生于广东西北怀集县的一个工人家庭，大学期间最大的遗憾是未能参加毕业合影。毕业后，她进入一家温泉公司，因为遇上了好的领导和工作氛围，没有"经历职场上的钩心斗角，更不需要担心同事间的尔虞我诈"，在其中收获了很多快乐和成长。因为满意，她从未想过跳槽。她记得自己最先应聘的岗位是文案策划，后来则更多倾向于项目管理，由于她所在的公司在温泉行业算得上佼佼者，很多后起的温泉企业一般都会找他们咨询，素婷在工作中获得了不少外出见识的机会，也学会了和各类人物打交道。她深谙服务行业的精髓，懂得站在他人的角度考虑问题，知道与人打交道讲究的是一种巧劲，"有时哪怕掌握了再多的理，也应该给别人留个面子，因为这个世界上，只要对方不想被说服，你永远都说服不了他，人家根本不是觉得你的理不对，而是反感你这种咄咄逼人的方式"。"成熟的处事方式是，在表达自己的同时，亦要照顾对方的感受。如何在别人不难堪的情况下交往，在说理的同时也不会让对方不痛快，是一门高深的技术，也是一门艺术。"</p>
+<p>素婷的温婉、厚道，还有善解人意的性格，让她在单位获得了实在的归宿感。在跳槽极为普遍的广东地区和温泉行业，她并不觉得跳槽是提升个人身价的最好方式。她疼惜父母，深知在小城镇生活了半辈子的父母生怕给子女添麻烦，总也不肯闲下来。素婷的最大心愿是，"努力赚钱，趁父母健康，带他们出去见识一下，吃各种好吃的东西"。</p>
+<p>她还没有结婚，不想过早步入婚姻生活。她也没有买房，觉得精神上的追求比拥有一套房子更重要。她有空会去旅游、学古筝、学韩语、练习毛笔字。她内心有着成熟职业女性的认知，"年龄困不住一个女人，如果一个女人将自己定位为一个独立个体，一个有能力、有勇气、有资本的人，就不会惧怕衰老。作为女人，应该告诉自己，无论到哪个年龄段，你最好的年龄，就是你现在的年龄"。"岁月对女人来说，从来都不是敌人，我们最大的敌人，是以男人的眼光来要求自己，是将自己的梦想构建在男人身上，是穿着最时尚的衣服，却有着最传统的内心。""做自己喜欢的事情，活成自己喜欢的样子，到死都能优雅，我认为这些是作为一个女人的最大追求。真正能掌握自己的喜好，有能力去负担自己的兴趣，便会成为最好的自己。"</p>
+    </div>
+    
+
+  
+    <div class="questions-block">
+      <span class="questions-label">Question 3 (15 marks)</span>
+      <p class="instruction">Answer the questions in EITHER Chinese OR English. You should write your answers in complete sentences.</p>
+      <p class="q-zh">(a) 根据选文，素婷在职业发展和人生规划方面体现了哪些独特的价值观念？ （3分）</p>
+<p class="q-en">According to the extract, what unique values does Su Ting demonstrate in her career development and life planning? (3 marks)</p>
+<p class="q-zh">(b) 作者如何运用直接引语和心理描写等手法来展现素婷的人生哲学和处世智慧？ （5分）</p>
+<p class="q-en">How does the author use techniques such as direct quotations and psychological description to demonstrate Su Ting's life philosophy and worldly wisdom? (5 marks)</p>
+<p class="q-zh">(c) 结合选文以及《夹缝中的光芒》的其他相关内容，分析作者如何通过素婷的人生选择来探讨"现代社会中的性别角色"变化和"现代年轻人的压力"应对策略。 （7分）</p>
+<p class="q-en">With reference to the extract and other relevant content from Light in the Crevice, analyse how the author uses Su Ting's life choices to explore changes in "gender roles in today's society" and coping strategies for "pressures on young people today". (7 marks)</p>
+
+    </div>
+    
+
+  <div class="answer-divider">示范答案 · Sample Answer</div>
+
+  
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label a">(a) 识别</span>
+            <span class="sub-title">素婷职业与人生规划的独特价值观念</span>
+            <span class="mark-badge">3 分</span>
+          </div>
+          <p class="body">素婷的价值观呈三重独特：职业上「从未想过跳槽」，在「跳槽极为普遍」的广东地区坚守第一份工作；人生节奏上「不想过早步入婚姻生活」，未婚未育亦未购房；价值取向上「觉得精神上的追求比拥有一套房子更重要」，将时间投入古筝、韩语、毛笔字与旅游。</p>
+        </div>
+        
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label b">(b) 分析</span>
+            <span class="sub-title">直接引语与心理描写呈现素婷的人生哲学和处世智慧</span>
+            <span class="mark-badge">5 分</span>
+          </div>
+          <p class="body">首先，作者运用直接引语呈现处世智慧的层次，「成熟的处事方式是，在表达自己的同时，亦要照顾对方的感受」一句直陈式表述将素婷的人际艺术外化为可被复述的格言，体现她在职场中既能自我表达又能体察他人的双向智慧。其次，作者运用直接引语展现女性自我定位的哲学深度，「年龄困不住一个女人」「我们最大的敌人，是以男人的眼光来要求自己，是将自己的梦想构建在男人身上」一系列原话密集铺排，把素婷对女性主体性的思考一次次置入读者眼前，构成其人生哲学的核心宣言。最后，作者运用心理描写呈现智慧的情感土壤，「她疼惜父母」「最大心愿是努力赚钱，趁父母健康，带他们出去见识一下，吃各种好吃的东西」的内心刻画，把素婷的智慧从抽象命题落回到具体情感动机上，使其「处世智慧」既有理性边界，又有温度归属。</p>
+        </div>
+        
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label c">(c) 综合</span>
+            <span class="sub-title">性别角色与年轻人压力应对策略</span>
+            <span class="mark-badge">7 分 ⚠ 满分门</span>
+          </div>
+          <p class="body">首先，素婷以「不结婚不买房」的选择重构了女性人生的成功标准。选文中她明言「年龄困不住一个女人」「就不会惧怕衰老」，并将「精神上的追求」置于物质资产之前。结合丽颖母亲「不工作就没有发言权」的觉醒可见，两代女性接力推进了性别角色的边界——从「争取就业」推进到「拒绝以婚姻和房产定义自我」——使女性的成功从外部确认进一步内化为「活成自己喜欢的样子」。</p>
+<p class="body">其次，素婷以「稳定加成长」的职业策略缓解了年轻人的流动性压力。选文中她在「跳槽极为普遍的广东地区和温泉行业」选择留守，从「文案策划」「项目管理」逐步晋升，正因「遇上了好的领导和工作氛围」就「没有动过跳槽的念头」。结合梅怡「至少有六份」工作的频繁更迭与梅怡第一次创业「亏空了所有积蓄」的代价可见，八零后并非整齐划一被迫流动——素婷的策略证明「稳定」依然可以是主动选择，并以此抵御市场化时代的不确定性。</p>
+<p class="body">最后，素婷以「精神生活组合」化解了年轻人的存在性焦虑。选文中她「有空会去旅游、学古筝、学韩语、练习毛笔字」，并以「做自己喜欢的事情，活成自己喜欢的样子，到死都能优雅」收束自身价值观。结合丽颖「几乎掉进了抑郁的阴霾」、梅怡「每天叫醒我的只有坚强」的不同压力反应可见，新一代应对社会压力的策略已分化——有人凭借不竭奋进抵抗失重，有人借多元志趣构建意义重心——素婷的路径展示了「精神资产」如何替代物质指标成为抗压结构。</p>
+        </div>
+        
+</section>
+
+<section class="question" id="q3-8">
+  <div class="q-head">
+    <span class="q-num">8</span>
+    <div>
+      <div class="q-title">第 8 题 · Q3 Reading &amp; Responding · 15 marks</div>
+      <div class="q-meta">Section II · Part A · (a) 3分 + (b) 5分 + (c) 7分</div>
+    </div>
+  </div>
+  <div class="section-labels">HSC Chinese and Literature · Section II – Reading and Responding · Part A</div>
+
+  
+    <div class="extract-card">
+      <span class="extract-label">Text 1 · 选文</span>
+      <p>梅怡1987年出生在广州，有一个比她小六岁的弟弟。父亲出生于1959年，高中毕业，母亲出生于1962年，初中毕业，父母都是个体户。对于家人的收入，她并不清楚，弟弟目前报读成人大专，在广汽本田任OP（管理员）一职，月收入有七千多。毕业以后，她换了很多工作，掰指一算，至少有六份，最长的两年，最短的三个月。2010年毕业季，尽管有很多银行、证券公司来招聘，但她没有去参加一次面试，而是选择了感兴趣的互联网行业，当了一名专业对口的网络编辑。</p>
+<p>第一次创业尽管热血澎湃，但异常艰辛。"别人说每天叫醒你的不是闹钟而是梦想，对于我，每天叫醒我的只有坚强。办公环境很差，在城中村租了一个三十多平米的办公室，七个人办公，月租两千元，其中有三个是兼职，38℃的天气我们是没有空调的，电脑都是自己带的手提。为了离公司近，我在附近租了一个单间，房租六百元，算上水电费每个月八百不到。因为当时是草根创业，为了降低个人的日常开销，拿着两千一个月的工资，算上水电费、吃喝，每个月基本没有剩余。"公司坚持了两年，团队从最初的七人变成了四人，为了不给团队成员造成压力，在亏空了所有积蓄后，她决定解散第一次创业的公司。</p>
+<p>在梅怡的就业观中，她从来没有动过心思寻求一份稳定的工作。张扬个性、实现自己的梦想，是她自主创业的心理动因。毫无疑问，她的选择，和父母的精神鼓励分不开，也和她大城市出生、长大的见识分不开，更和她较好的家庭经济条件分不开。她不像国伟，大学毕业后，"首要任务是要解决我和家人的生活问题"，也不像志勇，总在梦想和职业的纠缠中，横亘了一个急需他支撑的贫寒家庭。</p>
+    </div>
+    
+
+  
+    <div class="questions-block">
+      <span class="questions-label">Question 3 (15 marks)</span>
+      <p class="instruction">Answer the questions in EITHER Chinese OR English. You should write your answers in complete sentences.</p>
+      <p class="q-zh">(a) 根据选文，梅怡第一次创业面临了哪些具体的困难和挑战？ （3分）</p>
+<p class="q-en">According to the extract, what specific difficulties and challenges did Mei Yi face during her first entrepreneurial venture? (3 marks)</p>
+<p class="q-zh">(b) 作者如何运用对比手法和细节描写来突出梅怡创业选择的独特性？ （5分）</p>
+<p class="q-en">How does the author use contrasting techniques and detailed descriptions to highlight the uniqueness of Mei Yi's entrepreneurial choices? (5 marks)</p>
+<p class="q-zh">(c) 结合选文以及《夹缝中的光芒》的其他相关内容，分析作者如何通过梅怡与其他同学的对比来探讨家庭经济背景对年轻人职业选择和价值观念的深层影响。在你的答案中，从作品的内容和写作手法方面来分析。 （7分）</p>
+<p class="q-en">With reference to the extract and other relevant content from Light in the Crevice, analyse how the author uses the contrast between Mei Yi and other classmates to explore the profound influence of family economic background on young people's career choices and values. In your answer, analyse both the content and writing techniques of the work. (7 marks)</p>
+
+    </div>
+    
+
+  <div class="answer-divider">示范答案 · Sample Answer</div>
+
+  
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label a">(a) 识别</span>
+            <span class="sub-title">梅怡第一次创业面临的困难与挑战</span>
+            <span class="mark-badge">3 分</span>
+          </div>
+          <p class="body">梅怡的第一次创业承受三重压力：办公条件恶劣，「在城中村租了一个三十多平米的办公室，七个人办公」，「38℃的天气我们是没有空调的，电脑都是自己带的手提」；个人收入拮据，「拿着两千一个月的工资」「每个月基本没有剩余」；团队解体，「团队从最初的七人变成了四人」，最终「亏空了所有积蓄」后解散公司。</p>
+        </div>
+        
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label b">(b) 分析</span>
+            <span class="sub-title">对比与细节描写突出创业选择的独特性</span>
+            <span class="mark-badge">5 分</span>
+          </div>
+          <p class="body">首先，作者运用理想与现实的对比凸显创业选择的精神成本，「别人说每天叫醒你的不是闹钟而是梦想，对于我，每天叫醒我的只有坚强」一句反转了流行修辞，使梅怡的独特性建立在对励志话语的祛魅之上，体现其面对创业的清醒判断。其次，作者运用具体数据细节强化创业选择的物质底色，「三十多平米的办公室，七个人办公，月租两千元」「房租六百元，算上水电费每个月八百不到」等精确数据将「热血」具象化为可丈量的资源缺口，使「独特性」呈现为高门槛而非高姿态。最后，作者运用横向同侪对比锁定创业选择的家庭背景，「她不像国伟，大学毕业后，『首要任务是要解决我和家人的生活问题』，也不像志勇，总在梦想和职业的纠缠中，横亘了一个急需他支撑的贫寒家庭」一段并列陈述，将梅怡的「独特性」从个性气质上升为家庭资本配置层面的差异，使创业选择的代际与阶层根源被显影。</p>
+        </div>
+        
+        <div class="sample-answer">
+          <div class="sub-heading">
+            <span class="sub-label c">(c) 综合</span>
+            <span class="sub-title">家庭经济背景对职业选择和价值观念的影响</span>
+            <span class="mark-badge">7 分 ⚠ 满分门</span>
+          </div>
+          <p class="body">首先，家庭经济资本直接决定了职业选择的自由度。选文中梅怡父母「都是个体户」、「家庭经济条件」相对宽裕，使她「从来没有动过心思寻求一份稳定的工作」。结合国伟「首要任务是要解决我和家人的生活问题」与志勇「横亘了一个急需他支撑的贫寒家庭」的对照可见，家庭经济基础不只是物质支撑，更是定义「敢不敢冒险」的隐形地板——同代人面对相同社会环境，却因家底差异在「梦想空间」上拥有截然不同的起跑线。</p>
+<p class="body">其次，家庭经营经验塑造了职业价值观念的传承。选文中梅怡的「父母的精神鼓励」与个体户身份共同构成其创业冲动的文化基底，使「张扬个性、实现自己的梦想」成为家庭认可的发展方向。结合陈倩从婆家陶瓷厂接班、王国伟父亲「打工没有自由，还不如自己做个小老板」的家族信条可见，潮汕与珠三角家庭普遍以经商精神为代际传递的核心资产——价值观念不是个体偶然选择，而是家庭文化资本的隐性继承。</p>
+<p class="body">最后，家庭城市资源决定了试错恢复的弹性空间。选文中梅怡的「大城市出生、长大的见识」赋予她洞察互联网商机的敏感度，第一次创业失败后又能迅速展开第二次创业。结合海燕从乡村到广州、需「学会应酬、说漂亮话」才能在职场立足的艰难起步可见，城市出身不仅意味着资源接触面，更意味着「失败成本」的可吸收性——大城市家庭赋予年轻人的不只是机会，更是从机会中恢复的能力，这种差异最终塑造了同代人风险偏好与价值排序的深层分化。</p>
+        </div>
+        
+</section>
+
+
+<section class="divider-section">
+  <div class="section-divider-title"><span class="tag red">Part B</span>Section II – Part B · Thematic Essay · 2 道 Q4 题（每题 25 分）</div>
+  <div class="section-divider-meta">每题 cross-text 论文：Theme 1 + Theme 2 各一道 · 配对 valid 文本（漂向北方 / 大江大河）· 4 段结构 ~800 字 Band 6 范文</div>
+</section>
+
+
+<section class="question" id="q4-41">
+  <div class="q-head">
+    <span class="q-num" style="color: var(--red);">4-1</span>
+    <div>
+      <div class="q-title">Question 4-1 · Q4 Thematic Essay · 25 marks</div>
+      <div class="q-meta">Section II · Part B · 4-段 cross-text 结构 · ~800 字</div>
+    </div>
+  </div>
+  <div class="section-labels">HSC Chinese and Literature · Section II – Reading and Responding · Part B (Thematic Essay)</div>
+
+  <div class="q4-meta">
+    <div class="line"><strong>Theme:</strong>Theme 1: Individual and Community (个人与社区)</div>
+    <div class="line"><strong>Issue:</strong>Issue 1.1 变化的社会对个人产生的冲击 (Impact of Social Change on Individuals)</div>
+    <div class="line"><strong>Pairing:</strong>《夹缝中的光芒》＋《漂向北方》</div>
+  </div>
+
+  <div class="statement-block">
+    <span class="stmt-label">Question 4 (Option 1) (25 marks)</span>
+    <p class="stmt-zh">「乡村与城市之间的迁徙，不仅改变了个人的地理位置，也重塑了一代人的精神世界。」请结合《夹缝中的光芒》与《漂向北方》两个文本，分析作者如何呈现迁徙过程对个人的深层冲击。</p>
+    <p class="stmt-en">"The migration between rural and urban worlds reshaped not only individuals' geographic location, but also the inner world of an entire generation." With reference to Light in the Crevice and Drifting North, analyse how the authors portray the profound impact of migration on individuals.</p>
+    <p class="instructions">在你的答案中，从作品的内容和写作手法方面来分析。Word limit: 约 800 字 (25-mark thematic essay, four-paragraph cross-text structure)。</p>
+  </div>
+
+  <div class="answer-divider">Band 6 范文 · Model Answer</div>
+
+  
+        <div class="essay-para intro">
+          <span class="para-label">Intro · 50-80 字</span>
+          <p class="body">城市化的浪潮把中国年轻人推上了流动的轨道，而个人的精神世界往往在这种流动中被反复打磨与重塑。纪实文学《夹缝中的光芒》借大量个案揭示出迁徙的物质代价与情感重量，流行歌曲《漂向北方》则以歌词意象浓缩漂泊者的孤独与希冀，二者共同呈现迁徙对一代人的深层冲击。</p>
+        </div>
+        
+        <div class="essay-para body1">
+          <span class="para-label">Body 1 · Text 1 · ~270 字</span>
+          <p class="body">首先，《夹缝中的光芒》通过典型案例的并置呈现迁徙的物质代价。作者以潘海燕一家「父亲到广州开车」「母亲到佛山周记茶餐厅当服务员」的双线务工切片，并配以「不论接到妈妈的第一封信，还是接到妈妈的第一个电话，都因为思念而泣不成声」的直接引语，使迁徙的经济收益与情感断裂被同框呈现。其次，作者运用数据论证细化迁徙的结构性影响，「五十二名同学，全部在广东就业」「定居广州的十七名，定居深圳的四名」的精确分布，把迁徙从个体冲动落实为代际格局的统计转移。最后，作者通过反思性结构升华迁徙的精神维度，提出「中国乡村城镇化的进程......伴随家庭的需求和孩子们成长的路径，在不知不觉中自动完成」，将迁徙重新定义为代际共同体的精神再生产。</p>
+        </div>
+        
+        <div class="essay-para body2">
+          <span class="para-label">Body 2 · Text 2 · ~270 字</span>
+          <p class="body">其次，《漂向北方》以歌词的浓缩意象呈现漂泊者的孤独感。歌曲首先用「漂向北方，别问我家乡」的反复句式与「高耸古老的城墙挡不住忧伤」的具象意象，将身体上的远行与精神上的故乡剥离同时刻画。其次，歌词运用第一人称叙事「我」与对话式呼告「妈我好想你」并行交替，使迁徙者既站在城市的孤峰上、又被故乡的牵挂回望，形成自我分裂的双重视角。最后，歌曲以「黄沙像耳光」「梦想和现实的天秤」的比喻收束，将物质漂泊的冲击转译为精神信念的反复掂量，使迁徙者的内心斗争具备诗性张力。两种手法合力把漂泊者的精神世界拆解为「身-心-梦」三层冲击。</p>
+        </div>
+        
+        <div class="essay-para conclusion">
+          <span class="para-label">Conclusion · 50-80 字 (综上所述)</span>
+          <p class="body">综上所述，两文本以不同的语体——一边是数据与个案的纪实分析，一边是意象与呼告的诗化提炼——共同描绘出迁徙对一代人精神世界的双重重塑：既剥离了原有的归属，也催生了新的自我。年轻人正是在这种身心错位中艰难找到自己的「夹缝光芒」。</p>
+        </div>
+        
+</section>
+
+<section class="question" id="q4-42">
+  <div class="q-head">
+    <span class="q-num" style="color: var(--red);">4-2</span>
+    <div>
+      <div class="q-title">Question 4-2 · Q4 Thematic Essay · 25 marks</div>
+      <div class="q-meta">Section II · Part B · 4-段 cross-text 结构 · ~800 字</div>
+    </div>
+  </div>
+  <div class="section-labels">HSC Chinese and Literature · Section II – Reading and Responding · Part B (Thematic Essay)</div>
+
+  <div class="q4-meta">
+    <div class="line"><strong>Theme:</strong>Theme 2: Youth Culture (青年文化)</div>
+    <div class="line"><strong>Issue:</strong>Issue 2.2 教育在年轻人生活中的位置 (Education in Young People's Lives)</div>
+    <div class="line"><strong>Pairing:</strong>《夹缝中的光芒》＋《大江大河》</div>
+  </div>
+
+  <div class="statement-block">
+    <span class="stmt-label">Question 4 (Option 2) (25 marks)</span>
+    <p class="stmt-zh">「在社会变革的洪流中，教育是年轻人改变命运的最重要杠杆。」请结合《夹缝中的光芒》与《大江大河》两个文本，分析作者如何呈现教育对年轻人命运的塑造作用。</p>
+    <p class="stmt-en">"In the tide of social transformation, education is the most important lever for young people to change their destiny." With reference to Light in the Crevice and Like a Flowing River, analyse how the authors portray the role of education in shaping young people's destinies.</p>
+    <p class="instructions">在你的答案中，从作品的内容和写作手法方面来分析。Word limit: 约 800 字 (25-mark thematic essay, four-paragraph cross-text structure)。</p>
+  </div>
+
+  <div class="answer-divider">Band 6 范文 · Model Answer</div>
+
+  
+        <div class="essay-para intro">
+          <span class="para-label">Intro · 50-80 字</span>
+          <p class="body">改革开放以来的中国社会，教育被反复确认为年轻人改变命运的关键杠杆。纪实文学《夹缝中的光芒》以两班大学生的代际对比解析教育价值的变迁，长篇小说《大江大河》以宋运辉的成长叙事再现高考如何打开个人命运的新轨道，二者从不同维度论证了教育在社会变革中的核心位置。</p>
+        </div>
+        
+        <div class="essay-para body1">
+          <span class="para-label">Body 1 · Text 1 · ~270 字</span>
+          <p class="body">首先，《夹缝中的光芒》通过纵向数据对比奠定教育撬动命运的论证基底。作者以「1992年三百零三万人参加、录取率25%」与「2006年九百五十万人报名、录取率56.8%」两组高考数据并置，使教育扩张被锚定在可比较的统计坐标内。其次，作者以个案见证教育的具体效用，潘海燕「从一名劳务派遣的漂泊女孩，变成了一名金融系统的正式员工」的身份转换，与作者断言她若无教育将面临「照顾弟弟妹妹、早早辍学、嫁人生子」的对照，使教育对命运的撬动力具备可感的人生路径。最后，作者通过反思性立场修正流行判断，承认「文凭贬值的呼声几乎成为共识」却补以「整体上，通过高考，他们依然能获得在社会立足的根基」，把教育的价值从「直接转化」重定义为「平台保底」，呈现其在新时代仍稳固的杠杆功能。</p>
+        </div>
+        
+        <div class="essay-para body2">
+          <span class="para-label">Body 2 · Text 2 · ~270 字</span>
+          <p class="body">其次，《大江大河》通过人物成长轨迹具象化教育如何撬动命运。小说首先以宋运辉刚恢复高考时为争取录取名额「在公社门口背诵《人民日报》社论」的细节描写，把教育权利从抽象政策落到具体行动上，使其重要性可视化。其次，作者通过对比叙事呈现教育的命运分流功能，宋运辉因高考考入大学进入国营化工厂，与未能上学的同辈停留在原有生活轨道形成鲜明落差，凸显「考试」这一节点对个体路径的根本切割。最后，作者以宋运辉在金州化工凭借专业知识「攻克技术难关」的情节高潮收束，将教育从「机会入口」延伸为「持续竞争力」，证明教育不仅决定起点更塑造长期发展的内在动力。两条叙事合力呈现教育对命运的多阶段渗透。</p>
+        </div>
+        
+        <div class="essay-para conclusion">
+          <span class="para-label">Conclusion · 50-80 字 (综上所述)</span>
+          <p class="body">综上所述，两文本以纪实与虚构两种语体共同确认教育作为社会变革中年轻人命运杠杆的核心地位：纪实文学借数据与个案锚定其结构性价值，小说借人物轨迹放大其个体激活力。在时代的潮汐之间，教育既是入场券，也是续航器。</p>
+        </div>
+        
+</section>
+
+<a class="back-to-top" href="#top">↑ 返回顶部 / Back to top</a>
+</main>
+</body>
+</html>

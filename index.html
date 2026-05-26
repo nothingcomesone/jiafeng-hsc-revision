@@ -52,6 +52,7 @@
     .lesson-links a.secondary { border-color: var(--blue); color: var(--blue); }
     .lesson-links a.secondary:hover { background: var(--blue); color: #fff; }
     .resource-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .resource-grid.three { grid-template-columns: 1.4fr 1fr 1fr; }
     .resource-card { display: block; padding: 18px 22px; border: 1px solid var(--line); border-radius: 10px; background: #fff; text-decoration: none; color: var(--ink); transition: all 0.15s; }
     .resource-card:hover { background: var(--wash); border-color: var(--teal); transform: translateY(-1px); }
     .resource-card .icon { display: inline-block; padding: 5px 10px; border-radius: 6px; font-size: 12px; font-weight: 800; margin-bottom: 8px; }
@@ -61,6 +62,9 @@
     .resource-card.c .icon { background: var(--blue); color: #fff; }
     .resource-card.d .icon { background: var(--red); color: #fff; }
     .resource-card.practice .icon { background: var(--gold); color: #fff; }
+    .resource-card.html-primary { border-color: var(--teal); border-width: 2px; background: linear-gradient(135deg, rgba(15, 118, 110, 0.05), #fff); }
+    .resource-card.html-primary .icon { background: var(--teal); color: #fff; }
+    .resource-card.html-primary:hover { background: linear-gradient(135deg, rgba(15, 118, 110, 0.10), #fff); transform: translateY(-2px); }
     .resource-card .title { font-size: 17px; font-weight: 800; margin-bottom: 6px; }
     .resource-card .desc { font-size: 13px; color: var(--muted); }
     footer { padding: 32px 46px; background: var(--wash); border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
@@ -254,16 +258,21 @@
     <h2><span class="num">3</span>Q3 + Q4 练习集 · Practice Set</h2>
     <p class="section-intro">8 道 Q3 阅读题（Section II Part A，每题 15 分 · 3+5+7 结构）+ 2 道 Q4 跨文本议论文（Section II Part B，每题 25 分 · 4-段 cross-text 结构）。每题包括：中英双语题干 + 节选 verbatim from 文本 + Band 6 范文 / 示范答案。</p>
 
-    <div class="resource-grid">
+    <div class="resource-grid three">
+      <a class="resource-card html-primary" href="practice/q3-q4-practice-set.html">
+        <span class="icon">HTML · 在线阅读 ★ 推荐</span>
+        <div class="title">q3-q4-practice-set.html</div>
+        <div class="desc">在浏览器中直接阅读，自带 TOC 速查 + 题号锚点跳转。手机 / 平板友好。每题清晰显示节选 / 题干 / 示范答案三栏。</div>
+      </a>
       <a class="resource-card practice" href="practice/q3-q4-practice-set.pdf" target="_blank">
-        <span class="icon">PDF · 浏览友好</span>
+        <span class="icon">PDF · 可打印</span>
         <div class="title">q3-q4-practice-set.pdf</div>
-        <div class="desc">直接在浏览器中打开，手机 / 打印都可读。38 页。</div>
+        <div class="desc">A4 / 宋体 12pt / 含页码 + 页眉。可打印作纸质练习。38 页。</div>
       </a>
       <a class="resource-card practice" href="practice/q3-q4-practice-set.docx">
         <span class="icon">DOCX · 可编辑</span>
         <div class="title">q3-q4-practice-set.docx</div>
-        <div class="desc">Word 文档，老师可改题、学生可写答案。A4 / 宋体 12pt / 含页码 + 页眉。约 40 KB。</div>
+        <div class="desc">Word 文档，老师可改题、学生可写答案。约 40 KB。</div>
       </a>
     </div>
   </section>

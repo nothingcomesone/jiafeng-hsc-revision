@@ -61,14 +61,21 @@ for pair in "${PAIRS[@]}"; do
   fi
 done
 
-# ---------- 3. Q3 + Q4 practice (docx + regenerate PDF) ----------
+# ---------- 3. Q3 + Q4 practice (HTML + docx + regenerate PDF) ----------
 echo ""
-echo "==> Copying Q3+Q4 practice docx + regenerating PDF"
-Q_SRC="$SRC/夹缝中的光芒Q3&4.docx"
-if [ -f "$Q_SRC" ]; then
-  cp "$Q_SRC" practice/q3-q4-practice-set.docx
+echo "==> Copying Q3+Q4 practice HTML + docx + regenerating PDF"
+Q_DOCX="$SRC/夹缝中的光芒Q3&4.docx"
+Q_HTML="$SRC/夹缝中的光芒Q3&4.html"
+if [ -f "$Q_HTML" ]; then
+  cp "$Q_HTML" practice/q3-q4-practice-set.html
+  echo "    q3-q4-practice-set.html ✓"
+else
+  echo "    Q3+Q4 html ⚠ missing in source"
+fi
+if [ -f "$Q_DOCX" ]; then
+  cp "$Q_DOCX" practice/q3-q4-practice-set.docx
   if command -v soffice >/dev/null; then
-    soffice --headless --convert-to pdf --outdir practice "$Q_SRC" >/dev/null 2>&1
+    soffice --headless --convert-to pdf --outdir practice "$Q_DOCX" >/dev/null 2>&1
     mv "practice/夹缝中的光芒Q3&4.pdf" practice/q3-q4-practice-set.pdf 2>/dev/null || true
     echo "    q3-q4-practice-set.docx + .pdf ✓"
   else
