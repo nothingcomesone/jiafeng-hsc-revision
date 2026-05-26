@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>附录 B · 议题词典 — 《夹缝中的光芒》HSC hub</title>
+  <style>
+:root {
+  --ink: #1f2933; --muted: #5d6875; --line: #d7dee8;
+  --paper: #ffffff; --wash: #f6f8fb;
+  --teal: #0f766e; --teal-soft: #e7f4f2;
+  --red: #a43b3b; --red-soft: #faeeee;
+  --gold: #87620e; --gold-soft: #fff6dc;
+  --blue: #2b5d8a; --blue-soft: #edf5fb;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--wash); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; line-height: 1.65; }
+main { width: min(1100px, calc(100% - 32px)); margin: 28px auto 64px; background: var(--paper); border: 1px solid var(--line); box-shadow: 0 18px 48px rgba(31, 41, 51, 0.08); }
+header.doc-head { padding: 42px 46px 30px; border-bottom: 1px solid var(--line); background: linear-gradient(135deg, rgba(15, 118, 110, 0.11), rgba(43, 93, 138, 0.09)), #fff; }
+section.entry { padding: 36px 46px; border-bottom: 4px solid var(--line); scroll-margin-top: 20px; }
+section.entry:last-child { border-bottom: 0; }
+section.toc-section { padding: 28px 46px; border-bottom: 1px solid var(--line); }
+h1, h2, h3, h4 { margin: 0; line-height: 1.25; }
+h1 { font-size: 30px; margin-bottom: 8px; }
+h2 { font-size: 24px; margin-bottom: 4px; }
+h3 { font-size: 16px; margin: 20px 0 8px; color: var(--ink); display: flex; align-items: center; gap: 10px; }
+h3 .num { display: inline-block; min-width: 26px; height: 26px; line-height: 26px; border-radius: 6px; background: var(--teal-soft); color: var(--teal); font-weight: 800; font-size: 13px; text-align: center; padding: 0 6px; }
+h4 { font-size: 14px; margin: 0 0 5px; }
+p { margin: 0 0 10px; }
+ul, ol { margin: 6px 0 0 22px; padding: 0; }
+li { margin: 4px 0; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 13px; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; vertical-align: top; text-align: left; }
+th { background: #f1f5f9; font-weight: 700; }
+.doc-subtitle { color: var(--muted); font-size: 16px; margin-bottom: 18px; }
+.meta-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 18px; }
+.meta-card { padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: #fff; min-height: 70px; }
+.meta-label { display: block; color: var(--muted); font-size: 11px; letter-spacing: 0.05em; margin-bottom: 4px; }
+.meta-value { font-size: 15px; font-weight: 800; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-items: start; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.card { padding: 14px 16px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+.tag { display: inline-block; border-radius: 999px; padding: 2px 8px; margin: 2px 3px 2px 0; font-size: 11px; font-weight: 800; white-space: nowrap; }
+.tag.teal { background: var(--teal-soft); color: var(--teal); }
+.tag.red { background: var(--red-soft); color: var(--red); }
+.tag.gold { background: var(--gold-soft); color: var(--gold); }
+.tag.blue { background: var(--blue-soft); color: var(--blue); }
+.callout { padding: 14px 16px; background: var(--gold-soft); border: 1px solid #ead394; border-radius: 8px; margin-top: 12px; font-size: 13px; }
+.callout strong { color: var(--gold); }
+.teacher-note { padding: 12px 14px; background: var(--blue-soft); border: 1px solid #c9ddec; border-radius: 8px; margin-top: 12px; font-size: 13px; }
+.teacher-note strong { color: var(--blue); }
+.banned-zone { padding: 12px 14px; background: var(--red-soft); border: 1px solid #e9c1c1; border-radius: 8px; margin-top: 12px; font-size: 13px; }
+.banned-zone strong { color: var(--red); }
+.entry-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 14px; flex-wrap: wrap; }
+.entry-num { font-size: 36px; font-weight: 800; letter-spacing: -0.03em; color: var(--teal); min-width: 60px; }
+.entry-title { font-size: 22px; font-weight: 800; }
+.entry-meta { color: var(--muted); font-size: 12px; }
+.quote-card { padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: #fbfdfd; border-left: 4px solid var(--teal); margin-top: 8px; }
+.quote-line { padding: 5px 0; border-bottom: 1px dashed var(--line); font-size: 13px; }
+.quote-line:last-child { border-bottom: 0; }
+.quote-line .speaker { display: inline-block; min-width: 80px; font-weight: 700; color: var(--teal); font-size: 12px; }
+.quote-line .text { font-style: italic; }
+.usage-block { padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: #fff; border-left: 4px solid var(--ink); margin-top: 10px; }
+.usage-block.teal { border-left-color: var(--teal); }
+.usage-block.gold { border-left-color: var(--gold); }
+.usage-block.blue { border-left-color: var(--blue); }
+.usage-block.red { border-left-color: var(--red); }
+.usage-label { font-size: 11px; font-weight: 800; color: var(--muted); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 6px; }
+.usage-body { font-size: 13px; line-height: 1.75; }
+.usage-body strong { color: var(--red); }
+.toc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
+.toc-grid a { display: flex; gap: 10px; padding: 7px 10px; border: 1px solid var(--line); border-radius: 6px; text-decoration: none; color: var(--ink); background: #fff; font-size: 13px; align-items: center; }
+.toc-grid a:hover { background: var(--wash); }
+.toc-num { display: inline-block; min-width: 26px; font-weight: 800; color: var(--teal); }
+.matrix-table { font-size: 12px; }
+.matrix-table th, .matrix-table td { padding: 6px 8px; text-align: center; }
+.matrix-table th:first-child, .matrix-table td:first-child { text-align: left; font-weight: 700; }
+.rating { font-weight: 800; }
+.rating.three { color: var(--red); }
+.rating.two { color: var(--gold); }
+.rating.one { color: var(--blue); }
+.rating.none { color: var(--line); font-weight: 400; }
+.template-step { padding: 14px 16px; border: 1px solid var(--line); border-radius: 8px; background: #fff; border-left: 4px solid var(--gold); margin-top: 10px; }
+.template-step .step-num { font-size: 11px; font-weight: 800; color: var(--gold); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 6px; }
+.template-step .step-tech { font-size: 14px; font-weight: 800; margin-bottom: 6px; }
+.template-step .step-body { font-size: 13px; line-height: 1.7; }
+.template-step .step-body strong { color: var(--red); }
+.formula { padding: 12px 14px; background: var(--teal-soft); border: 1px solid #b3d9d3; border-radius: 8px; margin-top: 10px; font-family: monospace; font-size: 13px; }
+.formula strong { color: var(--teal); }
+.checklist { padding: 14px 16px; border: 1px solid var(--line); border-radius: 8px; background: #fff; margin-top: 10px; }
+.checklist li { padding: 4px 0; font-size: 13px; }
+@media (max-width: 860px) {
+  main { width: 100%; margin: 0; border-left: 0; border-right: 0; }
+  header.doc-head, section.entry, section.toc-section { padding: 22px 18px; }
+  .meta-row, .grid-2, .grid-3, .toc-grid { grid-template-columns: 1fr; }
+  .entry-num { font-size: 28px; }
+}
+</style>
+</head>
+<body>
+<main>
+<header class="doc-head">
+  <h1>附录 B · 议题词典</h1>
+  <p class="doc-subtitle">Theme 1 + Theme 2 · 6 个议题 × NESA 子考点 × 本文承载 × Q3/Q4 应用</p>
+  <div class="meta-row"><div class="meta-card"><span class="meta-label">议题数</span><span class="meta-value">6 议题</span></div><div class="meta-card"><span class="meta-label">Theme 范围</span><span class="meta-value">Theme 1 + Theme 2</span></div><div class="meta-card"><span class="meta-label">Out of scope</span><span class="meta-value">Theme 3 / Theme 4</span></div><div class="meta-card"><span class="meta-label">Q3/Q4 方向</span><span class="meta-value">30+ 题型样本</span></div></div>
+  <div class="callout">
+    <strong>使用场景：</strong>本文件是《夹缝中的光芒》hub 的横切参考——用于跨章节查询特定<strong>Theme 1 + Theme 2 严格边界 (无 Theme 3/4)</strong>。配合 <code>章节分析_全8章.html</code>（纵切：每章 6 块完整分析）使用。
+  </div>
+</header>
+
+<section class="toc-section">
+  <h2>速查</h2>
+  <div class="toc-grid">
+    <a href="#issue-1-1"><span class="toc-num">1.1</span>变化的社会对个人产生的冲击</a><a href="#issue-1-2"><span class="toc-num">1.2</span>现代社会中的性别角色</a><a href="#issue-1-3"><span class="toc-num">1.3</span>当代社会中的家庭</a><a href="#issue-2-1"><span class="toc-num">2.1</span>现代年轻人的压力</a><a href="#issue-2-2"><span class="toc-num">2.2</span>教育在年轻人生活中的位置</a><a href="#issue-2-3"><span class="toc-num">2.3</span>文化对年轻人的影响</a>
+  </div>
+</section>
+
+
+<section class="entry" id="issue-1-1">
+  <div class="entry-head">
+    <span class="entry-num" style="font-size:30px;">1.1</span>
+    <div>
+      <div class="entry-title">变化的社会对个人产生的冲击</div>
+      <div class="entry-meta"><em>Impact of Social Change on Individuals</em></div>
+    </div>
+  </div>
+
+  <h3><span class="num">1</span>NESA 子考点</h3>
+  <ul><li>1.1a 社会的进步、发展对个人的影响</li><li>1.1b 个人的角色及职责</li></ul>
+
+  <h3><span class="num">2</span>本文承载</h3>
+  <table>
+    <thead><tr><th>章节</th><th>人物/语境</th><th>关键引文</th><th>承载点</th></tr></thead>
+    <tbody><tr><td><strong>第 1 章</strong></td><td>方法论开篇</td><td><em>「「文凭贬值的呼声几乎成为共识」」</em></td><td>社会判断的反向直觉</td></tr><tr><td><strong>第 2 章</strong></td><td>两代就业模式</td><td><em>「「国家包分配」→ 市场化就业的代际断裂」</em></td><td>制度更迭对命运基底的重塑</td></tr><tr><td><strong>第 3 章</strong></td><td>梦兰 + 海燕</td><td><em>「「中国乡村城镇化的进程......渗透进千家万户的细部」」</em></td><td>城镇化对家庭结构的渗透</td></tr><tr><td><strong>第 4 章</strong></td><td>陈倩 / 大顺 / 国伟</td><td><em>「「宁愿开厂，也不愿给别人打工」」</em></td><td>地域经济结构对职业观念的塑造</td></tr><tr><td><strong>第 6 章</strong></td><td>海燕劳务派遣</td><td><em>「「劳务派遣是高等教育市场化在就业层面的直接体现」」</em></td><td>市场化对青年职业入口的重塑</td></tr></tbody>
+  </table>
+
+  <h3><span class="num">3</span>Q3 题型方向</h3>
+  <ul><li>作者如何呈现两代大学生在就业模式上的差异？</li><li>作者如何通过具体家庭案例呈现城镇化进程的复杂性？</li><li>作者如何通过对话引用和对比手法呈现不同地区年轻人职业观念的差异？</li></ul>
+
+  <h3><span class="num">4</span>Q4 essay 钩子</h3>
+  <ul><li>「年轻人面对社会变革的回应方式决定了他们的成长轨迹」——通过夹缝中的光芒 vs 漂向北方/大江大河</li><li>「个人在社会变革中寻求发展，需要抓住机会」——夹缝海燕/梅怡 + 大江大河雷东宝/杨巡</li><li>「年轻人在制度更迭中如何重新定义安身立命的标准」——夹缝丽颖/素婷 + 二马马威</li></ul>
+
+  <div class="banned-zone"><strong>议题边界（不要写偏）：</strong>1.1 <strong>不包含</strong>「家庭代际矛盾」（属 1.3）/「女性独立」（属 1.2）/「教育扩张」（属 2.2）。学生易把 1.1 写成万能筐——必须聚焦「<strong>社会变化 → 个人冲击</strong>」这一因果方向。</div>
+  <div class="callout"><strong>学生陷阱：</strong>易把 1.1 写成空泛的「时代背景影响人」——必须具体到<strong>哪种社会变化</strong>（制度更迭 / 城镇化 / 市场化）和<strong>哪种个人冲击</strong>（身份、命运、价值观）。</div>
+</section>
+
+<section class="entry" id="issue-1-2">
+  <div class="entry-head">
+    <span class="entry-num" style="font-size:30px;">1.2</span>
+    <div>
+      <div class="entry-title">现代社会中的性别角色</div>
+      <div class="entry-meta"><em>Gender Roles in Modern Society</em></div>
+    </div>
+  </div>
+
+  <h3><span class="num">1</span>NESA 子考点</h3>
+  <ul><li>1.2a 女性地位的改变：社会，家庭</li><li>1.2b 男女各自所扮演的角色，贡献</li><li>1.2c 不同性别角色的改变</li></ul>
+
+  <h3><span class="num">2</span>本文承载</h3>
+  <table>
+    <thead><tr><th>章节</th><th>人物/语境</th><th>关键引文</th><th>承载点</th></tr></thead>
+    <tbody><tr><td><strong>第 4 章</strong></td><td>陈倩</td><td><em>「「全面参与和管理工厂的整体事务」」</em></td><td>教育赋能下的女性家族企业管理</td></tr><tr><td><strong>第 5 章</strong></td><td>丽颖母亲</td><td><em>「「不工作就没有发言权，不工作就无法独立」」</em></td><td>传统家庭主妇的觉醒</td></tr><tr><td><strong>第 5 章</strong></td><td>丽颖本人</td><td><em>「「所有的事情，从高考的志愿、专业、人生规划，都自己做主」」</em></td><td>新一代女性的全方位自主</td></tr><tr><td><strong>第 7 章</strong></td><td>素婷 (核心)</td><td><em>「「年龄困不住一个女人」「我们最大的敌人，是以男人的眼光来要求自己」」</em></td><td>独立女性的哲学宣言</td></tr><tr><td><strong>第 6 章</strong></td><td>海燕</td><td><em>「教育让她跳出「照顾弟弟妹妹、早早辍学、嫁人生子」的轨迹」</em></td><td>教育打破女性的传统命运链</td></tr></tbody>
+  </table>
+
+  <h3><span class="num">3</span>Q3 题型方向</h3>
+  <ul><li>作者如何运用对比技巧呈现两代女性在性别角色认知上的转变？</li><li>作者如何通过直接引语展现素婷的女性主义立场？</li><li>作者如何通过陈倩的婚后选择探讨女性在家族企业中的新角色？</li></ul>
+
+  <h3><span class="num">4</span>Q4 essay 钩子</h3>
+  <ul><li>「现代女性的成功标准已从外部确认转向内部自决」——夹缝素婷/陈倩/丽颖母 + 二马温都太太/伊牧师女儿</li><li>「教育是女性突破传统命运链的核心杠杆」——夹缝海燕/梦兰 + 大江大河宋运萍</li></ul>
+
+  <div class="banned-zone"><strong>议题边界（不要写偏）：</strong>1.2 <strong>不</strong>是「女性故事」的统称——必须聚焦在「<strong>性别角色的变化</strong>」这一变量上。素婷的「拒绝婚房」是 1.2，但素婷的「跳槽哲学」是 2.1，不要混淆。</div>
+  <div class="callout"><strong>学生陷阱：</strong>易将所有女性人物笼统归为 1.2——其实每个女性人物在不同议题上的承载强度不同（见附录 C 矩阵）。</div>
+</section>
+
+<section class="entry" id="issue-1-3">
+  <div class="entry-head">
+    <span class="entry-num" style="font-size:30px;">1.3</span>
+    <div>
+      <div class="entry-title">当代社会中的家庭</div>
+      <div class="entry-meta"><em>Family in Contemporary Society</em></div>
+    </div>
+  </div>
+
+  <h3><span class="num">1</span>NESA 子考点</h3>
+  <ul><li>1.3a 家庭结构、分工的改变</li><li>1.3b 家庭关系的转变</li></ul>
+
+  <h3><span class="num">2</span>本文承载</h3>
+  <table>
+    <thead><tr><th>章节</th><th>人物/语境</th><th>关键引文</th><th>承载点</th></tr></thead>
+    <tbody><tr><td><strong>第 3 章</strong></td><td>梦兰家庭</td><td><em>「母亲六年陪读 + 父亲购地建房」</em></td><td>渐进式同步迁移的家庭重组</td></tr><tr><td><strong>第 3 章</strong></td><td>海燕家庭</td><td><em>「父母外出务工 + 子女分散寄养」</em></td><td>分离式留守的家庭重组</td></tr><tr><td><strong>第 6 章</strong></td><td>海燕大学后</td><td><em>「周末从龙洞跨城到荔湾父母租处煮饭洗衣」</em></td><td>新型家庭的「补偿性同框」</td></tr><tr><td><strong>第 4 章</strong></td><td>陈倩婚姻</td><td><em>「陈倩家陶瓷厂 + 婆家陶瓷厂资源整合」</em></td><td>婚姻作为家庭经济共同体的形成</td></tr><tr><td><strong>第 5 章</strong></td><td>丽颖家庭</td><td><em>「母亲从家庭主妇到公安局后勤」</em></td><td>家庭分工模式的代际重写</td></tr></tbody>
+  </table>
+
+  <h3><span class="num">3</span>Q3 题型方向</h3>
+  <ul><li>作者如何呈现城镇化进程中家庭结构、分工的根本性转变？</li><li>作者如何通过两个家庭案例对比探讨城镇化对家庭的不同影响？</li><li>作者如何通过陈倩的婚姻探讨当代家庭从情感共同体到经济共同体的转型？</li></ul>
+
+  <h3><span class="num">4</span>Q4 essay 钩子</h3>
+  <ul><li>「当代家庭的重组以教育投资为核心枢纽」——夹缝 + 别告诉她（家庭信息分工）/ 漂向北方（迁徙家庭）</li><li>「家庭分工从性别约定转向能力分工」——夹缝陈倩/丽颖母 + 二马温都母女</li></ul>
+
+  <div class="banned-zone"><strong>议题边界（不要写偏）：</strong>1.3 <strong>不</strong>等同于「家庭故事」——必须聚焦「<strong>家庭结构 / 分工 / 关系的变化</strong>」。家庭内部情感冲突单独存在不构成 1.3——必须连接到结构性转变。</div>
+  <div class="callout"><strong>学生陷阱：</strong>易将 1.3 与 1.2 混淆——丽颖母亲的觉醒同时涉及 1.2（女性独立）和 1.3（家庭分工重写）。学生应按题干引导明确锚定其中之一。</div>
+</section>
+
+<section class="entry" id="issue-2-1">
+  <div class="entry-head">
+    <span class="entry-num" style="font-size:30px;">2.1</span>
+    <div>
+      <div class="entry-title">现代年轻人的压力</div>
+      <div class="entry-meta"><em>Pressures on Today's Youth</em></div>
+    </div>
+  </div>
+
+  <h3><span class="num">1</span>NESA 子考点</h3>
+  <ul><li>2.1a 压力产生的原因</li><li>2.1b 释放压力、消除代沟的方法</li></ul>
+
+  <h3><span class="num">2</span>本文承载</h3>
+  <table>
+    <thead><tr><th>章节</th><th>人物/语境</th><th>关键引文</th><th>承载点</th></tr></thead>
+    <tbody><tr><td><strong>第 5 章</strong></td><td>丽颖</td><td><em>「「劳务派遣」+「领导并不尊重」+「抑郁的阴霾」+「专门被坑的八零后」」</em></td><td>制度性 + 心理双重压力</td></tr><tr><td><strong>第 6 章</strong></td><td>海燕</td><td><em>「「学会应酬、说漂亮话......对拙朴的乡村孩子而言，是一个很大的挑战」」</em></td><td>城乡过渡期的职场适应压力</td></tr><tr><td><strong>第 7 章</strong></td><td>素婷</td><td><em>「「跳槽极为普遍的广东地区」中的稳定策略 / 古筝、韩语等精神资产」</em></td><td>主动设计的抗压策略</td></tr><tr><td><strong>第 8 章</strong></td><td>梅怡</td><td><em>「「每天叫醒我的只有坚强」「亏空了所有积蓄」」</em></td><td>创业的物质 + 精神双重代价</td></tr></tbody>
+  </table>
+
+  <h3><span class="num">3</span>Q3 题型方向</h3>
+  <ul><li>作者如何通过对比与心理描写呈现丽颖职业发展中的困境与挑战？</li><li>作者如何通过素婷的人生选择呈现年轻人应对压力的多元策略？</li><li>作者如何通过具体数据细节突出梅怡创业选择的代价？</li></ul>
+
+  <h3><span class="num">4</span>Q4 essay 钩子</h3>
+  <ul><li>「八零后并非整齐被动——他们在制度压力下分化出多种应对策略」——夹缝丽颖/素婷/梅怡 + 漂向北方</li><li>「年轻人的压力源已从单一就业扩展到身份、关系、价值观多个维度」——夹缝 + 别告诉她碧莉的中西夹缝感</li></ul>
+
+  <div class="banned-zone"><strong>议题边界（不要写偏）：</strong>2.1 <strong>不</strong>限于「就业压力」——还包括身份不稳、人际焦虑、抑郁、孤独、代际责任等多维度压力。但<strong>不要</strong>把所有人物的负面情绪都笼统归为 2.1——必须连接到「<strong>当代社会</strong>」这一时代特征。</div>
+  <div class="callout"><strong>学生陷阱：</strong>易把 2.1 写成「丽颖很惨」「梅怡很苦」的故事汇报——必须分析压力的<strong>结构性来源</strong>（如劳务派遣制度、市场化、城乡差距）。</div>
+</section>
+
+<section class="entry" id="issue-2-2">
+  <div class="entry-head">
+    <span class="entry-num" style="font-size:30px;">2.2</span>
+    <div>
+      <div class="entry-title">教育在年轻人生活中的位置</div>
+      <div class="entry-meta"><em>Education in Young People's Lives</em></div>
+    </div>
+  </div>
+
+  <h3><span class="num">1</span>NESA 子考点</h3>
+  <ul><li>2.2a 教育的方法及其影响</li><li>2.2b 教育在年轻人发展中的作用</li></ul>
+
+  <h3><span class="num">2</span>本文承载</h3>
+  <table>
+    <thead><tr><th>章节</th><th>人物/语境</th><th>关键引文</th><th>承载点</th></tr></thead>
+    <tbody><tr><td><strong>第 1 章</strong></td><td>方法论核心</td><td><em>「文凭贬值的呼声几乎成为共识，读书改变命运也日渐被人怀疑」</em></td><td>全书反向直觉的起点</td></tr><tr><td><strong>第 6 章</strong></td><td>海燕求职</td><td><em>「从一名劳务派遣的漂泊女孩，变成了一名金融系统的正式员工」</em></td><td>教育撬动命运的具体路径</td></tr><tr><td><strong>第 3 章</strong></td><td>梦兰 / 海燕家</td><td><em>「三个孩子读书的学费、伙食费，爷爷奶奶的生活费、医药费」</em></td><td>家庭教育投资的极致形态</td></tr><tr><td><strong>第 2 章</strong></td><td>两代就业模式</td><td><em>「整体上，通过高考，他们依然能获得在社会立足的根基」</em></td><td>教育价值机制的代际变化</td></tr></tbody>
+  </table>
+
+  <h3><span class="num">3</span>Q3 题型方向</h3>
+  <ul><li>作者如何通过对比研究方法探讨当代教育价值的变化？</li><li>作者如何通过海燕的成长经历探讨教育在年轻人生活中的位置？</li><li>作者如何通过两代大学生的就业数据呈现教育价值兑现机制的转型？</li></ul>
+
+  <h3><span class="num">4</span>Q4 essay 钩子</h3>
+  <ul><li>「教育是社会变革中年轻人改变命运的最重要杠杆」——夹缝 + 大江大河宋运辉「背诵《人民日报》」</li><li>「教育的价值从制度兑现转向个体激活」——夹缝 + 二马马威「跨国教育」/漂向北方「乡到城」</li></ul>
+
+  <div class="banned-zone"><strong>议题边界（不要写偏）：</strong>2.2 <strong>不</strong>限于学校制度——还包括家庭教育、自我学习、文化资本传递。但<strong>不要</strong>把所有「读书」「学习」事件归为 2.2——必须连接到「教育在年轻人<strong>发展</strong>中的<strong>作用</strong>」。</div>
+  <div class="callout"><strong>学生陷阱：</strong>易将 2.2 写成「教育很重要」的口号——必须呈现教育<strong>如何</strong>起作用（机制）+ 在<strong>什么样的代际背景</strong>下起作用（变化）。</div>
+</section>
+
+<section class="entry" id="issue-2-3">
+  <div class="entry-head">
+    <span class="entry-num" style="font-size:30px;">2.3</span>
+    <div>
+      <div class="entry-title">文化对年轻人的影响</div>
+      <div class="entry-meta"><em>Cultural Influences on Youth</em></div>
+    </div>
+  </div>
+
+  <h3><span class="num">1</span>NESA 子考点</h3>
+  <ul><li>2.3a 经济的影响，改变了传统价值观</li><li>2.3b 如何把握自己</li></ul>
+
+  <h3><span class="num">2</span>本文承载</h3>
+  <table>
+    <thead><tr><th>章节</th><th>人物/语境</th><th>关键引文</th><th>承载点</th></tr></thead>
+    <tbody><tr><td><strong>第 4 章</strong></td><td>潮汕 vs 内地</td><td><em>「宁愿开厂，也不愿给别人打工」</em></td><td>地域经济文化的代际传递</td></tr><tr><td><strong>第 7 章</strong></td><td>素婷</td><td><em>「觉得精神上的追求比拥有一套房子更重要」</em></td><td>后物质价值观对传统的反叛</td></tr><tr><td><strong>第 8 章</strong></td><td>梅怡</td><td><em>「张扬个性、实现自己的梦想」</em></td><td>城市文化下的创业价值</td></tr><tr><td><strong>第 2 章</strong></td><td>代际对比</td><td><em>「八零后对稳定早已没有太多执念」</em></td><td>代际文化的整体变迁</td></tr></tbody>
+  </table>
+
+  <h3><span class="num">3</span>Q3 题型方向</h3>
+  <ul><li>作者如何通过潮汕家庭与内地家庭的对比呈现地域文化对职业观念的影响？</li><li>作者如何通过素婷的人生哲学呈现后物质价值观在新一代中的兴起？</li><li>作者如何呈现「张扬个性」「追求精神生活」等价值观在八零后中的扩散？</li></ul>
+
+  <h3><span class="num">4</span>Q4 essay 钩子</h3>
+  <ul><li>「地域文化塑造代际价值观」——夹缝潮汕vs内地 + 漂向北方北漂vs故乡</li><li>「八零后的价值观从物质成功转向精神生活」——夹缝素婷/梅怡 + 大江大河</li></ul>
+
+  <div class="banned-zone"><strong>议题边界（不要写偏）：</strong>2.3 <strong>不</strong>等同于「传统文化」——更聚焦「<strong>文化对年轻人的影响</strong>」，包括经济文化、消费文化、地域文化、代际文化。</div>
+  <div class="callout"><strong>学生陷阱：</strong>易将 2.3 写成「文化很重要」——必须指出<strong>哪一类文化</strong>（地域 / 经济 / 代际）+ <strong>如何影响</strong>（价值观 / 行为 / 选择）+ <strong>对哪一代</strong>（八零后 vs 七零后）。</div>
+</section>
+
+</main>
+</body>
+</html>

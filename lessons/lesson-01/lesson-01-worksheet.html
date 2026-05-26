@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>《夹缝中的光芒》L1 学生工作纸 · 历史背景 + 议题导入</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+@page{size:A4;margin:18mm 20mm}
+html{color:#1F1F1F;background:#fafafa}
+body{
+  font-family:'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif;
+  font-size:11pt;line-height:1.7;color:#1F1F1F;
+  max-width:210mm;margin:0 auto;padding:20mm;background:#fff;
+}
+h1,h2,h3,h4{
+  font-family:'Noto Sans SC','Microsoft YaHei',sans-serif;
+  font-weight:700;color:#1e2a4a;margin:1em 0 .5em;page-break-after:avoid;
+}
+h1{font-size:18pt;text-align:center;padding:.5em 0;border-bottom:2px solid #4a6a8a}
+h2{font-size:14pt;border-bottom:2px solid #1e2a4a;padding-bottom:4px;margin-top:1.8em}
+h3{font-size:12.5pt;color:#4a6a8a;margin-top:1.2em}
+h4{font-size:11.5pt;color:#4a6a8a}
+p{margin:.6em 0}
+strong{color:#1e2a4a;font-weight:700}
+em{color:#4a6a8a;font-style:italic}
+blockquote{
+  border-left:3px solid #1e2a4a;padding:.5em 1em;margin:.8em 0;
+  background:#F5F5F5;font-family:'Noto Serif SC',serif;font-size:11pt;
+}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:10.5pt;page-break-inside:avoid}
+table,th,td{border:1px solid #CCCCCC}
+th,td{padding:8px 12px;vertical-align:top;text-align:left}
+th{background:#1e2a4a;color:#fff;font-weight:700}
+tr:nth-child(even) td{background:#F8F9FA}
+ul,ol{margin:.5em 0 .5em 1.6em}
+li{margin:.3em 0}
+
+/* Title block */
+.titleblock{
+  border:1.5px solid #1e2a4a;margin:1em 0 1.5em;page-break-inside:avoid;
+}
+.titleblock .top{
+  background:#1e2a4a;color:#fff;padding:14px 18px;text-align:center;
+}
+.titleblock .top .h{font-size:15pt;font-weight:700;letter-spacing:.04em}
+.titleblock .top .s{font-size:10.5pt;opacity:.85;margin-top:4px}
+.titleblock .mid{
+  padding:14px 18px;text-align:center;
+}
+.titleblock .mid .a{font-size:13pt;font-weight:700;color:#1e2a4a}
+.titleblock .mid .b{font-size:11pt;color:#4a6a8a;margin-top:4px}
+.titleblock .mid .c{font-size:10pt;color:#4a6a8a;font-style:italic;margin-top:2px}
+
+/* Name row */
+.namerow{display:grid;grid-template-columns:1.3fr 1.3fr 1fr;border:1px solid #CCCCCC;font-size:10.5pt;margin:.6em 0 1.4em}
+.namerow > div{padding:8px 12px;border-right:1px solid #CCCCCC}
+.namerow > div:last-child{border-right:0}
+
+/* Info boxes (light blue / light gold) */
+.info{
+  border:1px solid #cfdbef;background:#E8F0FE;padding:14px 18px;
+  margin:1em 0;border-radius:3px;page-break-inside:avoid;
+}
+.info.gold{border-color:#e6d29a;background:#FFF8E7}
+.info.grey{border-color:#dddddd;background:#F5F5F5}
+.info .head{font-weight:700;color:#1e2a4a;margin-bottom:8px;font-size:11pt}
+.info ul{margin:.2em 0 .2em 1.4em}
+.info li{margin:.18em 0;font-size:10.5pt}
+
+/* Data emphasis box */
+.databox{
+  border:1px solid #1e2a4a;padding:18px 22px;margin:1em 0;
+  background:linear-gradient(135deg,#F8F9FA 0%,#fff 100%);
+  text-align:center;page-break-inside:avoid;
+}
+.databox .data{
+  display:flex;justify-content:center;align-items:baseline;gap:1.6em;
+  margin:.6em 0;font-family:'Noto Serif SC',serif;
+}
+.databox .data .n{font-size:38pt;font-weight:700;color:#1e2a4a;letter-spacing:-.02em}
+.databox .data .arrow{font-size:24pt;color:#4a6a8a;opacity:.6}
+.databox .lbl{font-size:9.5pt;color:#4a6a8a;letter-spacing:.1em;text-transform:uppercase;margin-top:6px}
+
+/* Writing lines (dotted underlines) */
+.wl{
+  border-bottom:1px dotted #777;height:1.7em;margin:.2em 0;
+}
+.wl-thick{
+  border-bottom:1px solid #555;height:1.9em;margin:.3em 0;
+}
+
+/* Two column brainstorm */
+.twocol{
+  display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:1em 0;
+  page-break-inside:avoid;
+}
+.twocol .col{
+  border:1px solid #1e2a4a;padding:12px 14px;
+}
+.twocol .col h4{margin-top:0;color:#1e2a4a;border-bottom:1px solid #cfdbef;padding-bottom:6px;margin-bottom:8px}
+.twocol .col .hint{font-size:9.5pt;color:#666;font-style:italic;margin:.3em 0 .8em}
+
+/* Highlight (本作位置) */
+.highlight-row td{background:#FFF8E7 !important;font-weight:700;color:#1e2a4a}
+
+@media print{
+  body{background:#fff;padding:0;max-width:100%}
+  table,.titleblock,.info,.databox,.twocol{page-break-inside:avoid}
+  h1,h2,h3,h4{page-break-after:avoid}
+}
+.pagebreak{page-break-before:always}
+</style>
+</head>
+<body>
+
+<!-- ===================== TITLE BLOCK ===================== -->
+<div class="titleblock">
+  <div class="top">
+    <div class="h">Year 12 Chinese &amp; Literature</div>
+    <div class="s">议题 1.1 社会冲击 · 1.2 性别角色 · 1.3 当代家庭 · 2.1 年轻人压力 · 2.2 教育的地位</div>
+  </div>
+  <div class="mid">
+    <div class="a">第 1 课 · 历史背景 + 议题导入</div>
+    <div class="b">走进《夹缝中的光芒》—— 文体 · 作者 · 时代脉络 · 议题地图</div>
+    <div class="c">L1 · Approaching <em>The Light in the Crevice</em> — Context &amp; Framework</div>
+  </div>
+</div>
+
+<!-- ===================== OBJECTIVES ===================== -->
+<div class="info">
+  <div class="head">Learning Objectives</div>
+  <ul>
+    <li>Distinguish the three genres (fiction / essay / nonfiction) and identify which one this text belongs to</li>
+    <li>Understand author Huang Deng's background and her motivation for spending ten years writing this book</li>
+    <li>Master 11 key historical-context terms (985 / 211 / second-tier universities / diploma devaluation / university expansion, etc.)</li>
+    <li>Build the HSC issues map: which prescribed issues this text addresses, and what the 2025 HSC Q4 has already tested</li>
+    <li>Brainstorm the two core metaphors of the title — <em>the crevice</em> and <em>the light</em></li>
+  </ul>
+</div>
+
+<p style="font-size:10pt;color:#666;font-style:italic;margin-top:1em">
+  Note: This lesson does not enter the text yet. We first build the scaffolding — genre, author, historical context, issues map — before moving into character-by-character close reading from L2 onwards.
+</p>
+
+<!-- ===================== PART A 作品速览 ===================== -->
+<h2>Part A · 作品速览 Text Overview</h2>
+
+<table>
+  <colgroup>
+    <col style="width:22%"><col style="width:78%">
+  </colgroup>
+  <tr><th>作者</th><td><strong>黄灯</strong>（1974-）｜湖南汨罗人｜中山大学文学博士｜学者 + 非虚构作家 + 大学教师</td></tr>
+  <tr><th>类型</th><td><strong>非虚构纪实文学（Nonfiction narrative）</strong>—— 不是小说，不是散文</td></tr>
+  <tr><th>出处</th><td>收录于《我的二本学生》第三章第三节｜人民文学出版社｜2020 年 8 月</td></tr>
+  <tr><th>跟踪对象</th><td>广东 F 学院 062111 班｜52 名学生｜2006 入学 · 2010 毕业｜作者跟踪走访 10 年</td></tr>
+  <tr><th>对照组</th><td>作者自己 1995 年毕业的 9202 班（七零后，包分配时代）</td></tr>
+  <tr><th>核心人物</th><td>钟梦兰 · 潘海燕 · 陈倩 · 马丽颖 · 刘素婷 · 张梅怡 · 王国伟 …（下节课起逐个介绍）</td></tr>
+</table>
+
+<div class="info gold">
+  <div class="head">作者自述</div>
+  <blockquote>我想写的不是教育，而是这群普通孩子如何在大时代里，找到自己的位置。<br>
+  <span style="font-size:9.5pt;color:#666;font-style:italic">—— 黄灯访谈，2020</span></blockquote>
+</div>
+
+<!-- ===================== PART B 三类文体 ===================== -->
+<h2>Part B · 三类文体辨别 Three Genres</h2>
+
+<p>请阅读下表，并在最后一行 <strong>"本作属于"</strong> 一栏打 ✓ 。</p>
+
+<table>
+  <colgroup>
+    <col style="width:18%"><col style="width:27%"><col style="width:27%"><col style="width:28%">
+  </colgroup>
+  <tr>
+    <th></th>
+    <th>A · 小说 Fiction</th>
+    <th>B · 散文 Essay</th>
+    <th>C · 非虚构 Nonfiction</th>
+  </tr>
+  <tr>
+    <td><strong>人物</strong></td>
+    <td>作者编出来的虚构人物</td>
+    <td>作者本人 / 作者熟人</td>
+    <td>真实人物（用真名或化名）</td>
+  </tr>
+  <tr>
+    <td><strong>情节</strong></td>
+    <td>可以完全虚构</td>
+    <td>个人回忆 / 见闻 / 议论</td>
+    <td>真实事件 + 田野调查记录</td>
+  </tr>
+  <tr>
+    <td><strong>视角</strong></td>
+    <td>第一 / 第三人称都常见</td>
+    <td>多用第一人称"我"</td>
+    <td>作者亲自参与 + 反思评论</td>
+  </tr>
+  <tr>
+    <td><strong>课程例子</strong></td>
+    <td>《二马》《大江大河》（Y12 prescribed novels）</td>
+    <td>（学生想一篇你读过的散文）______________</td>
+    <td><strong>《夹缝中的光芒》</strong>（Y12 唯一的非虚构 prescribed text）</td>
+  </tr>
+  <tr>
+    <td><strong>本作属于</strong></td>
+    <td style="text-align:center">☐ A</td>
+    <td style="text-align:center">☐ B</td>
+    <td style="text-align:center">☐ C</td>
+  </tr>
+</table>
+
+<!-- ===================== PART C 大学分层 ===================== -->
+<h2>Part C · 中国大学分层 Universities</h2>
+
+<p>062111 班所在的广东 F 学院 = <strong>二本</strong>。请阅读下表，理解"二本"在中国大学体系里的位置。</p>
+
+<table>
+  <colgroup>
+    <col style="width:20%"><col style="width:14%"><col style="width:66%">
+  </colgroup>
+  <tr><th>层级</th><th>校数</th><th>说明</th></tr>
+  <tr><td><strong>985 工程</strong></td><td>39 所</td><td>顶尖大学（清华、北大、复旦、上交）。"国家队"。</td></tr>
+  <tr><td><strong>211 工程</strong></td><td>116 所</td><td>重点大学（含 985）。省内一流。</td></tr>
+  <tr><td><strong>一本</strong></td><td>—</td><td>普通本科一批。高考第一批次录取。</td></tr>
+  <tr class="highlight-row"><td><strong>二本 ← 本书主角</strong></td><td>—</td><td>普通本科二批。文凭含金量低于一本，远低于 211。</td></tr>
+  <tr><td><strong>职业技术学院</strong></td><td>—</td><td>大专。三年制为主。</td></tr>
+</table>
+
+<div class="info">
+  <div class="head">想一想 Reflect</div>
+  <p>"二本"既不是精英教育的受益者，也不是被淘汰的人——他们在中间。<strong>作者为什么选择写"中间"这群人？</strong></p>
+  <div class="wl"></div>
+  <div class="wl"></div>
+</div>
+
+<!-- ===================== PART D Vocabulary ===================== -->
+<h2 class="pagebreak">Part D · 关键词汇 Vocabulary（11 个）</h2>
+
+<p>请用自己的话写出每个词的定义。中文 / 英文均可，简短即可。</p>
+
+<table>
+  <colgroup>
+    <col style="width:5%"><col style="width:24%"><col style="width:71%">
+  </colgroup>
+  <tr><th>#</th><th>词汇</th><th>你的定义 Your Definition</th></tr>
+  <tr><td>1</td><td><strong>一本高校</strong></td><td><div class="wl"></div><div class="wl"></div></td></tr>
+  <tr><td>2</td><td><strong>二本高校</strong></td><td><div class="wl"></div><div class="wl"></div></td></tr>
+  <tr><td>3</td><td><strong>985 工程</strong></td><td><div class="wl"></div><div class="wl"></div></td></tr>
+  <tr><td>4</td><td><strong>211 工程</strong></td><td><div class="wl"></div><div class="wl"></div></td></tr>
+  <tr><td>5</td><td><strong>大学扩招</strong></td><td><div class="wl"></div><div class="wl"></div></td></tr>
+  <tr><td>6</td><td><strong>文凭贬值</strong></td><td><div class="wl"></div><div class="wl"></div></td></tr>
+  <tr><td>7</td><td><strong>计划经济</strong></td><td><div class="wl"></div><div class="wl"></div></td></tr>
+  <tr><td>8</td><td><strong>市场经济</strong></td><td><div class="wl"></div><div class="wl"></div></td></tr>
+  <tr><td>9</td><td><strong>高等教育市场化</strong></td><td><div class="wl"></div><div class="wl"></div></td></tr>
+  <tr><td>10</td><td><strong>社会流动</strong></td><td><div class="wl"></div><div class="wl"></div></td></tr>
+  <tr><td>11</td><td><strong>城镇化</strong></td><td><div class="wl"></div><div class="wl"></div></td></tr>
+</table>
+
+<!-- ===================== PART E 数据冲击 ===================== -->
+<h2>Part E · 数据冲击 The Data Shift</h2>
+
+<p>请仔细看下面这组数据，然后回答问题。</p>
+
+<div class="databox">
+  <div class="data">
+    <div>
+      <div class="n">25%</div>
+      <div class="lbl">1992 全国高考录取率</div>
+    </div>
+    <div class="arrow">→</div>
+    <div>
+      <div class="n">56.8%</div>
+      <div class="lbl">2006 全国高考录取率</div>
+    </div>
+  </div>
+  <p style="font-size:9.5pt;color:#4a6a8a;font-style:italic;margin-top:.8em">14 年间，录取率翻倍。这就是"大学扩招"。</p>
+</div>
+
+<h3>思考题 Reflection</h3>
+
+<p><strong>E1.</strong> 这两个数字最直接的含义是什么？（一句话）</p>
+<div class="wl"></div>
+
+<p><strong>E2.</strong> 1992 年考上大学的人 vs 2006 年考上大学的人——哪一组的"文凭"更"值钱"？为什么？</p>
+<div class="wl"></div>
+<div class="wl"></div>
+
+<p><strong>E3.</strong> 062111 班是 2006 年入学的。这组数据对他们的命运可能有什么影响？</p>
+<div class="wl"></div>
+<div class="wl"></div>
+
+<!-- ===================== PART F HSC 议题地图 ===================== -->
+<h2 class="pagebreak">Part F · HSC 议题地图 HSC Issues Mapping</h2>
+
+<p>本作对接 HSC C&amp;L 的五大议题。请在右栏 <strong>预测</strong>：你猜本作里会用什么具体故事或人物来体现这个议题？（不必准确，凭直觉填写。下节课起我们会逐一验证。）</p>
+
+<table>
+  <colgroup>
+    <col style="width:6%"><col style="width:28%"><col style="width:66%">
+  </colgroup>
+  <tr><th></th><th>议题</th><th>你的预测 Prediction</th></tr>
+  <tr class="highlight-row"><td><strong>Core</strong></td><td><strong>Issue 1.1</strong><br>不断变化的社会对个人的冲击</td><td><div class="wl"></div><div class="wl"></div></td></tr>
+  <tr class="highlight-row"><td><strong>Core</strong></td><td><strong>Issue 2.2</strong><br>教育的地位</td><td><div class="wl"></div><div class="wl"></div></td></tr>
+  <tr><td></td><td><strong>Issue 2.1</strong><br>现在年轻人的压力</td><td><div class="wl"></div><div class="wl"></div></td></tr>
+  <tr><td></td><td><strong>Issue 1.3</strong><br>当代社会中的家庭</td><td><div class="wl"></div><div class="wl"></div></td></tr>
+  <tr><td></td><td><strong>Issue 1.2</strong><br>当代社会中的性别角色</td><td><div class="wl"></div><div class="wl"></div></td></tr>
+</table>
+
+<div class="info gold">
+  <div class="head">考情提示 Exam Note</div>
+  <p><strong>2025 HSC Q4 真题</strong>：本作的 <strong>钟梦兰</strong> 和 <strong>潘海燕</strong> 已经与《大江大河》的 <strong>雷东宝</strong> 一起，被考过一道跨文本 Q4。题目核心是 <em>"个人在社会变革中寻求发展，需要抓住机会"</em>。</p>
+  <p style="font-size:10pt">下节课起，我们会逐个人物精读，最后两节课直接用这道真题做 Q4 写作训练。</p>
+</div>
+
+<!-- ===================== PART G Brainstorm ===================== -->
+<h2>Part G · "夹缝中的光芒" Brainstorm</h2>
+
+<p>书名 <em>The Light in the Crevice</em> 已经把整章的论点压缩成五个字。请独立写 5 分钟，再 4 人一组分享。</p>
+
+<div class="twocol">
+  <div class="col">
+    <h4>夹缝是什么？The Crevice</h4>
+    <div class="hint">什么东西在挤压 062111 班？（限制 / 困境 / 不公）</div>
+    <div class="wl-thick"></div>
+    <div class="wl-thick"></div>
+    <div class="wl-thick"></div>
+    <div class="wl-thick"></div>
+    <div class="wl-thick"></div>
+    <div class="wl-thick"></div>
+  </div>
+  <div class="col">
+    <h4>光芒是什么？The Light</h4>
+    <div class="hint">他们抓住了什么？（机会 / 希望 / 突破）</div>
+    <div class="wl-thick"></div>
+    <div class="wl-thick"></div>
+    <div class="wl-thick"></div>
+    <div class="wl-thick"></div>
+    <div class="wl-thick"></div>
+    <div class="wl-thick"></div>
+  </div>
+</div>
+
+<div class="info grey">
+  <div class="head">小组分享提示</div>
+  <p>4 人一组，把每个人写的 "夹缝" 和 "光芒" 合并。看看你们四个人写的 <strong>有什么相同</strong>？<strong>有什么完全不同</strong>？不同的部分，谁说得更有道理？</p>
+</div>
+
+<!-- ===================== PART H 课后任务 ===================== -->
+<h2>Part H · 课后任务 Homework</h2>
+
+<table>
+  <colgroup>
+    <col style="width:8%"><col style="width:22%"><col style="width:70%">
+  </colgroup>
+  <tr><th>#</th><th>类型</th><th>任务</th></tr>
+  <tr>
+    <td><strong>1</strong></td>
+    <td><strong>阅读</strong></td>
+    <td>读课文开篇至 <strong>"9202 班 vs 062111 班"</strong> 对比段（约 3-4 页）。<br>在原文上标出：<em>所有数字</em>（用荧光笔）+ <em>所有"对比"出现的地方</em>（用框圈）。</td>
+  </tr>
+  <tr>
+    <td><strong>2</strong></td>
+    <td><strong>思考</strong></td>
+    <td>写一句话回答：为什么作者要用 <em>"幸运的一代"</em> 和 <em>"夹缝一代"</em> 这两个词来概括两班？<br>（写在下面 ↓）<br><div class="wl"></div><div class="wl"></div></td>
+  </tr>
+  <tr>
+    <td><strong>3</strong></td>
+    <td><strong>词汇</strong></td>
+    <td>把 Part D 的 11 个词全部用自己的话定义一遍（中文 / 英文均可）。</td>
+  </tr>
+</table>
+
+<div class="info">
+  <div class="head">下节课 · L2 预告</div>
+  <p>L2 我们会精读开篇，看作者怎么用 <strong>数据 + 代际对比</strong> 把整本书的"主旋律"立起来。今天你在 Part E 的思考会直接接上 L2 的精读。</p>
+</div>
+
+<p style="text-align:center;font-size:9.5pt;color:#999;margin-top:2em;font-style:italic">
+  — L1 工作纸结束 · End of L1 Worksheet —
+</p>
+
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>夹缝中的光芒 · 第 5 课 · 陈倩 + 张梅怡 (两种创业)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900&family=IBM+Plex+Mono:wght@300;400;500&family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#1a2e1f;--ink-rgb:26,46,31;--paper:#f5f1e8;--paper-rgb:245,241,232;--mono:"IBM Plex Mono",ui-monospace,monospace;--serif-en:"Playfair Display",Georgia,serif;--serif-zh:"Noto Serif SC",serif;--sans-zh:"Noto Sans SC",sans-serif}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:100%;height:100%;overflow:hidden;background:var(--ink);color:var(--paper);font-family:var(--sans-zh)}
+  canvas.bg{position:fixed;inset:0;width:100vw;height:100vh;z-index:0;display:block;transition:opacity 1.2s ease}
+  canvas#bg-light{opacity:0}canvas#bg-dark{opacity:1}
+  body.light-bg canvas#bg-light{opacity:1}body.light-bg canvas#bg-dark{opacity:0}
+  #deck{position:fixed;inset:0;width:10000vw;height:100vh;display:flex;flex-wrap:nowrap;transition:transform .9s cubic-bezier(.77,0,.175,1);z-index:10}
+  .slide{width:100vw;height:100vh;flex:0 0 100vw;position:relative;padding:6vh 6vw 10vh 6vw;display:flex;flex-direction:column;overflow:hidden}
+  .slide.light{color:var(--ink)}.slide.dark{color:var(--paper)}
+  .slide::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none}
+  .slide.light::before{background:rgba(var(--paper-rgb),.78);backdrop-filter:blur(3px)}
+  .slide.dark::before{background:rgba(var(--ink-rgb),.78);backdrop-filter:blur(3px)}
+  .slide.hero.light::before{background:rgba(var(--paper-rgb),.16);backdrop-filter:none}
+  .slide.hero.dark::before{background:rgba(var(--ink-rgb),.12);backdrop-filter:none}
+  .chrome{display:flex;justify-content:space-between;font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.2em;text-transform:uppercase;opacity:.62}
+  .foot{margin-top:auto;display:flex;justify-content:space-between;font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.18em;text-transform:uppercase;opacity:.5}
+  .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;opacity:.6;margin-bottom:2.6vh}
+  .meta{font-family:var(--mono);font-size:max(11px,.88vw);letter-spacing:.16em;text-transform:uppercase;opacity:.6}
+  em{font-style:italic;font-family:var(--serif-en)}
+  .frame{flex:1;display:flex;flex-direction:column;min-height:0}
+  .h-hero{font-family:var(--serif-zh);font-weight:900;font-size:10vw;line-height:.96;letter-spacing:-.02em}
+  .h-xl{font-family:var(--serif-zh);font-weight:700;font-size:6.2vw;line-height:1.08;letter-spacing:-.01em}
+  .h-sub{font-family:var(--serif-zh);font-weight:500;font-size:3.1vw;line-height:1.25;opacity:.7}
+  .h-md{font-family:var(--serif-zh);font-weight:600;font-size:2.3vw;line-height:1.3}
+  .lead{font-family:var(--serif-zh);font-weight:400;font-size:1.75vw;line-height:1.5;opacity:.86}
+  .meta-row{display:flex;gap:1.2em;align-items:baseline;flex-wrap:wrap;font-family:var(--mono);font-size:max(12px,.92vw);letter-spacing:.16em;text-transform:uppercase;opacity:.6}
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:4vw;flex:1;align-content:center}
+  .grid-4{display:grid;grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(2,1fr);gap:4vh 6vw;flex:1;align-content:center}
+  .grid-2-7-5{display:grid;grid-template-columns:7fr 5fr;gap:3vw 4vh;align-items:start}
+  .grid-2-6-6{display:grid;grid-template-columns:1fr 1fr;gap:3vw 4vh;align-items:start}
+  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;font-family:var(--serif-zh);font-size:max(15px,1.2vw);line-height:1.55;opacity:.92}
+  .slide.light .callout{background:rgba(var(--ink-rgb),.05)}
+  .slide.dark .callout{background:rgba(var(--paper-rgb),.06)}
+  .callout-src{display:block;margin-top:1.6vh;font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6}
+  .pillar{display:flex;flex-direction:column;gap:1.2vh;padding-top:1.4vh;border-top:1px solid currentColor;border-color:rgba(127,127,127,.35)}
+  .pillar .ic{font-family:var(--mono);font-size:.75vw;letter-spacing:.24em;text-transform:uppercase;opacity:.55}
+  .pillar .t{font-family:var(--serif-zh);font-weight:700;font-size:1.7vw;line-height:1.18}
+  .pillar .d{font-family:var(--sans-zh);font-weight:400;font-size:max(13px,1vw);opacity:.72;line-height:1.5}
+  .pillar.core{border-top-width:3px}.pillar.core .ic{opacity:.85;font-weight:600}
+  .stat-card{display:flex;flex-direction:column;gap:.8vh;padding-top:1.6vh;border-top:1px solid currentColor;border-color:rgba(127,127,127,.3)}
+  .stat-card .stat-label{font-family:var(--mono);font-size:max(10px,.78vw);letter-spacing:.24em;text-transform:uppercase;opacity:.55}
+  .stat-card .stat-nb{font-family:var(--serif-en);font-weight:800;font-size:5vw;line-height:.9;letter-spacing:-.03em;margin-top:.4vh}
+  .stat-card .stat-nb .stat-unit{font-family:var(--serif-zh);font-weight:500;font-size:.38em;opacity:.72;margin-left:.14em}
+  .stat-card .stat-note{font-family:var(--sans-zh);font-size:max(13px,1.05vw);line-height:1.5;opacity:.72;margin-top:.6vh}
+  .quote-text{font-family:var(--serif-zh);font-weight:500;font-size:max(16px,1.5vw);line-height:1.7;padding:2vh 2.4vw;border-left:3px solid currentColor}
+  .slide.light .quote-text{background:rgba(var(--ink-rgb),.04)}
+  .slide.dark .quote-text{background:rgba(var(--paper-rgb),.06)}
+  u{text-decoration-style:solid;text-decoration-thickness:1.5px;text-underline-offset:5px}
+  #nav{position:fixed;left:50%;bottom:2.6vh;transform:translateX(-50%);z-index:30;display:flex;gap:10px;padding:8px 14px;border-radius:999px;background:rgba(0,0,0,.18);backdrop-filter:blur(10px)}
+  #nav .dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.3);cursor:pointer;transition:all .3s ease;border:0;padding:0}
+  #nav .dot.active{background:rgba(255,255,255,.95);width:22px;border-radius:999px}
+  body.light-bg #nav{background:rgba(255,255,255,.25)}
+  body.light-bg #nav .dot{background:rgba(var(--ink-rgb),.25)}
+  body.light-bg #nav .dot.active{background:rgba(var(--ink-rgb),.9)}
+  #hint{position:fixed;bottom:3vh;right:3vw;z-index:30;font-family:var(--mono);font-size:10px;letter-spacing:.2em;opacity:.4;mix-blend-mode:difference;color:#aaa}
+</style>
+</head>
+<body>
+<canvas id="bg-dark" class="bg"></canvas>
+<canvas id="bg-light" class="bg"></canvas>
+<div id="hint">← → 翻页</div>
+<div id="deck">
+
+<section class="slide hero dark">
+  <div class="chrome"><div>Year 12 Chinese &amp; Literature · L5</div><div>01 / 12</div></div>
+  <div class="frame" style="display:grid;gap:4vh;align-content:center;min-height:80vh">
+    <div class="kicker">第 5 课 · 两个广东女孩</div>
+    <h1 class="h-hero" style="font-size:9vw">陈倩 + 张梅怡</h1>
+    <h2 class="h-sub">Section 4 + 8 · 两种创业逻辑 · 不进体制, 自己闯</h2>
+    <p class="lead" style="max-width:65vw">"夹缝中的光芒"另一种形态——不是高考 + 体制内, 而是<strong>创业</strong>。<br><span style="opacity:.7">陈倩走家族企业路, 张梅怡走草根创业路。同样是广东女孩, 两种逻辑。</span></p>
+    <div class="meta-row"><span>黄灯</span><span>·</span><span>第 4 + 8 节</span><span>·</span><span>议题 1.2 / 2.1 / 2.3</span></div>
+  </div>
+  <div class="foot"><div>L5 · 一节 55 分钟</div><div>— 2026 · #26CL —</div></div>
+</section>
+
+<section class="slide hero light">
+  <div class="chrome"><div>Act I · 陈倩 · 潮汕家族企业</div><div>02 / 12</div></div>
+  <div class="frame" style="display:grid;gap:6vh;align-content:center;min-height:80vh">
+    <div class="kicker">Act I · Section 4</div>
+    <h1 class="h-hero" style="font-size:8.5vw">陈倩</h1>
+    <p class="lead" style="max-width:62vw">出生潮州古巷镇 · 家里有陶瓷厂。<br><span style="opacity:.7">大学毕业回家, 嫁夫家接管家族企业 —— 这条路是"地域+家族+性别"三层因素共同塑造的。</span></p>
+  </div>
+  <div class="foot"><div>Act I · 陈倩</div><div>— · —</div></div>
+</section>
+
+<section class="slide light">
+  <div class="chrome"><div>Act I · 陈倩家庭背景</div><div>03 / 12</div></div>
+  <div class="frame" style="padding-top:5vh">
+    <div class="kicker">Family · 潮汕特色</div>
+    <h2 class="h-xl">家族企业的起点</h2>
+    <div class="grid-4" style="margin-top:5vh">
+      <div class="stat-card"><div class="stat-label">出生地</div><div class="stat-nb" style="font-size:3.4vw">潮州古巷镇</div><div class="stat-note">陶瓷重镇 · "一镇一业"经济模式</div></div>
+      <div class="stat-card"><div class="stat-label">兄弟姐妹</div><div class="stat-nb">4<span class="stat-unit">人</span></div><div class="stat-note">两个姐姐 + 一个弟弟</div></div>
+      <div class="stat-card"><div class="stat-label">家庭经济</div><div class="stat-nb" style="font-size:3vw">陶瓷厂</div><div class="stat-note">爸爸做工艺瓷 · 家里办厂</div></div>
+      <div class="stat-card"><div class="stat-label">毕业初年</div><div class="stat-nb" style="font-size:3vw">回潮州</div><div class="stat-note">先在佛山工作 1 年 · 找不到归宿感 → 2011 回乡</div></div>
+    </div>
+    <p class="lead" style="margin-top:4vh;max-width:80vw;opacity:.85">和钟梦兰 / 王国伟 / 海燕都不同——陈倩家<strong>没有进城务工的必要</strong>。家族企业本身就是经济基础。</p>
+  </div>
+  <div class="foot"><div>L5 · S3 · 陈倩起点</div><div>地域 + 家族经济基础</div></div>
+</section>
+
+<section class="slide dark">
+  <div class="chrome"><div>Act I · 陈倩的选择</div><div>04 / 12</div></div>
+  <div class="frame grid-2-7-5" style="padding-top:5vh">
+    <div>
+      <div class="kicker">Career Choice · 接管而非打工</div>
+      <h2 class="h-xl" style="margin-bottom:3vh">嫁后接管夫家厂</h2>
+      <p style="font-family:var(--sans-zh);font-size:max(14px,1.15vw);line-height:1.6;opacity:.9">陈倩面临的现实:</p>
+      <ul style="padding-left:1.2em;font-family:var(--sans-zh);font-size:max(13px,1.05vw);line-height:1.55;opacity:.85;margin-top:1vh">
+        <li>"<u>潮州工厂遍地, 但大的公司极少</u>"</li>
+        <li>普通文员"<u>月薪只有两千元左右</u>"</li>
+        <li>"<u>稍微好一点的公司, 必须通过关系才能达成</u>"</li>
+        <li>她的人脉<u>没有办法帮她进入大公司</u></li>
+      </ul>
+      <p style="margin-top:2vh;font-family:var(--sans-zh);font-size:max(13px,1.05vw);line-height:1.6;opacity:.85">嫁与同为古巷镇的丈夫(<u>家里也开陶瓷厂</u>) → "<strong>彻底放弃了去外面谋生的念头</strong>"。</p>
+    </div>
+    <div class="callout">
+      她利用自己的<u>专业知识和工作经验</u>, 很快成为丈夫家族企业的一员, 并<strong>全面参与和管理工厂的整体事务</strong> —— 设计、跟单、货款跟踪、产品维护、与客户联系, 每一个环节, 她都了然于胸。
+      <span class="callout-src">第 4 节 · 陈倩接管夫家厂</span>
+    </div>
+  </div>
+  <div class="foot"><div>L5 · S4 · 陈倩选择</div><div>核心管理者 · 不是辅助</div></div>
+</section>
+
+<section class="slide light">
+  <div class="chrome"><div>Act I · 潮汕重商文化</div><div>05 / 12</div></div>
+  <div class="frame" style="padding-top:5vh">
+    <div class="kicker">Regional Culture · "宁愿开厂"</div>
+    <h2 class="h-xl">潮汕父辈的择业观</h2>
+    <div class="quote-text" style="margin-top:4vh;max-width:88vw">大顺爸爸:"<u>宁愿开厂, 也不愿给别人打工</u>。"<br>国伟父亲:"<u>打工没有自由, 还不如自己做个小老板</u>。"<span class="callout-src">第 4 节 · 父辈观念集合</span></div>
+    <div class="grid-3" style="margin-top:5vh;align-items:start">
+      <div class="pillar core"><div class="ic">枫溪镇</div><div class="t">潮州工艺瓷</div><div class="d">陈倩家所在 · 工艺瓷发源地</div></div>
+      <div class="pillar core"><div class="ic">古巷镇</div><div class="t">厨卫洁具</div><div class="d">陈倩夫家所在 · 一镇一业</div></div>
+      <div class="pillar core"><div class="ic">彩塘镇</div><div class="t">不锈钢加工</div><div class="d">另一专业镇</div></div>
+    </div>
+    <p class="lead" style="margin-top:4vh;max-width:80vw;opacity:.85">"一镇一业"的地域分工 + 民营经济传统 → 重塑年轻人的<strong>择业观</strong>:不向往体制内, 而是<u>家族延续式创业</u>。</p>
+  </div>
+  <div class="foot"><div>L5 · S5 · 潮汕文化</div><div>地域决定择业观</div></div>
+</section>
+
+<section class="slide hero dark">
+  <div class="chrome"><div>Act II · 张梅怡 · 草根创业</div><div>06 / 12</div></div>
+  <div class="frame" style="display:grid;gap:6vh;align-content:center;min-height:80vh">
+    <div class="kicker">Act II · Section 8</div>
+    <h1 class="h-hero" style="font-size:8.5vw">张梅怡</h1>
+    <p class="lead" style="max-width:62vw">1987 广州本地 · 父母个体户 · 大学换过 6 份工作。<br><span style="opacity:.7">"从来没有动过心思寻求一份稳定的工作"——张扬个性, 实现梦想, <strong>自主创业</strong>是她的心理动因。</span></p>
+  </div>
+  <div class="foot"><div>Act II · 张梅怡</div><div>— · —</div></div>
+</section>
+
+<section class="slide light">
+  <div class="chrome"><div>Act II · 第一次创业 · 草根艰辛</div><div>07 / 12</div></div>
+  <div class="frame" style="padding-top:5vh">
+    <div class="kicker">First Attempt · 38℃ 城中村</div>
+    <h2 class="h-xl">第一次创业</h2>
+    <div class="grid-4" style="margin-top:4vh">
+      <div class="stat-card"><div class="stat-label">办公环境</div><div class="stat-nb" style="font-size:4vw">30 m²</div><div class="stat-note">城中村租 · 7 人办公(3 兼职)</div></div>
+      <div class="stat-card"><div class="stat-label">月租</div><div class="stat-nb" style="font-size:4vw">¥2,000</div><div class="stat-note">38℃ 天气 · 无空调</div></div>
+      <div class="stat-card"><div class="stat-label">个人工资</div><div class="stat-nb" style="font-size:4vw">¥2,000<span class="stat-unit">/月</span></div><div class="stat-note">为降低开销 · 单间月租 ¥600</div></div>
+      <div class="stat-card"><div class="stat-label">坚持</div><div class="stat-nb">2<span class="stat-unit">年</span></div><div class="stat-note">团队从 7 人减到 4 人</div></div>
+    </div>
+    <div class="callout" style="margin-top:4vh">"<u>别人说每天叫醒你的不是闹钟而是梦想, 对于我, 每天叫醒我的<strong>只有坚强</strong></u>。"<span class="callout-src">第 8 节 · 梅怡自述第一次创业</span></div>
+  </div>
+  <div class="foot"><div>L5 · S7 · 第一次创业</div><div>"叫醒我的只有坚强"</div></div>
+</section>
+
+<section class="slide dark">
+  <div class="chrome"><div>Act II · 第一次失败 · 解散公司</div><div>08 / 12</div></div>
+  <div class="frame" style="padding-top:5vh">
+    <div class="kicker">First Failure · 责任承担</div>
+    <h2 class="h-xl">解散的决定</h2>
+    <div class="quote-text" style="margin-top:4vh;max-width:88vw">公司坚持了两年, 团队从最初的七人变成了四人, <u>为了不给团队成员造成压力</u>, 在<strong>亏空了所有积蓄</strong>后, 她决定<u>解散</u>第一次创业的公司。<span class="callout-src">第 8 节</span></div>
+    <p class="lead" style="margin-top:4vh;max-width:80vw">关键词不是"<em>失败</em>", 是"<strong>不给团队造成压力</strong>"——梅怡的失败不是单纯的商业损失, 而是<u>一个创业者对团队责任的承担</u>。</p>
+    <p style="margin-top:2vh;font-family:var(--sans-zh);font-size:max(14px,1.15vw);line-height:1.6;opacity:.7;max-width:80vw">第一次创业历练的<strong>不是技术, 是态度</strong>。对她而言, "<em>创业以前的所有历练, 都是为了独挡一面的单干</em>"。</p>
+  </div>
+  <div class="foot"><div>L5 · S8 · 第一次失败</div><div>损失 + 学费</div></div>
+</section>
+
+<section class="slide light">
+  <div class="chrome"><div>Act II · 第二次合伙人创业</div><div>09 / 12</div></div>
+  <div class="frame grid-2-7-5" style="padding-top:5vh">
+    <div>
+      <div class="kicker">Second Attempt · 互补 + 风险评估</div>
+      <h2 class="h-xl" style="margin-bottom:3vh">第二次创业</h2>
+      <p style="font-family:var(--sans-zh);font-size:max(14px,1.15vw);line-height:1.6">合伙人 = 英国留学的<strong>闺蜜</strong>。两人<u>能力互补</u>:</p>
+      <ul style="padding-left:1.2em;font-family:var(--sans-zh);font-size:max(13px,1.05vw);line-height:1.55;margin-top:1vh">
+        <li>闺蜜: 看好<strong>留学项目</strong> · 对公司运作缺乏了解</li>
+        <li>梅怡: 对公司运作有经验 · 对互联网知识一窍不通</li>
+        <li><u>互补 = 双方都需要对方</u></li>
+      </ul>
+      <p style="margin-top:2vh;font-family:var(--sans-zh);font-size:max(13px,1.05vw);line-height:1.6">梅怡<u>吸取上次教训</u>: 项目风险评估 + 收益评估 + 客户痛点。</p>
+    </div>
+    <div class="callout">
+      公司创立之时恰逢<strong>国内教育需求的快速释放</strong>, 进展还算顺利……<u>合伙人在英国驻点</u>, 寻求合作项目; 梅怡在国内负责网站运营、推广和客服咨询。
+      <span class="callout-src">第 8 节 · 第二次创业</span>
+      <p style="margin-top:1.5vh;font-family:var(--sans-zh);font-size:max(12px,.95vw);opacity:.75;line-height:1.5">关键时代条件:"<em>国内教育需求的快速释放</em>"——梅怡赶上了<u>第二个机会窗口</u>(K12 / 留学行业上行期)。</p>
+    </div>
+  </div>
+  <div class="foot"><div>L5 · S9 · 第二次创业</div><div>互补 + 时代红利</div></div>
+</section>
+
+<section class="slide hero light">
+  <div class="chrome"><div>Act III · 大引用 · "叫醒我的只有坚强"</div><div>10 / 12</div></div>
+  <div class="frame" style="display:grid;gap:5vh;align-content:center;min-height:80vh">
+    <div class="kicker">The Quote · 草根创业的金句</div>
+    <blockquote style="font-family:var(--serif-zh);font-weight:600;font-size:max(20px,2.6vw);line-height:1.55;letter-spacing:-.005em;max-width:84vw;padding:3vh 3vw;border-left:4px solid currentColor;background:rgba(var(--ink-rgb),.04)">
+      别人说每天叫醒你的不是闹钟而是梦想, 对于我, <u>每天叫醒我的只有坚强</u>。
+    </blockquote>
+    <p class="lead" style="max-width:62vw;opacity:.85">这是夹缝中的另一种"<strong>光芒</strong>" —— 不是体制保障的稳定光, 而是<u>草根创业者用孤独换来的火光</u>。<br><span style="opacity:.7">把"梦想"和"坚强"对照, 让我们看清:八零后创业青年的生存底色不是浪漫, 是<u>独自扛压</u>。</span></p>
+    <div class="meta-row"><span>— 张梅怡</span><span>·</span><span>第 8 节</span></div>
+  </div>
+  <div class="foot"><div>L5 · S10 · 金句</div><div>夹缝里的另一种光</div></div>
+</section>
+
+<section class="slide dark">
+  <div class="chrome"><div>Act III · 写作技巧 · Section 4+8 用了</div><div>11 / 12</div></div>
+  <div class="frame" style="padding-top:5vh">
+    <div class="kicker">Writing Techniques · 四个</div>
+    <h2 class="h-xl">这两节的技巧</h2>
+    <div class="grid-4" style="margin-top:5vh">
+      <div class="pillar core"><div class="ic">技巧 1 · Case Tracking</div><div class="t">个案跟踪叙述</div><div class="d">陈倩 从大学 → 佛山 → 回潮州 → 嫁后接管完整轨迹; 梅怡 从实习 → 第一次创业 → 失败 → 第二次合伙完整轨迹 —— 连续性叙述让选择的<u>逻辑链条</u>看得清。</div></div>
+      <div class="pillar core"><div class="ic">技巧 2 · Direct Quotation</div><div class="t">直接引语</div><div class="d">"<em>宁愿开厂, 也不愿给别人打工</em>" / "<em>打工没有自由, 还不如自己做个小老板</em>" / "<em>叫醒我的只有坚强</em>" —— 保留人物原话, 让<u>价值观直接发声</u>。</div></div>
+      <div class="pillar core"><div class="ic">技巧 3 · Data Details</div><div class="t">具体数字细节</div><div class="d">"<em>月租两千元</em>"、"<em>30 多平方米</em>"、"<em>38℃ 没空调</em>"、"<em>月薪两千元</em>" —— 数字让"创业艰辛"不再抽象。</div></div>
+      <div class="pillar core"><div class="ic">技巧 4 · Categorisation</div><div class="t">分类归纳</div><div class="d">作者把 062111 班职业去向<u>系统分类</u>:公务员 / 金融 / 私企 / 创业 —— 把个案上升到群体规律。</div></div>
+    </div>
+  </div>
+  <div class="foot"><div>L5 · S11 · 四技巧</div><div>TEE 训练材料</div></div>
+</section>
+
+<section class="slide light">
+  <div class="chrome"><div>Act III · 收束 · Closing</div><div>12 / 12</div></div>
+  <div class="frame grid-2-7-5" style="padding-top:8vh;align-content:start">
+    <div>
+      <div class="kicker">课后任务 · Homework</div>
+      <h2 class="h-xl" style="margin-bottom:3vh">这周的练习</h2>
+      <div style="display:flex;flex-direction:column;gap:2.6vh">
+        <div><div class="meta" style="opacity:.7">任务 1 · 两人对照表</div><p style="margin-top:.8vh;font-family:var(--sans-zh);font-size:max(14px,1.15vw);line-height:1.6">在 booklet Part E 完成陈倩 vs 张梅怡的 6 维度对照表(地域 / 家庭基础 / 择业逻辑 / 性别角色 / 困难 / 时代红利)。</p></div>
+        <div><div class="meta" style="opacity:.7">任务 2 · 预读</div><p style="margin-top:.8vh;font-family:var(--sans-zh);font-size:max(14px,1.15vw);line-height:1.6">读到课文<strong>第 5 节(丽颖)</strong>和<strong>第 7 节(刘素婷)</strong>。标出:① 丽颖母亲"<u>井底之蛙</u>"觉醒 ② 刘素婷"<u>岁月对女人</u>"金句。</p></div>
+        <div><div class="meta" style="opacity:.7">任务 3 · TEE Round 4</div><p style="margin-top:.8vh;font-family:var(--sans-zh);font-size:max(14px,1.15vw);line-height:1.6">从 S11 四技巧选 3 个用 TEE 写 Q3 分析。<strong>Effect 三层结构</strong>(直接作用 / 论证目的 / 议题内涵收口)。</p></div>
+      </div>
+    </div>
+    <div class="callout">
+      <strong>下节课 · L6 预告</strong><br>丽颖母女 + 刘素婷 + 班级整体职业归纳 —— 两代女性觉醒, 现代女性精神追求, 全章回望"夹缝/光芒"。<br><span style="opacity:.75">议题:1.2 (性别) + 2.1 (压力) + 1.1 (社会冲击)。</span>
+      <span class="callout-src">L6 · 丽颖 + 刘素婷 + 班级归纳</span>
+    </div>
+  </div>
+  <div class="foot"><div>L5 · S12 · 收束</div><div>下节 · L6</div></div>
+</section>
+
+</div>
+<div id="nav"></div>
+<script>
+const VS=`attribute vec2 position;void main(){gl_Position=vec4(position,0.0,1.0);}`;
+const FS_DARK=`precision highp float;uniform vec2 u_resolution;uniform float u_time;uniform vec2 u_mouse;vec3 palette(float t,vec3 a,vec3 b,vec3 c,vec3 d){return a+b*cos(6.28318*(c*t+d));}void main(){vec2 uv=gl_FragCoord.xy/u_resolution.xy;vec2 p=uv*2.0-1.0;p.x*=u_resolution.x/u_resolution.y;vec2 m=u_mouse*2.0-1.0;m.x*=u_resolution.x/u_resolution.y;float md=length(p-m);float mr=sin(md*15.0-u_time*4.0)*exp(-md*3.0);p+=mr*0.08;vec2 p0=p;for(float i=1.0;i<4.0;i++){p.x+=0.1/i*sin(i*3.0*p.y+u_time*0.4)+0.05;p.y+=0.1/i*cos(i*2.0*p.x+u_time*0.3)-0.05;}float r=length(p);float ang=atan(p.y,p.x);vec3 a=vec3(0.12,0.12,0.13);vec3 b=vec3(0.03,0.04,0.05);vec3 c=vec3(1.0,1.0,1.0);vec3 d=vec3(0.1,0.2,0.4);vec3 col=palette(r*1.5+p0.x*0.5+u_time*0.1,a,b,c,d);float disp=sin(r*25.0-u_time*1.5+ang*2.0)*0.5+0.5;col+=vec3(disp*0.015,disp*0.01,disp*0.02);float hi=pow(sin(p.x*4.0+p.y*3.0+u_time)*0.5+0.5,8.0);col+=hi*0.08;vec3 base=vec3(0.05,0.05,0.06);col=mix(base,col,0.85);gl_FragColor=vec4(col,1.0);}`;
+const FS_LIGHT=`precision highp float;uniform vec2 u_resolution;uniform float u_time;uniform vec2 u_mouse;float hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}float noise(vec2 p){vec2 i=floor(p),f=fract(p);float a=hash(i),b=hash(i+vec2(1,0));float c=hash(i+vec2(0,1)),d=hash(i+vec2(1,1));vec2 u=f*f*(3.0-2.0*f);return mix(a,b,u.x)+(c-a)*u.y*(1.0-u.x)+(d-b)*u.x*u.y;}float fbm(vec2 p){float v=0.0,a=0.5;mat2 m=mat2(0.80,0.60,-0.60,0.80);for(int i=0;i<5;i++){v+=a*noise(p);p=m*p*2.02;a*=0.5;}return v;}void main(){vec2 uv=gl_FragCoord.xy/u_resolution.xy;vec2 p=uv;p.x*=u_resolution.x/u_resolution.y;vec2 m=u_mouse;m.x*=u_resolution.x/u_resolution.y;vec2 md=p-m;float dl=length(md);p+=normalize(md+vec2(0.0001))*exp(-dl*5.0)*0.03;vec2 q=vec2(fbm(p*1.8+u_time*0.07),fbm(p*1.8+vec2(5.2,1.3)+u_time*0.06));vec2 r=vec2(fbm(p*2.0+q*1.3+vec2(1.7,9.2)+u_time*0.05),fbm(p*2.0+q*1.3+vec2(8.3,2.8)+u_time*0.04));float f=fbm(p*2.2+r*1.5);vec3 silverDark=vec3(0.86,0.85,0.84);vec3 paper=vec3(0.955,0.945,0.925);vec3 col=mix(silverDark,paper,f);float ph=r.x*2.2+u_time*0.35;col+=vec3(0.78,0.62,0.92)*sin(ph)*0.055;col+=vec3(0.55,0.72,0.95)*sin(ph*0.8+2.0)*0.05;float hl=smoothstep(0.48,0.92,f);col+=hl*0.06;gl_FragColor=vec4(col,1.0);}`;
+const mouse={x:0.5,y:0.5};
+addEventListener('mousemove',e=>{mouse.x=e.clientX/innerWidth;mouse.y=e.clientY/innerHeight});
+function bootGL(canvasId,fsSrc){const canvas=document.getElementById(canvasId);const gl=canvas.getContext('webgl',{alpha:false,antialias:true});if(!gl)return ()=>false;const mk=(t,s)=>{const sh=gl.createShader(t);gl.shaderSource(sh,s);gl.compileShader(sh);return sh};const prog=gl.createProgram();gl.attachShader(prog,mk(gl.VERTEX_SHADER,VS));gl.attachShader(prog,mk(gl.FRAGMENT_SHADER,fsSrc));gl.linkProgram(prog);gl.useProgram(prog);const buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,-1,1,1,-1,1,1]),gl.STATIC_DRAW);const pos=gl.getAttribLocation(prog,'position');gl.enableVertexAttribArray(pos);gl.vertexAttribPointer(pos,2,gl.FLOAT,false,0,0);const lRes=gl.getUniformLocation(prog,'u_resolution');const lT=gl.getUniformLocation(prog,'u_time');const lM=gl.getUniformLocation(prog,'u_mouse');const resize=()=>{const d=Math.min(window.devicePixelRatio||1,2);canvas.width=innerWidth*d;canvas.height=innerHeight*d;gl.viewport(0,0,canvas.width,canvas.height);};addEventListener('resize',resize);resize();return (tSec)=>{gl.uniform2f(lRes,canvas.width,canvas.height);gl.uniform1f(lT,tSec);gl.uniform2f(lM,mouse.x,1-mouse.y);gl.drawArrays(gl.TRIANGLES,0,6);return true;};}
+const drawDark=bootGL('bg-dark',FS_DARK);const drawLight=bootGL('bg-light',FS_LIGHT);const t0=Date.now();
+(function loop(){const t=(Date.now()-t0)/1000;drawDark(t);drawLight(t);requestAnimationFrame(loop);})();
+const deck=document.getElementById('deck');const slides=deck.querySelectorAll('.slide');const nav=document.getElementById('nav');let idx=0,total=slides.length,lock=false;
+deck.style.width=(total*100)+'vw';
+slides.forEach((s,i)=>{const b=document.createElement('button');b.className='dot';b.onclick=()=>go(i);nav.appendChild(b);});
+function go(n){if(lock)return;idx=Math.max(0,Math.min(total-1,n));deck.style.transform=`translateX(${-idx*100}vw)`;nav.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('active',i===idx));document.body.classList.toggle('light-bg',slides[idx].classList.contains('light'));lock=true;setTimeout(()=>lock=false,700);}
+addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' ')go(idx+1);if(e.key==='ArrowLeft'||e.key==='PageUp')go(idx-1);});
+let wheelAcc=0,wheelTO=null;addEventListener('wheel',e=>{wheelAcc+=e.deltaY+e.deltaX;if(Math.abs(wheelAcc)>50){go(idx+(wheelAcc>0?1:-1));wheelAcc=0;}clearTimeout(wheelTO);wheelTO=setTimeout(()=>wheelAcc=0,150);},{passive:true});
+let tx=0;addEventListener('touchstart',e=>{tx=e.touches[0].clientX},{passive:true});
+addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>50)go(idx+(dx<0?1:-1));},{passive:true});
+go(0);
+</script>
+</body>
+</html>

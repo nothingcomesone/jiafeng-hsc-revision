@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>附录 C · 人物议题表 — 《夹缝中的光芒》HSC hub</title>
+  <style>
+:root {
+  --ink: #1f2933; --muted: #5d6875; --line: #d7dee8;
+  --paper: #ffffff; --wash: #f6f8fb;
+  --teal: #0f766e; --teal-soft: #e7f4f2;
+  --red: #a43b3b; --red-soft: #faeeee;
+  --gold: #87620e; --gold-soft: #fff6dc;
+  --blue: #2b5d8a; --blue-soft: #edf5fb;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--wash); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; line-height: 1.65; }
+main { width: min(1100px, calc(100% - 32px)); margin: 28px auto 64px; background: var(--paper); border: 1px solid var(--line); box-shadow: 0 18px 48px rgba(31, 41, 51, 0.08); }
+header.doc-head { padding: 42px 46px 30px; border-bottom: 1px solid var(--line); background: linear-gradient(135deg, rgba(15, 118, 110, 0.11), rgba(43, 93, 138, 0.09)), #fff; }
+section.entry { padding: 36px 46px; border-bottom: 4px solid var(--line); scroll-margin-top: 20px; }
+section.entry:last-child { border-bottom: 0; }
+section.toc-section { padding: 28px 46px; border-bottom: 1px solid var(--line); }
+h1, h2, h3, h4 { margin: 0; line-height: 1.25; }
+h1 { font-size: 30px; margin-bottom: 8px; }
+h2 { font-size: 24px; margin-bottom: 4px; }
+h3 { font-size: 16px; margin: 20px 0 8px; color: var(--ink); display: flex; align-items: center; gap: 10px; }
+h3 .num { display: inline-block; min-width: 26px; height: 26px; line-height: 26px; border-radius: 6px; background: var(--teal-soft); color: var(--teal); font-weight: 800; font-size: 13px; text-align: center; padding: 0 6px; }
+h4 { font-size: 14px; margin: 0 0 5px; }
+p { margin: 0 0 10px; }
+ul, ol { margin: 6px 0 0 22px; padding: 0; }
+li { margin: 4px 0; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 13px; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; vertical-align: top; text-align: left; }
+th { background: #f1f5f9; font-weight: 700; }
+.doc-subtitle { color: var(--muted); font-size: 16px; margin-bottom: 18px; }
+.meta-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 18px; }
+.meta-card { padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: #fff; min-height: 70px; }
+.meta-label { display: block; color: var(--muted); font-size: 11px; letter-spacing: 0.05em; margin-bottom: 4px; }
+.meta-value { font-size: 15px; font-weight: 800; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-items: start; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.card { padding: 14px 16px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+.tag { display: inline-block; border-radius: 999px; padding: 2px 8px; margin: 2px 3px 2px 0; font-size: 11px; font-weight: 800; white-space: nowrap; }
+.tag.teal { background: var(--teal-soft); color: var(--teal); }
+.tag.red { background: var(--red-soft); color: var(--red); }
+.tag.gold { background: var(--gold-soft); color: var(--gold); }
+.tag.blue { background: var(--blue-soft); color: var(--blue); }
+.callout { padding: 14px 16px; background: var(--gold-soft); border: 1px solid #ead394; border-radius: 8px; margin-top: 12px; font-size: 13px; }
+.callout strong { color: var(--gold); }
+.teacher-note { padding: 12px 14px; background: var(--blue-soft); border: 1px solid #c9ddec; border-radius: 8px; margin-top: 12px; font-size: 13px; }
+.teacher-note strong { color: var(--blue); }
+.banned-zone { padding: 12px 14px; background: var(--red-soft); border: 1px solid #e9c1c1; border-radius: 8px; margin-top: 12px; font-size: 13px; }
+.banned-zone strong { color: var(--red); }
+.entry-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 14px; flex-wrap: wrap; }
+.entry-num { font-size: 36px; font-weight: 800; letter-spacing: -0.03em; color: var(--teal); min-width: 60px; }
+.entry-title { font-size: 22px; font-weight: 800; }
+.entry-meta { color: var(--muted); font-size: 12px; }
+.quote-card { padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: #fbfdfd; border-left: 4px solid var(--teal); margin-top: 8px; }
+.quote-line { padding: 5px 0; border-bottom: 1px dashed var(--line); font-size: 13px; }
+.quote-line:last-child { border-bottom: 0; }
+.quote-line .speaker { display: inline-block; min-width: 80px; font-weight: 700; color: var(--teal); font-size: 12px; }
+.quote-line .text { font-style: italic; }
+.usage-block { padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: #fff; border-left: 4px solid var(--ink); margin-top: 10px; }
+.usage-block.teal { border-left-color: var(--teal); }
+.usage-block.gold { border-left-color: var(--gold); }
+.usage-block.blue { border-left-color: var(--blue); }
+.usage-block.red { border-left-color: var(--red); }
+.usage-label { font-size: 11px; font-weight: 800; color: var(--muted); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 6px; }
+.usage-body { font-size: 13px; line-height: 1.75; }
+.usage-body strong { color: var(--red); }
+.toc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
+.toc-grid a { display: flex; gap: 10px; padding: 7px 10px; border: 1px solid var(--line); border-radius: 6px; text-decoration: none; color: var(--ink); background: #fff; font-size: 13px; align-items: center; }
+.toc-grid a:hover { background: var(--wash); }
+.toc-num { display: inline-block; min-width: 26px; font-weight: 800; color: var(--teal); }
+.matrix-table { font-size: 12px; }
+.matrix-table th, .matrix-table td { padding: 6px 8px; text-align: center; }
+.matrix-table th:first-child, .matrix-table td:first-child { text-align: left; font-weight: 700; }
+.rating { font-weight: 800; }
+.rating.three { color: var(--red); }
+.rating.two { color: var(--gold); }
+.rating.one { color: var(--blue); }
+.rating.none { color: var(--line); font-weight: 400; }
+.template-step { padding: 14px 16px; border: 1px solid var(--line); border-radius: 8px; background: #fff; border-left: 4px solid var(--gold); margin-top: 10px; }
+.template-step .step-num { font-size: 11px; font-weight: 800; color: var(--gold); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 6px; }
+.template-step .step-tech { font-size: 14px; font-weight: 800; margin-bottom: 6px; }
+.template-step .step-body { font-size: 13px; line-height: 1.7; }
+.template-step .step-body strong { color: var(--red); }
+.formula { padding: 12px 14px; background: var(--teal-soft); border: 1px solid #b3d9d3; border-radius: 8px; margin-top: 10px; font-family: monospace; font-size: 13px; }
+.formula strong { color: var(--teal); }
+.checklist { padding: 14px 16px; border: 1px solid var(--line); border-radius: 8px; background: #fff; margin-top: 10px; }
+.checklist li { padding: 4px 0; font-size: 13px; }
+@media (max-width: 860px) {
+  main { width: 100%; margin: 0; border-left: 0; border-right: 0; }
+  header.doc-head, section.entry, section.toc-section { padding: 22px 18px; }
+  .meta-row, .grid-2, .grid-3, .toc-grid { grid-template-columns: 1fr; }
+  .entry-num { font-size: 28px; }
+}
+</style>
+</head>
+<body>
+<main>
+<header class="doc-head">
+  <h1>附录 C · 人物议题表</h1>
+  <p class="doc-subtitle">8 主要人物卡 + 议题承载矩阵 + Q4 配对建议（同文本 + 跨文本）</p>
+  <div class="meta-row"><div class="meta-card"><span class="meta-label">主要人物</span><span class="meta-value">8 人</span></div><div class="meta-card"><span class="meta-label">矩阵规模</span><span class="meta-value">8 × 6</span></div><div class="meta-card"><span class="meta-label">Q4 配对</span><span class="meta-value">7 同 + 3 跨</span></div><div class="meta-card"><span class="meta-label">禁配文本</span><span class="meta-value">别告诉她 / 流浪地球2</span></div></div>
+  <div class="callout">
+    <strong>使用场景：</strong>本文件是《夹缝中的光芒》hub 的横切参考——用于跨章节查询特定<strong>人物 × 议题维度</strong>。配合 <code>章节分析_全8章.html</code>（纵切：每章 6 块完整分析）使用。
+  </div>
+</header>
+
+<section class="toc-section">
+  <h2>速查</h2>
+  <div class="toc-grid">
+    <a href="#char-潘"><span class="toc-num">潘</span>潘海燕</a><a href="#char-钟"><span class="toc-num">钟</span>钟梦兰</a><a href="#char-陈"><span class="toc-num">陈</span>陈倩</a><a href="#char-马"><span class="toc-num">马</span>马丽颖</a><a href="#char-刘"><span class="toc-num">刘</span>刘素婷</a><a href="#char-张"><span class="toc-num">张</span>张梅怡</a><a href="#char-王"><span class="toc-num">王</span>王国伟</a><a href="#char-吴"><span class="toc-num">吴</span>吴志勇</a><a href="#matrix"><span class="toc-num">⊞</span>速查矩阵</a><a href="#pairings"><span class="toc-num">⇄</span>Q4 配对建议</a>
+  </div>
+</section>
+
+
+<section class="entry" id="char-潘">
+  <div class="entry-head">
+    <span class="entry-num">潘</span>
+    <div>
+      <div class="entry-title">潘海燕</div>
+      <div class="entry-meta">广东连州市大路边镇 / 农民家庭 / 1986 生</div>
+    </div>
+  </div>
+
+  <div><span class="tag teal">议题 1.1</span> <span class="tag teal">议题 1.3</span> <span class="tag gold">议题 2.1</span> <span class="tag gold">议题 2.2</span></div>
+
+  <h3><span class="num">1</span>关键节点</h3>
+  <ul><li>初中起母亲外出佛山打工 / 父亲外出广州开车</li><li>海燕寄养在姑姑家 / 弟妹成留守儿童</li><li>毕业后清远农信社第一轮落选 → 广州移动萝岗分公司劳务派遣 → 失而复得农信社录用</li></ul>
+
+  <h3><span class="num">2</span>关键引文</h3>
+  <div class="quote-card"><div class="quote-line"><span class="text">「从一名劳务派遣的漂泊女孩，变成了一名金融系统的正式员工」</span></div><div class="quote-line"><span class="text">「不论接到妈妈的第一封信，还是接到妈妈的第一个电话，都因为思念而泣不成声」</span></div><div class="quote-line"><span class="text">「对于妈妈外出打工，我当时也没太多想法，因为很多家庭都是这样的，妈妈要外出挣钱交学费」</span></div></div>
+
+  <h3><span class="num">3</span>Q3 推荐角度</h3>
+  <p>戏剧性求职反转 / 城乡过渡身份重塑 / 劳务派遣制度</p>
+
+  <h3><span class="num">4</span>Q4 配对建议</h3>
+  <p>与梦兰配（同代教育路径对照）/ 与丽颖配（同遇劳务派遣，结局迥异）/ 与漂向北方配（乡到城的精神代价）</p>
+</section>
+
+<section class="entry" id="char-钟">
+  <div class="entry-head">
+    <span class="entry-num">钟</span>
+    <div>
+      <div class="entry-title">钟梦兰</div>
+      <div class="entry-meta">广东吴川市 / 农民家庭 / 兄弟姐妹五人</div>
+    </div>
+  </div>
+
+  <div><span class="tag teal">议题 1.1</span> <span class="tag teal">议题 1.3</span> <span class="tag gold">议题 2.2</span></div>
+
+  <h3><span class="num">1</span>关键节点</h3>
+  <ul><li>小学全校第一考入镇中学</li><li>母亲租房陪读六年</li><li>高二那年父亲购地建房 → 全家完成城市化</li><li>大学毕业进入广州工作</li></ul>
+
+  <h3><span class="num">2</span>关键引文</h3>
+  <div class="quote-card"><div class="quote-line"><span class="text">「母亲为了照顾孩子们的学业，租房住在镇上」</span></div><div class="quote-line"><span class="text">「梦兰一家的经历，对观照纯粹的农村家庭如何迈进城市化门槛，具有极为典型的样板意义」</span></div><div class="quote-line"><span class="text">「中国乡村城镇化的进程......渗透进千家万户的细部」</span></div></div>
+
+  <h3><span class="num">3</span>Q3 推荐角度</h3>
+  <p>渐进式家庭迁移 / 城镇化的「典型样板」/ 教育推动家庭整体上行</p>
+
+  <h3><span class="num">4</span>Q4 配对建议</h3>
+  <p>与海燕配（同代教育路径分叉）/ 与陈倩配（家庭整合的两种模式）/ 与漂向北方配（迁徙的情感代价对比）</p>
+</section>
+
+<section class="entry" id="char-陈">
+  <div class="entry-head">
+    <span class="entry-num">陈</span>
+    <div>
+      <div class="entry-title">陈倩</div>
+      <div class="entry-meta">广东潮州古巷镇 / 陶瓷厂家庭 / 二姐一弟</div>
+    </div>
+  </div>
+
+  <div><span class="tag teal">议题 1.2</span> <span class="tag teal">议题 1.3</span> <span class="tag gold">议题 2.3</span></div>
+
+  <h3><span class="num">1</span>关键节点</h3>
+  <ul><li>毕业后佛山工作一年 → 找不到归宿感回潮州</li><li>与同乡丈夫结婚 → 整合两家族陶瓷厂</li><li>大学教育嵌入家族企业管理</li></ul>
+
+  <h3><span class="num">2</span>关键引文</h3>
+  <div class="quote-card"><div class="quote-line"><span class="text">「从设计、跟单、货款跟踪、产品维护、一直到与客户的频繁联系，每一个环节，她都了然于胸」</span></div><div class="quote-line"><span class="text">「工厂遍地，但大的公司极少」</span></div><div class="quote-line"><span class="text">「依靠中文的专业背景，找一份普通的文员工作并不难，但月薪只有两千元左右」</span></div></div>
+
+  <h3><span class="num">3</span>Q3 推荐角度</h3>
+  <p>潮汕家族企业承继 / 教育嵌入家族经济 / 婚姻作为资源整合</p>
+
+  <h3><span class="num">4</span>Q4 配对建议</h3>
+  <p>与素婷配（嫁入家族 vs 独立未婚）/ 与丽颖母配（家族整合 vs 制度内觉醒）/ 与二马温都母女配（华人家族企业的跨地域对照）</p>
+</section>
+
+<section class="entry" id="char-马">
+  <div class="entry-head">
+    <span class="entry-num">马</span>
+    <div>
+      <div class="entry-title">马丽颖</div>
+      <div class="entry-meta">广州市从化区 / 警察家庭 / 独女</div>
+    </div>
+  </div>
+
+  <div><span class="tag teal">议题 1.1</span> <span class="tag teal">议题 1.2</span> <span class="tag gold">议题 2.1</span></div>
+
+  <h3><span class="num">1</span>关键节点</h3>
+  <ul><li>母亲长期家庭主妇 → 丽颖初三时觉醒就业</li><li>丽颖独立性格 / 抑郁期 / 遇医生丈夫</li><li>毕业进入电视台播音主持（劳务派遣） → 规划局</li></ul>
+
+  <h3><span class="num">2</span>关键引文</h3>
+  <div class="quote-card"><div class="quote-line"><span class="text">「作为专门被坑的八零后，如何混战在这个复杂的社会」</span></div><div class="quote-line"><span class="text">「独立带来的副产品，是孤独感的滋生。有一段时间，她几乎掉进了抑郁的阴霾」</span></div><div class="quote-line"><span class="text">「30岁的我，微胖，育有自己的乖女儿，同时继续在职场打滚」</span></div></div>
+
+  <h3><span class="num">3</span>Q3 推荐角度</h3>
+  <p>代际女性觉醒 / 劳务派遣的制度性歧视 / 职业表里落差</p>
+
+  <h3><span class="num">4</span>Q4 配对建议</h3>
+  <p>与素婷配（被动承受 vs 主动设计）/ 与海燕配（同遇劳务派遣，结局迥异）/ 与漂向北方配（梦想与现实的天秤）</p>
+</section>
+
+<section class="entry" id="char-刘">
+  <div class="entry-head">
+    <span class="entry-num">刘</span>
+    <div>
+      <div class="entry-title">刘素婷</div>
+      <div class="entry-meta">广东西北怀集县 / 工人家庭</div>
+    </div>
+  </div>
+
+  <div><span class="tag teal">议题 1.2</span> <span class="tag gold">议题 2.1</span> <span class="tag gold">议题 2.3</span></div>
+
+  <h3><span class="num">1</span>关键节点</h3>
+  <ul><li>毕业进入温泉公司 → 从未跳槽</li><li>从文案策划晋升项目管理</li><li>未婚未育未购房 / 古筝、韩语、毛笔字</li></ul>
+
+  <h3><span class="num">2</span>关键引文</h3>
+  <div class="quote-card"><div class="quote-line"><span class="text">「年龄困不住一个女人，如果一个女人将自己定位为一个独立个体」</span></div><div class="quote-line"><span class="text">「我们最大的敌人，是以男人的眼光来要求自己，是将自己的梦想构建在男人身上」</span></div><div class="quote-line"><span class="text">「做自己喜欢的事情，活成自己喜欢的样子，到死都能优雅」</span></div><div class="quote-line"><span class="text">「觉得精神上的追求比拥有一套房子更重要」</span></div></div>
+
+  <h3><span class="num">3</span>Q3 推荐角度</h3>
+  <p>独立女性哲学 / 主动稳定策略 / 后物质价值观</p>
+
+  <h3><span class="num">4</span>Q4 配对建议</h3>
+  <p>与丽颖配（主动 vs 被动）/ 与陈倩配（拒绝主流 vs 嵌入家族）/ 与二马温都太太配（独立女性的中西对照）</p>
+</section>
+
+<section class="entry" id="char-张">
+  <div class="entry-head">
+    <span class="entry-num">张</span>
+    <div>
+      <div class="entry-title">张梅怡</div>
+      <div class="entry-meta">广州市 / 个体户家庭 / 1987 生</div>
+    </div>
+  </div>
+
+  <div><span class="tag gold">议题 2.1</span> <span class="tag gold">议题 2.3</span> <span class="tag teal">议题 1.1</span></div>
+
+  <h3><span class="num">1</span>关键节点</h3>
+  <ul><li>毕业后至少六份工作（最长两年，最短三个月）</li><li>第一次创业（互联网） → 38°C 无空调城中村 → 亏空积蓄解散</li><li>第二次创业（教育咨询） → 与英国合伙人合作</li></ul>
+
+  <h3><span class="num">2</span>关键引文</h3>
+  <div class="quote-card"><div class="quote-line"><span class="text">「别人说每天叫醒你的不是闹钟而是梦想，对于我，每天叫醒我的只有坚强」</span></div><div class="quote-line"><span class="text">「在城中村租了一个三十多平米的办公室，七个人办公，月租两千元」</span></div><div class="quote-line"><span class="text">「她不像国伟，大学毕业后，'首要任务是要解决我和家人的生活问题'」</span></div></div>
+
+  <h3><span class="num">3</span>Q3 推荐角度</h3>
+  <p>城市原生家庭的试错弹性 / 创业的物质代价 / 家庭经济背景对职业选择自由度</p>
+
+  <h3><span class="num">4</span>Q4 配对建议</h3>
+  <p>与海燕配（城市冒险 vs 农村跃迁）/ 与国伟配（个体户支撑 vs 家庭生计优先）/ 与大江大河杨巡配（八零年代 vs 互联网代创业）</p>
+</section>
+
+<section class="entry" id="char-王">
+  <div class="entry-head">
+    <span class="entry-num">王</span>
+    <div>
+      <div class="entry-title">王国伟</div>
+      <div class="entry-meta">广东四会 / 古法造纸厂家庭</div>
+    </div>
+  </div>
+
+  <div><span class="tag teal">议题 1.1</span> <span class="tag gold">议题 2.3</span></div>
+
+  <h3><span class="num">1</span>关键节点</h3>
+  <ul><li>父亲 1995 年四会市买房 → 家庭转折</li><li>父亲哲学：「打工没有自由，还不如自己做个小老板」</li><li>毕业后银行工作 → 四会监狱公务员</li></ul>
+
+  <h3><span class="num">2</span>关键引文</h3>
+  <div class="quote-card"><div class="quote-line"><span class="text">「首要任务是要解决我和家人的生活问题」</span></div><div class="quote-line"><span class="text">「打工没有自由，还不如自己做个小老板（父亲）」</span></div></div>
+
+  <h3><span class="num">3</span>Q3 推荐角度</h3>
+  <p>潮汕经商哲学 / 家庭支撑下的职业选择 / 公务员路径</p>
+
+  <h3><span class="num">4</span>Q4 配对建议</h3>
+  <p>与梅怡配（家庭支撑 vs 城市自由）/ 与大顺配（潮汕经商代际传递）/ 与二马老马配（华人家族经商哲学）</p>
+</section>
+
+<section class="entry" id="char-吴">
+  <div class="entry-head">
+    <span class="entry-num">吴</span>
+    <div>
+      <div class="entry-title">吴志勇</div>
+      <div class="entry-meta">贫寒家庭</div>
+    </div>
+  </div>
+
+  <div><span class="tag teal">议题 1.1</span> <span class="tag gold">议题 2.1</span></div>
+
+  <h3><span class="num">1</span>关键节点</h3>
+  <ul><li>网店 → 社工 → 公安局 → 纹绣培训师 → 与兄弟开餐厅</li><li>「在他所从事的职业门类中，压根就没有稳定一说」</li></ul>
+
+  <h3><span class="num">2</span>关键引文</h3>
+  <div class="quote-card"><div class="quote-line"><span class="text">「在他所从事的职业门类中，压根就没有稳定一说」</span></div><div class="quote-line"><span class="text">「总在梦想和职业的纠缠中，横亘了一个急需他支撑的贫寒家庭」</span></div></div>
+
+  <h3><span class="num">3</span>Q3 推荐角度</h3>
+  <p>极致职业流动 / 贫寒家庭的就业约束 / 八零后命运多样性</p>
+
+  <h3><span class="num">4</span>Q4 配对建议</h3>
+  <p>与梅怡配（贫寒兜底 vs 城市自由）/ 与漂向北方配（漂泊的多重形态）</p>
+</section>
+
+<section class="entry" id="matrix">
+  <div class="entry-head">
+    <span class="entry-num">⊞</span>
+    <div>
+      <div class="entry-title">8 主要人物 × 6 议题 速查矩阵</div>
+      <div class="entry-meta">星级标识每个人物在各议题上的承载强度——用于快速筛选 Q3/Q4 引证对象</div>
+    </div>
+  </div>
+  <table class="matrix-table">
+    <thead><tr><th>人物</th><th>1.1 社会冲击</th><th>1.2 性别角色</th><th>1.3 家庭</th><th>2.1 压力</th><th>2.2 教育</th><th>2.3 文化</th></tr></thead>
+    <tbody><tr><td>潘海燕</td><td><span class="rating three">★★★</span></td><td><span class="rating two">★★</span></td><td><span class="rating three">★★★</span></td><td><span class="rating three">★★★</span></td><td><span class="rating three">★★★</span></td><td><span class="rating one">★</span></td></tr><tr><td>钟梦兰</td><td><span class="rating three">★★★</span></td><td><span class="rating none">—</span></td><td><span class="rating three">★★★</span></td><td><span class="rating one">★</span></td><td><span class="rating three">★★★</span></td><td><span class="rating one">★</span></td></tr><tr><td>陈倩</td><td><span class="rating one">★</span></td><td><span class="rating three">★★★</span></td><td><span class="rating three">★★★</span></td><td><span class="rating two">★★</span></td><td><span class="rating two">★★</span></td><td><span class="rating three">★★★</span></td></tr><tr><td>马丽颖</td><td><span class="rating two">★★</span></td><td><span class="rating three">★★★</span></td><td><span class="rating two">★★</span></td><td><span class="rating three">★★★</span></td><td><span class="rating two">★★</span></td><td><span class="rating two">★★</span></td></tr><tr><td>刘素婷</td><td><span class="rating one">★</span></td><td><span class="rating three">★★★</span></td><td><span class="rating one">★</span></td><td><span class="rating three">★★★</span></td><td><span class="rating two">★★</span></td><td><span class="rating three">★★★</span></td></tr><tr><td>张梅怡</td><td><span class="rating two">★★</span></td><td><span class="rating two">★★</span></td><td><span class="rating two">★★</span></td><td><span class="rating three">★★★</span></td><td><span class="rating two">★★</span></td><td><span class="rating three">★★★</span></td></tr><tr><td>王国伟</td><td><span class="rating two">★★</span></td><td><span class="rating none">—</span></td><td><span class="rating two">★★</span></td><td><span class="rating two">★★</span></td><td><span class="rating two">★★</span></td><td><span class="rating three">★★★</span></td></tr><tr><td>吴志勇</td><td><span class="rating three">★★★</span></td><td><span class="rating none">—</span></td><td><span class="rating two">★★</span></td><td><span class="rating three">★★★</span></td><td><span class="rating two">★★</span></td><td><span class="rating two">★★</span></td></tr></tbody>
+  </table>
+  <p class="mini" style="font-size:12px; color: var(--muted); margin-top: 10px;"><span class="rating three">★★★</span> primary 承载 · <span class="rating two">★★</span> secondary 承载 · <span class="rating one">★</span> minor · <span class="rating none">—</span> not applicable</p>
+  <div class="callout"><strong>使用提示：</strong>选 Q3 (c) 或 Q4 引证人物时，先查议题对应的 ★★★ 列——这些是该议题<strong>最强承载</strong>的人物。多议题题干（如 1.2 + 2.1）应选两列都至少 ★★ 的人物。</div>
+</section>
+
+<section class="entry" id="pairings">
+  <div class="entry-head">
+    <span class="entry-num">⇄</span>
+    <div>
+      <div class="entry-title">Q4 配对建议</div>
+      <div class="entry-meta">7 组同文本配对 + 3 组跨文本配对（Theme 1/2 范围内）</div>
+    </div>
+  </div>
+
+  <h3><span class="num">A</span>同文本配对 — 夹缝中的光芒内部 7 组</h3>
+  <div class="grid-2"><div class="card"><h4>海燕 ⇄ 梦兰</h4><p>同代教育路径的两种家庭策略——分离打工 vs 同步迁移；都通过教育实现城乡跃迁，但代价不同。</p><p><span class="tag teal">议题 1.1</span> <span class="tag teal">议题 1.3</span> <span class="tag gold">议题 2.2</span></p></div><div class="card"><h4>丽颖 ⇄ 素婷</h4><p>面对劳务派遣时代的两种应对——被动承受 vs 主动设计；体现八零后的策略分化。</p><p><span class="tag teal">议题 1.2</span> <span class="tag gold">议题 2.1</span></p></div><div class="card"><h4>梅怡 ⇄ 国伟</h4><p>城市原生 vs 家底支撑的创业起点对比——同样有家庭后盾，路径却完全不同。</p><p><span class="tag gold">议题 2.1</span> <span class="tag gold">议题 2.3</span></p></div><div class="card"><h4>陈倩 ⇄ 素婷</h4><p>嫁入家族企业 vs 独立未婚的两种女性人生选择——展现性别角色的多元路径。</p><p><span class="tag teal">议题 1.2</span> <span class="tag teal">议题 1.3</span> <span class="tag gold">议题 2.3</span></p></div><div class="card"><h4>丽颖母 ⇄ 素婷</h4><p>代际女性的两端——觉醒型主妇 vs 主动设计独立——勾勒女性角色的演进光谱。</p><p><span class="tag teal">议题 1.2</span></p></div><div class="card"><h4>梅怡 ⇄ 海燕</h4><p>城市原生 vs 农村跃迁的同代两面——共同验证「学历 = 入口 + 个体激活力」论点。</p><p><span class="tag teal">议题 1.1</span> <span class="tag gold">议题 2.2</span></p></div><div class="card"><h4>志勇 ⇄ 国伟</h4><p>贫寒兜底 vs 家庭支撑的对照——同代不同家庭起点下的职业流动差异。</p><p><span class="tag teal">议题 1.1</span> <span class="tag gold">议题 2.1</span></p></div></div>
+
+  <h3><span class="num">B</span>跨文本配对 — 夹缝中的光芒 + 其他 prescribed text</h3>
+  <div class="grid-3"><div class="card"><h4>夹缝 + 漂向北方</h4><p>Theme 1 配对 — 都呈现乡村到城市的迁徙体验；夹缝用数据 + 个案，漂向北方用诗化反复音节，两套语体合力展现迁徙的精神代价。</p><p><span class="tag teal">议题 1.1</span> <span class="tag teal">议题 1.3</span> <span class="tag gold">议题 2.1</span></p><p class="mini"><strong>人物配对：</strong>海燕 ↔ 北漂者；丽颖 ↔ 漂泊心理</p></div><div class="card"><h4>夹缝 + 大江大河</h4><p>Theme 1 / Theme 2 配对 — 都呈现教育和经济转型对个人命运的塑造；夹缝是改革开放下半场（八零后），大江大河是上半场（七零年代末）。</p><p><span class="tag teal">议题 1.1</span> <span class="tag gold">议题 2.2</span></p><p class="mini"><strong>人物配对：</strong>海燕 ↔ 宋运辉（教育撬动）；梅怡 ↔ 杨巡（创业）；国伟 ↔ 雷东宝（乡镇企业）</p></div><div class="card"><h4>夹缝 + 二马</h4><p>Theme 1 / Theme 2 配对 — 都呈现华人个体在变迁环境中的适应；夹缝是国内城乡过渡，二马是跨国文化错位。</p><p><span class="tag teal">议题 1.1</span> <span class="tag teal">议题 1.2</span> <span class="tag gold">议题 2.3</span></p><p class="mini"><strong>人物配对：</strong>陈倩 ↔ 温都母女（家族企业 + 性别角色）；国伟 ↔ 老马（经商哲学）；素婷 ↔ 温都太太（独立女性）</p></div></div>
+
+  <div class="banned-zone"><strong>禁止配对：</strong>夹缝 <strong>不可</strong>与《别告诉她》（Theme 3 文本）或《流浪地球2》（Theme 1 + Theme 4）作 Theme 3/4 的 cross-text essay 主线——只可在 Theme 1 维度上有限交集。</div>
+</section>
+
+</main>
+</body>
+</html>

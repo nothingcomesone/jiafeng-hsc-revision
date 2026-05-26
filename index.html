@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>《夹缝中的光芒》HSC 中文与文学复习资源 · Light in the Crevice Study Hub</title>
+  <meta name="description" content="HSC Chinese & Literature《夹缝中的光芒》全套复习资料：9 课课堂手册 + 8 章节分析 + 4 个全局附录 + Q3 / Q4 练习集（含 Band 6 范文）。Theme 1 + Theme 2 / 2025–2030 NESA prescribed text.">
+  <style>
+    :root {
+      --ink: #1f2933; --muted: #5d6875; --line: #d7dee8;
+      --paper: #ffffff; --wash: #f6f8fb;
+      --teal: #0f766e; --teal-soft: #e7f4f2;
+      --red: #a43b3b; --red-soft: #faeeee;
+      --gold: #87620e; --gold-soft: #fff6dc;
+      --blue: #2b5d8a; --blue-soft: #edf5fb;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--wash); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; line-height: 1.65; }
+    main { width: min(1080px, calc(100% - 32px)); margin: 28px auto 64px; background: var(--paper); border: 1px solid var(--line); box-shadow: 0 18px 48px rgba(31, 41, 51, 0.08); }
+    header { padding: 48px 46px 36px; border-bottom: 1px solid var(--line); background: linear-gradient(135deg, rgba(15, 118, 110, 0.13), rgba(135, 98, 14, 0.10) 60%, rgba(43, 93, 138, 0.10)), #fff; }
+    section { padding: 36px 46px; border-bottom: 1px solid var(--line); }
+    section:last-child { border-bottom: 0; }
+    h1, h2, h3, h4 { margin: 0; line-height: 1.25; }
+    h1 { font-size: 36px; margin-bottom: 10px; letter-spacing: -0.01em; }
+    h2 { font-size: 24px; margin-bottom: 8px; display: flex; align-items: center; gap: 12px; }
+    h2 .num { display: inline-flex; align-items: center; justify-content: center; min-width: 34px; height: 34px; border-radius: 8px; background: var(--teal); color: #fff; font-weight: 800; font-size: 16px; padding: 0 10px; }
+    h3 { font-size: 18px; margin: 0 0 6px; }
+    p { margin: 0 0 12px; }
+    .doc-subtitle { color: var(--muted); font-size: 18px; margin-bottom: 22px; }
+    .tag-row { margin-bottom: 24px; }
+    .tag { display: inline-block; border-radius: 999px; padding: 3px 11px; margin: 2px 4px 2px 0; font-size: 12px; font-weight: 800; }
+    .tag.teal { background: var(--teal-soft); color: var(--teal); }
+    .tag.red { background: var(--red-soft); color: var(--red); }
+    .tag.gold { background: var(--gold-soft); color: var(--gold); }
+    .tag.blue { background: var(--blue-soft); color: var(--blue); }
+    .meta-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+    .meta-card { padding: 14px 16px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+    .meta-label { display: block; color: var(--muted); font-size: 11px; letter-spacing: 0.05em; margin-bottom: 5px; }
+    .meta-value { font-size: 16px; font-weight: 800; }
+    .intro-card { padding: 18px 22px; border: 1px solid #ead394; background: var(--gold-soft); border-radius: 10px; margin-top: 14px; }
+    .intro-card strong { color: var(--gold); }
+    .section-intro { color: var(--muted); font-size: 14px; margin-bottom: 14px; }
+    .lesson-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .lesson-card { padding: 16px 18px; border: 1px solid var(--line); border-radius: 10px; background: #fff; transition: background 0.15s, border-color 0.15s; }
+    .lesson-card:hover { background: var(--wash); border-color: var(--teal); }
+    .lesson-num { display: inline-block; padding: 3px 10px; border-radius: 6px; background: var(--teal); color: #fff; font-weight: 800; font-size: 13px; }
+    .lesson-title { font-size: 16px; font-weight: 800; margin: 10px 0 4px; }
+    .lesson-scope { color: var(--muted); font-size: 12px; margin-bottom: 12px; }
+    .lesson-links { display: flex; gap: 8px; flex-wrap: wrap; }
+    .lesson-links a { display: inline-flex; align-items: center; gap: 4px; padding: 6px 11px; border: 1px solid var(--teal); border-radius: 6px; text-decoration: none; color: var(--teal); font-size: 13px; font-weight: 700; }
+    .lesson-links a:hover { background: var(--teal); color: #fff; }
+    .lesson-links a.secondary { border-color: var(--blue); color: var(--blue); }
+    .lesson-links a.secondary:hover { background: var(--blue); color: #fff; }
+    .resource-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .resource-card { display: block; padding: 18px 22px; border: 1px solid var(--line); border-radius: 10px; background: #fff; text-decoration: none; color: var(--ink); transition: all 0.15s; }
+    .resource-card:hover { background: var(--wash); border-color: var(--teal); transform: translateY(-1px); }
+    .resource-card .icon { display: inline-block; padding: 5px 10px; border-radius: 6px; font-size: 12px; font-weight: 800; margin-bottom: 8px; }
+    .resource-card.full .icon { background: var(--red); color: #fff; }
+    .resource-card.a .icon { background: var(--teal); color: #fff; }
+    .resource-card.b .icon { background: var(--gold); color: #fff; }
+    .resource-card.c .icon { background: var(--blue); color: #fff; }
+    .resource-card.d .icon { background: var(--red); color: #fff; }
+    .resource-card.practice .icon { background: var(--gold); color: #fff; }
+    .resource-card .title { font-size: 17px; font-weight: 800; margin-bottom: 6px; }
+    .resource-card .desc { font-size: 13px; color: var(--muted); }
+    footer { padding: 32px 46px; background: var(--wash); border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+    footer h4 { color: var(--ink); margin: 0 0 8px; font-size: 14px; }
+    footer p { margin: 0 0 8px; }
+    footer .credit { padding-top: 14px; margin-top: 14px; border-top: 1px solid var(--line); font-size: 12px; }
+    a.inline { color: var(--teal); text-decoration: none; border-bottom: 1px dashed var(--teal); }
+    a.inline:hover { background: var(--teal-soft); }
+    @media (max-width: 860px) {
+      main { width: 100%; margin: 0; border-left: 0; border-right: 0; }
+      header, section, footer { padding: 26px 20px; }
+      .meta-row, .lesson-grid, .resource-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <header>
+    <h1>《夹缝中的光芒》</h1>
+    <p class="doc-subtitle">HSC Chinese &amp; Literature 复习资源中心 · Light in the Crevice Study Hub</p>
+    <div class="tag-row">
+      <span class="tag teal">Theme 1（议题 1.1 / 1.2 / 1.3）</span>
+      <span class="tag gold">Theme 2（议题 2.1 / 2.2 / 2.3）</span>
+      <span class="tag blue">纪实文学 · Non-fiction</span>
+      <span class="tag red">2025–2030 NESA Prescribed Text</span>
+    </div>
+    <div class="meta-row">
+      <div class="meta-card">
+        <span class="meta-label">课程数</span>
+        <span class="meta-value">9 课 / 共 18 HTML</span>
+      </div>
+      <div class="meta-card">
+        <span class="meta-label">章节分析</span>
+        <span class="meta-value">全 8 章 × 6 块</span>
+      </div>
+      <div class="meta-card">
+        <span class="meta-label">参考附录</span>
+        <span class="meta-value">A / B / C / D</span>
+      </div>
+      <div class="meta-card">
+        <span class="meta-label">Q3 + Q4 练习</span>
+        <span class="meta-value">8 道 Q3 + 2 道 Q4</span>
+      </div>
+    </div>
+    <div class="intro-card">
+      <strong>使用方法：</strong>
+      点击下面任意 lesson 进入 <em>课堂幻灯</em>（教师讲课用）或 <em>学生工作纸</em>（学生练习用）。
+      章节分析与附录跨课通用——可作 Q3 / Q4 备考速查。Q3 + Q4 练习集包含 8 道完整 Q3 模拟（每题 3+5+7 = 15 分）+ 2 道 Q4 跨文本议论文（25 分），全部含 Band 6 范文 / 示范答案。
+    </div>
+  </header>
+
+  <!-- ===== 1. 9 课 ===== -->
+  <section>
+    <h2><span class="num">1</span>九课课堂资源 · 9-Lesson Course Pack</h2>
+    <p class="section-intro">9 节课覆盖《夹缝中的光芒》全 8 章。每课双轨：幻灯课件（教师讲课）+ 学生工作纸（学生练习 / 课后温习）。</p>
+
+    <div class="lesson-grid">
+      <div class="lesson-card">
+        <span class="lesson-num">第 1 课</span>
+        <div class="lesson-title">历史背景 + 议题导入</div>
+        <div class="lesson-scope">1992 vs 2006 高考 · 计划经济到市场经济 · Theme 1+2 议题速览</div>
+        <div class="lesson-links">
+          <a href="lessons/lesson-01/lesson-01-slides.html">课堂幻灯 ▸</a>
+          <a class="secondary" href="lessons/lesson-01/lesson-01-worksheet.html">学生工作纸 ▸</a>
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <span class="lesson-num">第 2 课</span>
+        <div class="lesson-title">开篇精读：9202 vs 062111</div>
+        <div class="lesson-scope">作者方法论 · 两班对比 · 反思性语言</div>
+        <div class="lesson-links">
+          <a href="lessons/lesson-02/lesson-02-slides.html">课堂幻灯 ▸</a>
+          <a class="secondary" href="lessons/lesson-02/lesson-02-worksheet.html">学生工作纸 ▸</a>
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <span class="lesson-num">第 3 课</span>
+        <div class="lesson-title">钟梦兰 + 王国伟 + 潘海燕（铺垫）</div>
+        <div class="lesson-scope">三家城镇化路径并置 · 1.1 + 1.3 议题</div>
+        <div class="lesson-links">
+          <a href="lessons/lesson-03/lesson-03-slides.html">课堂幻灯 ▸</a>
+          <a class="secondary" href="lessons/lesson-03/lesson-03-worksheet.html">学生工作纸 ▸</a>
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <span class="lesson-num">第 4 课</span>
+        <div class="lesson-title">潘海燕全程（1986-2018）</div>
+        <div class="lesson-scope">乡村出生 → 留守 → 大学 → 劳务派遣 → 农信社正式员工</div>
+        <div class="lesson-links">
+          <a href="lessons/lesson-04/lesson-04-slides.html">课堂幻灯 ▸</a>
+          <a class="secondary" href="lessons/lesson-04/lesson-04-worksheet.html">学生工作纸 ▸</a>
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <span class="lesson-num">第 5 课</span>
+        <div class="lesson-title">陈倩 + 张梅怡 · 两种创业</div>
+        <div class="lesson-scope">潮汕家族企业承继 vs 城市互联网创业 · 1.2 + 2.3 议题</div>
+        <div class="lesson-links">
+          <a href="lessons/lesson-05/lesson-05-slides.html">课堂幻灯 ▸</a>
+          <a class="secondary" href="lessons/lesson-05/lesson-05-worksheet.html">学生工作纸 ▸</a>
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <span class="lesson-num">第 6 课</span>
+        <div class="lesson-title">丽颖 + 刘素婷 + 班级归纳</div>
+        <div class="lesson-scope">代际女性觉醒 · 独立女性哲学 · 八零后的多元应对</div>
+        <div class="lesson-links">
+          <a href="lessons/lesson-06/lesson-06-slides.html">课堂幻灯 ▸</a>
+          <a class="secondary" href="lessons/lesson-06/lesson-06-worksheet.html">学生工作纸 ▸</a>
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <span class="lesson-num">第 7 课</span>
+        <div class="lesson-title">写作技巧综合 + Q3 限时训练</div>
+        <div class="lesson-scope">8 类非虚构技巧整合 · Q3 (a)(b)(c) 答题流程</div>
+        <div class="lesson-links">
+          <a href="lessons/lesson-07/lesson-07-slides.html">课堂幻灯 ▸</a>
+          <a class="secondary" href="lessons/lesson-07/lesson-07-worksheet.html">学生工作纸 ▸</a>
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <span class="lesson-num">第 8 课</span>
+        <div class="lesson-title">Q4 跨文本 + 2025 HSC 真题 + Band 6 真卷</div>
+        <div class="lesson-scope">Theme 1 + Theme 2 cross-text essay · 真题样卷拆解</div>
+        <div class="lesson-links">
+          <a href="lessons/lesson-08/lesson-08-slides.html">课堂幻灯 ▸</a>
+          <a class="secondary" href="lessons/lesson-08/lesson-08-worksheet.html">学生工作纸 ▸</a>
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <span class="lesson-num">第 9 课</span>
+        <div class="lesson-title">Q4 实战 + 单元收尾</div>
+        <div class="lesson-scope">Q4 限时写作 · 自评互评 · 课堂总结</div>
+        <div class="lesson-links">
+          <a href="lessons/lesson-09/lesson-09-slides.html">课堂幻灯 ▸</a>
+          <a class="secondary" href="lessons/lesson-09/lesson-09-worksheet.html">学生工作纸 ▸</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 2. 章节分析 + 4 附录 ===== -->
+  <section>
+    <h2><span class="num">2</span>章节分析与全局附录 · Chapter Analysis &amp; Reference</h2>
+    <p class="section-intro">每章 6 块的完整分析；4 个全局附录跨课通用，分别从技巧、议题、人物、应试四个维度提供横切参考。</p>
+
+    <div class="resource-grid">
+      <a class="resource-card full" href="analysis/chapter-analysis-all-8.html">
+        <span class="icon">全 8 章 · 主资料</span>
+        <div class="title">章节分析 · 全 8 章 ⓘ</div>
+        <div class="desc">每章 6 块：场景 + 议题映射 · 关键引文 · Q3 三 TEE · 学生思考题 · Q4 macro 钩子 · model 段。88 KB · 479 行。</div>
+      </a>
+
+      <a class="resource-card a" href="analysis/appendix-a-narrative-techniques.html">
+        <span class="icon">附录 A</span>
+        <div class="title">叙事手法库 · Narrative Techniques</div>
+        <div class="desc">8 类非虚构论证技巧（对比论证 / 典型案例 / 数据论证 / 直接引语 / 反思性语言 / 隐喻 / 情感化叙述 / 时间线编排）× 文中出处 + Q3/Q4 用法。</div>
+      </a>
+
+      <a class="resource-card b" href="analysis/appendix-b-issue-dictionary.html">
+        <span class="icon">附录 B</span>
+        <div class="title">议题词典 · Issue Dictionary</div>
+        <div class="desc">Theme 1 (1.1 / 1.2 / 1.3) + Theme 2 (2.1 / 2.2 / 2.3) × NESA 子考点 × 本文承载 × Q3 题型方向 × Q4 essay 钩子。严格 Theme 1+2 边界。</div>
+      </a>
+
+      <a class="resource-card c" href="analysis/appendix-c-character-grid.html">
+        <span class="icon">附录 C</span>
+        <div class="title">人物议题表 · Character Grid</div>
+        <div class="desc">8 主要人物卡（海燕 / 梦兰 / 陈倩 / 丽颖 / 素婷 / 梅怡 / 国伟 / 志勇）+ 8 × 6 议题速查矩阵 + 7 组同文本 + 3 组跨文本 Q4 配对。</div>
+      </a>
+
+      <a class="resource-card d" href="analysis/appendix-d-hsc-templates.html">
+        <span class="icon">附录 D</span>
+        <div class="title">HSC Q3 / Q4 考试模板 · Exam Templates</div>
+        <div class="desc">Q3 [3+5+7] 三档分解（基于 2025 NESA 真题模式） + Q4 25 分四段 cross-text 模板 + mini-TEEL 通用公式 + 评分要素 checklist + 禁词清单。</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== 3. Q3 + Q4 练习 ===== -->
+  <section>
+    <h2><span class="num">3</span>Q3 + Q4 练习集 · Practice Set</h2>
+    <p class="section-intro">8 道 Q3 阅读题（Section II Part A，每题 15 分 · 3+5+7 结构）+ 2 道 Q4 跨文本议论文（Section II Part B，每题 25 分 · 4-段 cross-text 结构）。每题包括：中英双语题干 + 节选 verbatim from 文本 + Band 6 范文 / 示范答案。</p>
+
+    <div class="resource-grid">
+      <a class="resource-card practice" href="practice/q3-q4-practice-set.pdf" target="_blank">
+        <span class="icon">PDF · 浏览友好</span>
+        <div class="title">q3-q4-practice-set.pdf</div>
+        <div class="desc">直接在浏览器中打开，手机 / 打印都可读。38 页。</div>
+      </a>
+      <a class="resource-card practice" href="practice/q3-q4-practice-set.docx">
+        <span class="icon">DOCX · 可编辑</span>
+        <div class="title">q3-q4-practice-set.docx</div>
+        <div class="desc">Word 文档，老师可改题、学生可写答案。A4 / 宋体 12pt / 含页码 + 页眉。约 40 KB。</div>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div style="width: min(1080px, calc(100% - 32px)); margin: 0 auto;">
+    <h4>关于本资源 / About</h4>
+    <p>本站收录 NSW HSC Chinese &amp; Literature 课程《夹缝中的光芒》的教学评注与复习材料，供 Year 11–12 学生备考使用。</p>
+    <p>《夹缝中的光芒》是一部纪实文学作品，跟踪记录了作者所执教的广东 F 学院 062111 班（80 后大学生）与作者自己 1995 年毕业的岳阳大学 9202 班（70 后大学生）的命运对比。文本节选与人物引用属<strong>合理使用</strong>（fair dealing for educational analysis）。</p>
+    <p>HSC 议题框架（Theme 1 / Theme 2）依据 <a class="inline" href="https://educationstandards.nsw.edu.au/wps/portal/nesa/11-12/stage-6-learning-areas/stage-6-languages/chinese-and-literature-syllabus" target="_blank" rel="noopener">NSW Education Standards Authority (NESA) Chinese and Literature Syllabus</a>。</p>
+    <div class="credit">
+      <p>原作致谢：《夹缝中的光芒》原作者（广东 F 学院 062111 班班主任）</p>
+      <p>教学分析：HSC 中文与文学教学组 · 内容采用 <a class="inline" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 协议授权</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
