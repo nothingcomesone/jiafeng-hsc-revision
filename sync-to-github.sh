@@ -62,6 +62,17 @@ for pair in "${PAIRS[@]}"; do
   fi
 done
 
+# ---------- 2b. Full-text HTML (清纯本 · 不含分析) at repo ROOT ----------
+echo ""
+echo "==> Copying full-text canonical HTML (at root, not /analysis)"
+FT_HTML="$SRC/课文全文_纯文本版.html"
+if [ -f "$FT_HTML" ]; then
+  cp "$FT_HTML" full-text.html
+  echo "    课文全文_纯文本版.html → full-text.html ✓"
+else
+  echo "    课文全文 html ⚠ missing in source"
+fi
+
 # ---------- 3. Q3 + Q4 practice (HTML + docx + regenerate PDF) ----------
 echo ""
 echo "==> Copying Q3+Q4 practice HTML + docx + regenerating PDF"
