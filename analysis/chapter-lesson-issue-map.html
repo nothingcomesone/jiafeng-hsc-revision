@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>《夹缝中的光芒》课文 ↔ Lesson ↔ 议题 对照地图</title>
+  <meta name="description" content="阅读 + 上课双轨导航。每章可看哪节课、每节课对应哪章、隐性淡化提示。配课和自读两用。">
+  <style>
+    :root {
+      --ink: #1f2933; --muted: #5d6875; --line: #d7dee8;
+      --paper: #ffffff; --wash: #f6f8fb;
+      --teal: #0f766e; --teal-soft: #e7f4f2;
+      --red: #a43b3b; --red-soft: #faeeee;
+      --gold: #87620e; --gold-soft: #fff6dc;
+      --blue: #2b5d8a; --blue-soft: #edf5fb;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--wash); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; line-height: 1.65; }
+    main { width: min(1100px, calc(100% - 32px)); margin: 28px auto 64px; background: var(--paper); border: 1px solid var(--line); box-shadow: 0 18px 48px rgba(31, 41, 51, 0.08); }
+    header.doc-head { padding: 42px 46px 30px; border-bottom: 1px solid var(--line); background: linear-gradient(135deg, rgba(15, 118, 110, 0.13), rgba(135, 98, 14, 0.10) 60%, rgba(43, 93, 138, 0.10)), #fff; }
+    section.block { padding: 36px 46px; border-bottom: 4px solid var(--line); }
+    section.block:last-child { border-bottom: 0; }
+    h1, h2, h3, h4 { margin: 0; line-height: 1.25; }
+    h1 { font-size: 30px; margin-bottom: 8px; }
+    h2 { font-size: 22px; margin-bottom: 10px; display: flex; align-items: center; gap: 12px; }
+    h2 .num { display: inline-flex; align-items: center; justify-content: center; min-width: 32px; height: 32px; border-radius: 8px; background: var(--teal); color: #fff; font-weight: 800; font-size: 15px; padding: 0 10px; }
+    h3 { font-size: 16px; margin: 18px 0 8px; }
+    p { margin: 0 0 10px; }
+    .doc-subtitle { color: var(--muted); font-size: 16px; margin-bottom: 18px; }
+    .meta-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 18px; }
+    .meta-card { padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: #fff; min-height: 70px; }
+    .meta-label { display: block; color: var(--muted); font-size: 11px; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .meta-value { font-size: 15px; font-weight: 800; }
+    .section-intro { color: var(--muted); font-size: 14px; margin-bottom: 18px; }
+    .tag { display: inline-block; border-radius: 999px; padding: 2px 8px; margin: 2px 3px 2px 0; font-size: 11px; font-weight: 800; white-space: nowrap; }
+    .tag.teal { background: var(--teal-soft); color: var(--teal); }
+    .tag.red { background: var(--red-soft); color: var(--red); }
+    .tag.gold { background: var(--gold-soft); color: var(--gold); }
+    .tag.blue { background: var(--blue-soft); color: var(--blue); }
+    .tag.ghost { background: #f1f5f9; color: var(--muted); }
+
+    /* Dual-axis diagram */
+    .dual-axis { padding: 18px 22px; background: var(--wash); border: 1px solid var(--line); border-radius: 10px; margin: 16px 0; }
+    .axis-row { display: grid; grid-template-columns: 100px 1fr; gap: 12px; align-items: center; padding: 8px 0; border-bottom: 1px dashed var(--line); }
+    .axis-row:last-child { border-bottom: 0; }
+    .axis-label { font-size: 12px; font-weight: 800; color: var(--muted); letter-spacing: 0.05em; }
+    .axis-flow { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 13px; font-weight: 700; }
+    .axis-flow .step { padding: 4px 10px; background: #fff; border: 1px solid var(--line); border-radius: 6px; }
+    .axis-flow .step.book { border-color: var(--teal); color: var(--teal); }
+    .axis-flow .step.lesson { border-color: var(--gold); color: var(--gold); }
+    .axis-flow .arrow { color: var(--muted); }
+
+    /* Chapter / Lesson cards */
+    .grid-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .card { padding: 16px 18px; border: 1px solid var(--line); border-radius: 10px; background: #fff; transition: all 0.15s; }
+    .card:hover { background: var(--wash); border-color: var(--teal); }
+    .card-num { display: inline-block; padding: 3px 11px; border-radius: 6px; font-weight: 800; font-size: 12px; color: #fff; margin-bottom: 8px; }
+    .card-num.ch { background: var(--teal); }
+    .card-num.ls { background: var(--gold); }
+    .card-title { font-size: 15px; font-weight: 800; margin-bottom: 6px; }
+    .card-field { font-size: 12px; margin: 6px 0; }
+    .card-field .label { display: inline-block; min-width: 70px; color: var(--muted); font-weight: 700; letter-spacing: 0.03em; }
+    .card-link { display: inline-flex; gap: 4px; padding: 3px 9px; border: 1px solid var(--gold); border-radius: 5px; font-size: 11px; font-weight: 700; text-decoration: none; color: var(--gold); margin-right: 4px; margin-top: 4px; }
+    .card-link:hover { background: var(--gold); color: #fff; }
+    .card-link.teal { border-color: var(--teal); color: var(--teal); }
+    .card-link.teal:hover { background: var(--teal); color: #fff; }
+    .card-quote { padding: 8px 10px; background: var(--teal-soft); border-left: 3px solid var(--teal); border-radius: 4px; font-size: 12px; font-style: italic; margin-top: 8px; line-height: 1.55; }
+
+    /* Warning / callout */
+    .callout { padding: 14px 16px; background: var(--gold-soft); border: 1px solid #ead394; border-radius: 8px; margin-top: 12px; font-size: 13px; }
+    .callout strong { color: var(--gold); }
+    .warn { padding: 14px 16px; background: var(--red-soft); border: 1px solid #e9c1c1; border-radius: 8px; margin-top: 12px; font-size: 13px; }
+    .warn strong { color: var(--red); }
+    .info { padding: 14px 16px; background: var(--blue-soft); border: 1px solid #c9ddec; border-radius: 8px; margin-top: 12px; font-size: 13px; }
+    .info strong { color: var(--blue); }
+
+    /* Path block */
+    .path-block { padding: 16px 20px; border: 1px solid var(--line); border-radius: 10px; background: #fff; margin: 12px 0; }
+    .path-block h4 { font-size: 14px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+    .path-block ol { margin: 0; padding-left: 22px; font-size: 13px; line-height: 1.85; }
+
+    @media (max-width: 860px) {
+      main { width: 100%; margin: 0; border-left: 0; border-right: 0; }
+      header.doc-head, section.block { padding: 24px 18px; }
+      .meta-row, .grid-cards { grid-template-columns: 1fr; }
+      .axis-row { grid-template-columns: 1fr; gap: 4px; }
+    }
+  </style>
+</head>
+<body>
+<main>
+
+<header class="doc-head">
+  <h1>课文 ↔ Lesson ↔ 议题 对照地图</h1>
+  <p class="doc-subtitle">《夹缝中的光芒》阅读 + 上课双轨导航 · 每章可看哪节课 · 每节课对应哪章 · 含隐性淡化提示</p>
+  <div>
+    <span class="tag teal">8 章节</span>
+    <span class="tag gold">9 课</span>
+    <span class="tag blue">6 NESA 议题</span>
+    <span class="tag red">配课 + 自读 两用</span>
+  </div>
+  <div class="meta-row">
+    <div class="meta-card"><span class="meta-label">课文章节</span><span class="meta-value">8 章 (~12,000 字)</span></div>
+    <div class="meta-card"><span class="meta-label">主教课文 lessons</span><span class="meta-value">L2 → L6（5 节）</span></div>
+    <div class="meta-card"><span class="meta-label">应试训练 lessons</span><span class="meta-value">L1 / L7 / L8 / L9（4 节）</span></div>
+    <div class="meta-card"><span class="meta-label">议题覆盖</span><span class="meta-value">1.1 / 1.2 / 1.3 / 2.1 / 2.2 / 2.3</span></div>
+  </div>
+  <div class="callout">
+    <strong>为什么需要这张地图？</strong> 9 节课的顺序<u>不</u>等于课文 1-8 章的顺序——lessons 按<strong>议题主题</strong>重组（如 L5 把 Ch 4 陈倩 + Ch 8 梅怡配对成「两种创业」）。学生自读时按书 1-8 章读，跟课时按地图查对应——两条路线互不冲突。
+  </div>
+</header>
+
+<!-- ============== 1. 双轨视图 ============== -->
+<section class="block">
+  <h2><span class="num">1</span>双轨视图 · 课文 vs 上课顺序</h2>
+  <p class="section-intro">同一份内容，两种打开方式。Linear（课文）适合通读全书；Thematic（lessons）适合 HSC 议题备考。</p>
+
+  <div class="dual-axis">
+    <div class="axis-row">
+      <div class="axis-label">📖 课文顺序<br><span style="font-weight: 400; font-size: 11px;">（自读用）</span></div>
+      <div class="axis-flow">
+        <span class="step book">Ch 1</span>
+        <span class="arrow">→</span>
+        <span class="step book">Ch 2</span>
+        <span class="arrow">→</span>
+        <span class="step book">Ch 3</span>
+        <span class="arrow">→</span>
+        <span class="step book">Ch 4</span>
+        <span class="arrow">→</span>
+        <span class="step book">Ch 5</span>
+        <span class="arrow">→</span>
+        <span class="step book">Ch 6</span>
+        <span class="arrow">→</span>
+        <span class="step book">Ch 7</span>
+        <span class="arrow">→</span>
+        <span class="step book">Ch 8</span>
+        <span class="arrow">→</span>
+        <span class="step book">结尾段</span>
+      </div>
+    </div>
+    <div class="axis-row">
+      <div class="axis-label">🎯 Lesson 顺序<br><span style="font-weight: 400; font-size: 11px;">（跟课用）</span></div>
+      <div class="axis-flow">
+        <span class="step lesson">L1 导论</span>
+        <span class="arrow">→</span>
+        <span class="step lesson">L2 = Ch 1+2</span>
+        <span class="arrow">→</span>
+        <span class="step lesson">L3 = Ch 3</span>
+        <span class="arrow">→</span>
+        <span class="step lesson">L4 = Ch 6</span>
+        <span class="arrow">→</span>
+        <span class="step lesson">L5 = Ch 4+8</span>
+        <span class="arrow">→</span>
+        <span class="step lesson">L6 = Ch 5+7+结尾</span>
+        <span class="arrow">→</span>
+        <span class="step lesson">L7-L9 应试</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="info">
+    <strong>跳跃点解析：</strong>
+    <ul style="margin: 6px 0; padding-left: 22px;">
+      <li><strong>L4 = Ch 6（单章 ✓）</strong>——海燕全程；不跨章。Ch 6 本身就是「海燕 1986-2018」的完整叙述，所以 L4 看似跨章，实则单章深挖。</li>
+      <li><strong>L5 = Ch 4 + Ch 8（跳过 5/6/7）</strong>——主题配对「两种创业逻辑」（陈倩家族企业 + 梅怡互联网）。</li>
+      <li><strong>L6 = Ch 5 + Ch 7 + 结尾段</strong>——主题配对「两代女性 + 全班归纳」（丽颖 + 素婷 + 062111 班八年回望）。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============== 2. 按章节查（自读用） ============== -->
+<section class="block">
+  <h2><span class="num">2</span>按章节查 · 自读全书时用</h2>
+  <p class="section-intro">学生按 Ch 1-8 顺序读书时，每读完一章，回到这里查「这章主要讲什么 · 议题对应哪个 · 哪节课重点教过」。</p>
+
+  <div class="grid-cards">
+
+    <div class="card">
+      <span class="card-num ch">第 1 章</span>
+      <div class="card-title">两班对比的方法论 — 学历价值研究的统计基石</div>
+      <div class="card-field"><span class="label">出场人物：</span>9202 班、062111 班（整体）</div>
+      <div class="card-field"><span class="label">主要议题：</span><span class="tag teal">1.1 社会冲击</span><span class="tag gold">2.2 教育价值变迁</span></div>
+      <div class="card-field"><span class="label">教在哪节：</span><a href="lessons/lesson-02/lesson-02-slides.html" class="card-link">L2 幻灯</a><a href="lessons/lesson-02/lesson-02-worksheet.html" class="card-link teal">L2 工作纸</a></div>
+      <div class="card-quote">「我的直觉是......062111 班学生的命运，和 9202 班同学的整体命运，并没有太大的差距。」</div>
+    </div>
+
+    <div class="card">
+      <span class="card-num ch">第 2 章</span>
+      <div class="card-title">命运的代际分流 — 计划经济与市场经济下的就业模式</div>
+      <div class="card-field"><span class="label">出场人物：</span>9202 班（80% 终身一岗）vs 062111 班（高频流动）</div>
+      <div class="card-field"><span class="label">主要议题：</span><span class="tag teal">1.1 社会冲击</span><span class="tag gold">2.1 就业压力</span></div>
+      <div class="card-field"><span class="label">教在哪节：</span><a href="lessons/lesson-02/lesson-02-slides.html" class="card-link">L2 幻灯</a><a href="lessons/lesson-02/lesson-02-worksheet.html" class="card-link teal">L2 工作纸</a></div>
+      <div class="card-quote">「如果说，岳阳大学 9202 班的同学......以此为对照，我发现 062111 班的学生......」</div>
+    </div>
+
+    <div class="card">
+      <span class="card-num ch">第 3 章</span>
+      <div class="card-title">城镇化进程中的两种家庭策略 — 钟梦兰 vs 潘海燕</div>
+      <div class="card-field"><span class="label">出场人物：</span>钟梦兰、王国伟、潘海燕（铺垫）</div>
+      <div class="card-field"><span class="label">主要议题：</span><span class="tag teal">1.1 社会冲击</span><span class="tag red">1.3 家庭重组</span><span class="tag gold">2.2 教育投资</span></div>
+      <div class="card-field"><span class="label">教在哪节：</span><a href="lessons/lesson-03/lesson-03-slides.html" class="card-link">L3 幻灯</a><a href="lessons/lesson-03/lesson-03-worksheet.html" class="card-link teal">L3 工作纸</a></div>
+      <div class="card-quote">「中国乡村城镇化的进程......渗透进千家万户的细部，伴随家庭的需求和孩子们成长的路径，在不知不觉中自动完成。」</div>
+    </div>
+
+    <div class="card">
+      <span class="card-num ch">第 4 章</span>
+      <div class="card-title">潮汕家族企业的承继 — 陈倩婚后角色重塑</div>
+      <div class="card-field"><span class="label">出场人物：</span>陈倩、大顺父、王国伟父；附 12 公务员（黄春燕 / 张健 / 曾刚 / 石磊）</div>
+      <div class="card-field"><span class="label">主要议题：</span><span class="tag teal">1.2 性别角色</span><span class="tag red">1.3 家庭经济共同体</span><span class="tag gold">2.3 地域文化</span></div>
+      <div class="card-field"><span class="label">教在哪节：</span><a href="lessons/lesson-05/lesson-05-slides.html" class="card-link">L5 幻灯</a><a href="lessons/lesson-05/lesson-05-worksheet.html" class="card-link teal">L5 工作纸</a></div>
+      <div class="card-quote">「宁愿开厂，也不愿给别人打工。」「打工没有自由，还不如自己做个小老板。」</div>
+      <div class="warn" style="margin-top: 10px; font-size: 12px;"><strong>提醒：</strong>L5 只深教陈倩（配对 Ch 8 梅怡）；Ch 4 的「12 公务员群体」整体叙述被推到 L6 概括，朱柱球 / 梁景军 / 黄春燕个案被淡化。</div>
+    </div>
+
+    <div class="card">
+      <span class="card-num ch">第 5 章</span>
+      <div class="card-title">警察家庭的代际女性 — 丽颖母女的觉醒与挣扎</div>
+      <div class="card-field"><span class="label">出场人物：</span>马丽颖、丽颖母亲（觉醒型）</div>
+      <div class="card-field"><span class="label">主要议题：</span><span class="tag teal">1.1 社会冲击</span><span class="tag red">1.2 性别角色</span><span class="tag gold">2.1 八零后压力</span></div>
+      <div class="card-field"><span class="label">教在哪节：</span><a href="lessons/lesson-06/lesson-06-slides.html" class="card-link">L6 幻灯</a><a href="lessons/lesson-06/lesson-06-worksheet.html" class="card-link teal">L6 工作纸</a></div>
+      <div class="card-quote">「不工作就没有发言权，不工作就无法独立。」（丽颖母亲）「作为专门被坑的八零后......」（丽颖）</div>
+    </div>
+
+    <div class="card">
+      <span class="card-num ch">第 6 章</span>
+      <div class="card-title">从留守儿童到金融正式员工 — 潘海燕的求职戏剧性</div>
+      <div class="card-field"><span class="label">出场人物：</span>潘海燕全程（1986-2018）</div>
+      <div class="card-field"><span class="label">主要议题：</span><span class="tag teal">1.1 制度冲击</span><span class="tag red">1.3 家庭代价</span><span class="tag gold">2.2 教育撬动</span></div>
+      <div class="card-field"><span class="label">教在哪节：</span><a href="lessons/lesson-04/lesson-04-slides.html" class="card-link">L4 幻灯</a><a href="lessons/lesson-04/lesson-04-worksheet.html" class="card-link teal">L4 工作纸</a></div>
+      <div class="card-quote">「从一名劳务派遣的漂泊女孩，变成了一名金融系统的正式员工。」</div>
+    </div>
+
+    <div class="card">
+      <span class="card-num ch">第 7 章</span>
+      <div class="card-title">独立女性的精神坐标 — 刘素婷的稳定哲学</div>
+      <div class="card-field"><span class="label">出场人物：</span>刘素婷</div>
+      <div class="card-field"><span class="label">主要议题：</span><span class="tag red">1.2 女性自主</span><span class="tag gold">2.1 抗压策略</span><span class="tag blue">2.3 后物质价值</span></div>
+      <div class="card-field"><span class="label">教在哪节：</span><a href="lessons/lesson-06/lesson-06-slides.html" class="card-link">L6 幻灯</a><a href="lessons/lesson-06/lesson-06-worksheet.html" class="card-link teal">L6 工作纸</a></div>
+      <div class="card-quote">「年龄困不住一个女人......做自己喜欢的事情，活成自己喜欢的样子，到死都能优雅。」</div>
+    </div>
+
+    <div class="card">
+      <span class="card-num ch">第 8 章</span>
+      <div class="card-title">个体户家庭与互联网创业 — 张梅怡的城市资本</div>
+      <div class="card-field"><span class="label">出场人物：</span>张梅怡、（对照）王国伟、吴志勇</div>
+      <div class="card-field"><span class="label">主要议题：</span><span class="tag teal">1.1 城乡分化</span><span class="tag gold">2.1 创业压力</span><span class="tag blue">2.3 家庭资本</span></div>
+      <div class="card-field"><span class="label">教在哪节：</span><a href="lessons/lesson-05/lesson-05-slides.html" class="card-link">L5 幻灯</a><a href="lessons/lesson-05/lesson-05-worksheet.html" class="card-link teal">L5 工作纸</a></div>
+      <div class="card-quote">「别人说每天叫醒你的不是闹钟而是梦想，对于我，每天叫醒我的只有坚强。」</div>
+    </div>
+
+    <div class="card" style="background: var(--wash); border-style: dashed;">
+      <span class="card-num" style="background: var(--muted);">结尾段</span>
+      <div class="card-title">062111 班八年回望 — 「读书改变命运的古老隐喻」</div>
+      <div class="card-field"><span class="label">出场人物：</span>062111 班整体回顾 + 四大职业去向归纳</div>
+      <div class="card-field"><span class="label">主要议题：</span><span class="tag teal">1.1 时代总结</span><span class="tag gold">2.2 教育的实然价值</span></div>
+      <div class="card-field"><span class="label">教在哪节：</span><a href="lessons/lesson-06/lesson-06-slides.html" class="card-link">L6 幻灯</a> · 标 "第 9 节"（书末 conclusion）</div>
+      <div class="card-quote">「整体上，对八零后一代孩子而言......他们通过各种努力和尝试，大都能拥有一份让人踏实的工作......实现读书改变命运的古老隐喻。」</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============== 3. 按 Lesson 查（跟课用） ============== -->
+<section class="block">
+  <h2><span class="num">3</span>按 Lesson 查 · 跟课时用</h2>
+  <p class="section-intro">学生跟课时，每节课前查这里，知道本节课覆盖书的哪一章、配什么议题、链接到哪个 slide/工作纸。</p>
+
+  <div class="grid-cards">
+
+    <div class="card">
+      <span class="card-num ls">L1</span>
+      <div class="card-title">历史背景 + 议题导入</div>
+      <div class="card-field"><span class="label">对应章节：</span><span class="tag ghost">不教课文</span> 导论用</div>
+      <div class="card-field"><span class="label">教学主题：</span>非虚构定位 + 二本背景 + 5 议题地图 + 「夹缝」「光芒」释义</div>
+      <div class="card-field"><span class="label">课前可读：</span><a href="analysis/chapter-analysis-all-8.html" class="card-link teal">章节分析全 8 章 ▸</a></div>
+      <div class="card-field"><a href="lessons/lesson-01/lesson-01-slides.html" class="card-link">L1 幻灯</a><a href="lessons/lesson-01/lesson-01-worksheet.html" class="card-link teal">L1 工作纸</a></div>
+    </div>
+
+    <div class="card">
+      <span class="card-num ls">L2</span>
+      <div class="card-title">开篇精读 · 9202 vs 062111</div>
+      <div class="card-field"><span class="label">对应章节：</span><span class="tag teal">Ch 1 方法论</span><span class="tag teal">Ch 2 就业模式</span></div>
+      <div class="card-field"><span class="label">教学主题：</span>控制变量 + 数据论证 + 反思性语言 + 代际对比 4 技巧</div>
+      <div class="card-field"><span class="label">课前应读：</span>Ch 1 + Ch 2（约 2,200 字）</div>
+      <div class="card-field"><a href="lessons/lesson-02/lesson-02-slides.html" class="card-link">L2 幻灯</a><a href="lessons/lesson-02/lesson-02-worksheet.html" class="card-link teal">L2 工作纸</a></div>
+    </div>
+
+    <div class="card">
+      <span class="card-num ls">L3</span>
+      <div class="card-title">钟梦兰 + 王国伟 + 潘海燕（铺垫）</div>
+      <div class="card-field"><span class="label">对应章节：</span><span class="tag teal">Ch 3 三家庭城镇化</span></div>
+      <div class="card-field"><span class="label">教学主题：</span>三家庭城镇化路径对比 + 父母决策 → 子女命运 + 典型案例法</div>
+      <div class="card-field"><span class="label">课前应读：</span>Ch 3（约 1,800 字）</div>
+      <div class="card-field"><a href="lessons/lesson-03/lesson-03-slides.html" class="card-link">L3 幻灯</a><a href="lessons/lesson-03/lesson-03-worksheet.html" class="card-link teal">L3 工作纸</a></div>
+    </div>
+
+    <div class="card">
+      <span class="card-num ls">L4</span>
+      <div class="card-title">潘海燕全程（1986-2018）</div>
+      <div class="card-field"><span class="label">对应章节：</span><span class="tag teal">Ch 6 海燕求职</span> · 复习 Ch 3 海燕铺垫</div>
+      <div class="card-field"><span class="label">教学主题：</span>乡村出生 → 留守 → 大学 → 劳务派遣 → 农信社转正（28 岁运营主管）</div>
+      <div class="card-field"><span class="label">课前应读：</span>Ch 6（约 1,950 字）+ 回看 Ch 3 海燕段</div>
+      <div class="card-field"><a href="lessons/lesson-04/lesson-04-slides.html" class="card-link">L4 幻灯</a><a href="lessons/lesson-04/lesson-04-worksheet.html" class="card-link teal">L4 工作纸</a></div>
+    </div>
+
+    <div class="card">
+      <span class="card-num ls">L5</span>
+      <div class="card-title">陈倩 + 张梅怡（两种创业）</div>
+      <div class="card-field"><span class="label">对应章节：</span><span class="tag teal">Ch 4 陈倩</span><span class="tag teal">Ch 8 梅怡</span></div>
+      <div class="card-field"><span class="label">教学主题：</span>潮汕家族企业承继 vs 城市互联网创业 · 不进体制 / 自己闯</div>
+      <div class="card-field"><span class="label">课前应读：</span>Ch 4 + Ch 8（约 3,200 字）</div>
+      <div class="card-field"><a href="lessons/lesson-05/lesson-05-slides.html" class="card-link">L5 幻灯</a><a href="lessons/lesson-05/lesson-05-worksheet.html" class="card-link teal">L5 工作纸</a></div>
+    </div>
+
+    <div class="card">
+      <span class="card-num ls">L6</span>
+      <div class="card-title">丽颖 + 刘素婷 + 班级归纳</div>
+      <div class="card-field"><span class="label">对应章节：</span><span class="tag teal">Ch 5 丽颖</span><span class="tag teal">Ch 7 素婷</span><span class="tag teal">结尾段</span></div>
+      <div class="card-field"><span class="label">教学主题：</span>代际女性觉醒（依附 → 独立）+ 独立女性哲学 + 062111 班四大职业去向</div>
+      <div class="card-field"><span class="label">课前应读：</span>Ch 5 + Ch 7 + 书末结尾段（约 2,600 字）</div>
+      <div class="card-field"><a href="lessons/lesson-06/lesson-06-slides.html" class="card-link">L6 幻灯</a><a href="lessons/lesson-06/lesson-06-worksheet.html" class="card-link teal">L6 工作纸</a></div>
+    </div>
+
+    <div class="card" style="background: var(--gold-soft); border-color: #ead394;">
+      <span class="card-num ls">L7</span>
+      <div class="card-title">写作技巧综合 + Q3 限时训练</div>
+      <div class="card-field"><span class="label">对应章节：</span><span class="tag ghost">不教课文</span> 应试训练</div>
+      <div class="card-field"><span class="label">教学主题：</span>8 类非虚构技巧整合 + TEE × 3 三步法 + 25 min Q3(b) 限时</div>
+      <div class="card-field"><span class="label">配套参考：</span><a href="analysis/appendix-a-narrative-techniques.html" class="card-link">附录 A 技巧库 ▸</a><a href="analysis/appendix-d-hsc-templates.html" class="card-link">附录 D 模板 ▸</a></div>
+      <div class="card-field"><a href="lessons/lesson-07/lesson-07-slides.html" class="card-link">L7 幻灯</a><a href="lessons/lesson-07/lesson-07-worksheet.html" class="card-link teal">L7 工作纸</a></div>
+    </div>
+
+    <div class="card" style="background: var(--gold-soft); border-color: #ead394;">
+      <span class="card-num ls">L8</span>
+      <div class="card-title">Q4 跨文本 + 2025 HSC 真题 + Band 6 真卷</div>
+      <div class="card-field"><span class="label">对应章节：</span><span class="tag ghost">不教课文</span> 应试训练</div>
+      <div class="card-field"><span class="label">教学主题：</span>Q4 跨文本（夹缝 × 大江）大 TEEL 模型 + 「抓住机会」立场 + 4 份 NESA Band 6 真卷拆解</div>
+      <div class="card-field"><span class="label">配套参考：</span><a href="analysis/appendix-c-character-grid.html" class="card-link">附录 C 配对 ▸</a><a href="practice/q3-q4-practice-set.html" class="card-link teal">Q3+Q4 练习集 ▸</a></div>
+      <div class="card-field"><a href="lessons/lesson-08/lesson-08-slides.html" class="card-link">L8 幻灯</a><a href="lessons/lesson-08/lesson-08-worksheet.html" class="card-link teal">L8 工作纸</a></div>
+    </div>
+
+    <div class="card" style="background: var(--gold-soft); border-color: #ead394;">
+      <span class="card-num ls">L9</span>
+      <div class="card-title">Q4 实战 + 单元收尾</div>
+      <div class="card-field"><span class="label">对应章节：</span><span class="tag ghost">不教课文</span> 应试训练</div>
+      <div class="card-field"><span class="label">教学主题：</span>40 min 限时 Q4 + NESA 5-band 自评 + 9 节课成果回望</div>
+      <div class="card-field"><span class="label">配套参考：</span><a href="analysis/appendix-d-hsc-templates.html" class="card-link">附录 D 评分要素 ▸</a></div>
+      <div class="card-field"><a href="lessons/lesson-09/lesson-09-slides.html" class="card-link">L9 幻灯</a><a href="lessons/lesson-09/lesson-09-worksheet.html" class="card-link teal">L9 工作纸</a></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============== 4. 隐性淡化与提醒 ============== -->
+<section class="block">
+  <h2><span class="num">4</span>隐性淡化与提醒（透明披露）</h2>
+  <p class="section-intro">Lessons 的 thematic 重组牺牲了某些覆盖。学生如果只跟课、不读书，会错过下面这些。</p>
+
+  <div class="warn">
+    <strong>⚠ Ch 4 群体叙述被简化</strong>
+    <p style="margin: 8px 0;">课文 Ch 4 的完整主题是「062111 班四大职业去向 + 陈倩个案 + 潮汕父辈观念」，三块都有 sociological 价值。L5 只挑了「陈倩个案」做深教，配对 Ch 8 梅怡成「两种创业」主题。这意味着：</p>
+    <ul style="margin: 6px 0; padding-left: 22px; font-size: 13px;">
+      <li>「12 公务员群体」叙述被推到 L6 用一句话总结「四大职业去向」</li>
+      <li>朱柱球（气体安装工）/ 梁景军（农信社）/ 黄春燕（潮州电视台主持人）/ 张健（博罗政府）等 minor cases 基本不教</li>
+      <li>大顺父亲、王国伟父亲的潮汕经商哲学引语 ✓ 在 L5 引用，但只作为「父辈观念集合」一带而过</li>
+    </ul>
+    <p style="margin: 8px 0 0; font-size: 13px;"><strong>补救：</strong>读 Ch 4 时格外注意这些 minor cases 的 sociological 意义——它们组成「全班职业图谱」，是 HSC Q3 (c) 「wider-text 引文」的潜在资源。</p>
+  </div>
+
+  <div class="info">
+    <strong>ℹ L4 看似跨章 · 实则单章</strong>
+    <p style="margin: 8px 0;">L4「潘海燕全程」让人以为是跨 Ch 3 + Ch 6 教学，其实 Ch 6 本身就重述了海燕的家庭背景（开头：「海燕 1986 年出生于广东省连州市大路边镇一个村庄......祖祖辈辈都是农民」）。所以 L4 = Ch 6 单章。</p>
+    <p style="margin: 8px 0 0; font-size: 13px;">L3 也提海燕，但只作 Ch 3「三家庭城镇化」之一的对照——两节课用海燕讲不同议题（L3 = 1.3 家庭重组，L4 = 2.2 教育撬动）。</p>
+  </div>
+
+  <div class="info">
+    <strong>ℹ 「Section 9」= 书末结尾段</strong>
+    <p style="margin: 8px 0;">L6 标注「第 5 + 7 + 9 节」中的「第 9 节」<strong>不是</strong>课文的第 9 章——课文只有 8 章。「第 9 节」指 Ch 8 之后的结尾归纳段「概而言之，毕业八年后，综观 062111 班学生的就业情况和生存状貌......实现读书改变命运的古老隐喻」。这是全书的 thesis 总收口。</p>
+  </div>
+
+  <div class="callout">
+    <strong>📚 课文本身的范围</strong>
+    <p style="margin: 8px 0;">DLC 文件夹的 <code>00_课文_夹缝中的光芒_含分析.docx</code> 是原书的<u>编选本</u>——8 章 ~12,000 字。原书还含 Ch 1 之前的引言、王国伟早期家族背景、更多 minor 角色个案。HSC 备考<strong>只需读编选本</strong>就够了——课文涵盖了所有 HSC 议题、所有主要人物、所有可考引文。</p>
+  </div>
+</section>
+
+<!-- ============== 5. 完整阅读路径建议 ============== -->
+<section class="block">
+  <h2><span class="num">5</span>完整阅读路径建议</h2>
+  <p class="section-intro">按学习目标选三种路径之一。</p>
+
+  <div class="path-block">
+    <h4>🎯 路径 A · 跟课 + 配读（最推荐 · 与 lessons 同步）</h4>
+    <ol>
+      <li><strong>L1 前</strong>：先扫一眼 <a href="analysis/chapter-analysis-all-8.html" style="color: var(--teal);">章节分析全 8 章</a> 的 TOC 速览全书</li>
+      <li><strong>L2 前</strong>：读 <strong>Ch 1 + Ch 2</strong>（方法论 + 就业模式 · 约 2,200 字 · 30 分钟）</li>
+      <li><strong>L3 前</strong>：读 <strong>Ch 3</strong>（三家庭城镇化 · 1,800 字 · 25 分钟）</li>
+      <li><strong>L4 前</strong>：读 <strong>Ch 6</strong>（海燕求职 · 1,950 字 · 25 分钟）</li>
+      <li><strong>L5 前</strong>：读 <strong>Ch 4 + Ch 8</strong>（陈倩 + 梅怡 · 约 3,200 字 · 40 分钟）</li>
+      <li><strong>L6 前</strong>：读 <strong>Ch 5 + Ch 7 + 结尾段</strong>（丽颖 + 素婷 + 班级归纳 · 约 2,600 字 · 35 分钟）</li>
+      <li><strong>L7-L9</strong>：上课不需读课文，但每节课课前用 5 分钟过 <a href="analysis/appendix-d-hsc-templates.html" style="color: var(--teal);">附录 D 考试模板</a></li>
+    </ol>
+    <p style="margin-top: 10px; font-size: 13px; color: var(--muted);">总阅读量：~12,000 字 = ~2.5 小时（分布在 5 周内 · 每周 30 分钟）</p>
+  </div>
+
+  <div class="path-block">
+    <h4>📖 路径 B · 独立阅读全书（自读为主 · lessons 作辅助）</h4>
+    <ol>
+      <li>按 Ch 1 → Ch 8 顺序一口气读完（~2.5 小时）</li>
+      <li>读完每章回到本页 §2「按章节查」找对应 lesson 看 slides + 工作纸</li>
+      <li>读完全书后看 L7-L9 完成应试训练</li>
+    </ol>
+  </div>
+
+  <div class="path-block">
+    <h4>⚡ 路径 C · 仅备考 Q3/Q4（应试优先 · 时间紧）</h4>
+    <ol>
+      <li>看 <a href="analysis/chapter-analysis-all-8.html" style="color: var(--teal);">章节分析全 8 章</a>（每章 6 块 · Q3/Q4 钩子 + Band 6 model 都在里面）</li>
+      <li>看 <a href="analysis/appendix-c-character-grid.html" style="color: var(--teal);">附录 C 人物议题表</a> 找 Q4 配对</li>
+      <li>刷 <a href="practice/q3-q4-practice-set.html" style="color: var(--teal);">Q3 + Q4 练习集</a>（8 道 Q3 + 2 道 Q4，含 Band 6 范文）</li>
+      <li>看 L8 / L9 的 2025 真题拆解</li>
+    </ol>
+    <p style="margin-top: 10px; font-size: 13px; color: var(--muted);">耗时：~5 小时密集训练（不读原书也可应付 HSC，但分析深度可能不够 Band 6）</p>
+  </div>
+</section>
+
+</main>
+</body>
+</html>

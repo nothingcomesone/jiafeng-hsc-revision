@@ -49,6 +49,7 @@ declare -a PAIRS=(
   "附录B_议题词典.html|appendix-b-issue-dictionary.html"
   "附录C_人物议题表.html|appendix-c-character-grid.html"
   "附录D_HSC考试模板.html|appendix-d-hsc-templates.html"
+  "课程导航_课文Lesson议题对照.html|chapter-lesson-issue-map.html"
 )
 for pair in "${PAIRS[@]}"; do
   zh="${pair%%|*}"
