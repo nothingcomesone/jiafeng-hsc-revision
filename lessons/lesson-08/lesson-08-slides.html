@@ -281,5 +281,6 @@ let tx=0;addEventListener('touchstart',e=>{tx=e.touches[0].clientX},{passive:tru
 addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>50)go(idx+(dx<0?1:-1));},{passive:true});
 go(0);
 </script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e705882a63a84e8b911f8e94f491529c"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
